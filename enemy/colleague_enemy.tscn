@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjvu6haff4888"]
+
+[ext_resource type="Script" path="res://script/colleague_enemy.gd" id="1_hcbsy"]
+[ext_resource type="PackedScene" uid="uid://dw0873tjomhe6" path="res://enemy/detection_area.tscn" id="1_ujunv"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_hcbsy")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="Area2D" parent="." instance=ExtResource("1_ujunv")]
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(50, 50)
+collision_mask = 2
+
+[node name="RayCast2D2" type="RayCast2D" parent="."]
+collision_mask = 2
+
+[node name="RayCast2D3" type="RayCast2D" parent="."]
+collision_mask = 2
+
+[node name="RayCast2D4" type="RayCast2D" parent="."]
+collision_mask = 2
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
