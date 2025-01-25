@@ -1,5 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b6h5501gcr477"]
 
+
 [ext_resource type="Texture2D" uid="uid://c82jkwiiqywsk" path="res://textures/imprimante.png" id="1_xflg5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tvwio"]
@@ -7,6 +8,7 @@ size = Vector2(57, 48)
 
 [node name="Printer" type="StaticBody2D"]
 collision_layer = 2
+script = ExtResource("1_q4t0q")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visibility_layer = 2

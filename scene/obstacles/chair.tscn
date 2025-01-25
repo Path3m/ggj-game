@@ -1,12 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://ceqnv83xerj10"]
 
+
 [ext_resource type="Texture2D" uid="uid://d18wwgy4fsaxb" path="res://textures/chaise.png" id="1_koppq"]
+
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
 size = Vector2(30, 36)
 
 [node name="Chair" type="StaticBody2D"]
 collision_layer = 2
+script = ExtResource("1_fxhhx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(1, 14)
