@@ -1,6 +1,6 @@
 extends Control
 
-@onready var first_level = preload("res://level1.tscn")
+@onready var first_level = preload("res://scene/level1.tscn")
 
 func _on_start_pressed():
 	await get_tree().create_timer(1)
