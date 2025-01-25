@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b6h5501gcr477"]
 
-[ext_resource type="Script" path="res://script/obstacle_hide.gd" id="1_q4t0q"]
+[ext_resource type="Script" path="res://script/bubbling_hide.gd" id="1_q4t0q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tvwio"]
 size = Vector2(64, 64)
