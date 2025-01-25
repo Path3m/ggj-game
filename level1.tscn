@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=9 format=3 uid="uid://bkx1u1wsuunlb"]
 
 [ext_resource type="PackedScene" uid="uid://ceqnv83xerj10" path="res://obstacles/chair.tscn" id="1_ptg44"]
@@ -195,6 +196,7 @@ terrain_set_0/terrain_0/name = "autotile 0"
 terrain_set_0/terrain_0/color = Color(1, 0, 0.25098, 1)
 sources/0 = SubResource("TileSetAtlasSource_uq024")
 
+
 [node name="Level1" type="Node2D"]
 
 [node name="BubbleMap" type="Node2D" parent="."]
@@ -204,11 +206,14 @@ sources/0 = SubResource("TileSetAtlasSource_uq024")
 [node name="bubble_floor" type="TextureRect" parent="BubbleMap"]
 offset_right = 40.0
 offset_bottom = 40.0
+
 metadata/_edit_use_anchors_ = true
+
 
 [node name="RealMap" type="Node2D" parent="."]
 
 [node name="real_tilemap" type="TileMap" parent="RealMap"]
+
 texture_filter = 1
 tile_set = SubResource("TileSet_sowen")
 format = 2
