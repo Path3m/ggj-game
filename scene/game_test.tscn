@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbh0swh4sduwi"]
+
+[ext_resource type="Script" path="res://script/game_test.gd" id="1_acsqv"]
+[ext_resource type="PackedScene" uid="uid://bjvu6haff4888" path="res://scene/enemy/colleague_enemy.tscn" id="2_4qkui"]
+[ext_resource type="PackedScene" uid="uid://cd7xjr3ufiw60" path="res://scene/false_player.tscn" id="3_v7741"]
+[ext_resource type="PackedScene" uid="uid://b6h5501gcr477" path="res://obstacles/printer.tscn" id="5_bl30x"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_acsqv")
+
+[node name="colleague_enemy" parent="." instance=ExtResource("2_4qkui")]
+position = Vector2(57, 57)
+
+[node name="false_player" parent="." instance=ExtResource("3_v7741")]
+position = Vector2(324, 232)
+
+[node name="Printer" parent="." instance=ExtResource("5_bl30x")]
+position = Vector2(171, 140)
+
+[node name="Printer2" parent="." instance=ExtResource("5_bl30x")]
+position = Vector2(454, 136)
+
+[node name="Printer3" parent="." instance=ExtResource("5_bl30x")]
+position = Vector2(453, 466)
+
+[node name="Printer4" parent="." instance=ExtResource("5_bl30x")]
+position = Vector2(169, 463)

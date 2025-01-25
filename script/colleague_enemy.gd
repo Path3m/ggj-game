@@ -1,27 +1,13 @@
 extends Node2D
 
-const ENNEMY_SPEED = 30;
+const ENNEMY_SPEED = 45;
 var direction = Vector2(0,0);
  
 @onready var detection_area = $Area2D
 @onready var colleague_sprite = $AnimatedSprite2D
 
 # Ray cast to check collision with environnement
-
-@onready var ray_cast = [
-	$North, #north
-	$South, #south
-	$East, #east
-	$West #west
-];
-
-func collide_check() -> Vector2:
-	var collide = Vector2(0,0);
-	if ray_cast[0].is_colliding(): collide.y += -1;
-	if ray_cast[1].is_colliding(): collide.y += 1;
-	if ray_cast[2].is_colliding(): collide.x += -1;
-	if ray_cast[3].is_colliding(): collide.x += 1;
-	return collide;
+@onready var collide_detect = $CollideDetect;
 
 # -----------------------------------------------
 # Checking if the character has entered the area
@@ -50,7 +36,8 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 # -----------------------------------------------
 # Main process
 func _process(delta: float) -> void:
-	var collide = collide_check();
+	var collide = collide_detect.collide_check();
+	print("Collide on side : ", collide);
 	if is_hunting:
 		position += delta * ENNEMY_SPEED * (collide + direction_to_prey());
 	else:
