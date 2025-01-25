@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://script/perso.gd" id="1_264pp"]
 [ext_resource type="Texture2D" uid="uid://c1tyiofburlq5" path="res://assets/animations/perso_principale/mc_Sheet_face.png" id="2_2l0iw"]
-[ext_resource type="PackedScene" uid="uid://cxfcr6p6bkkoc" path="res://scene/stress.tscn" id="3_2o3bu"]
+[ext_resource type="PackedScene" path="res://scene/stress.tscn" id="3_2o3bu"]
 [ext_resource type="Texture2D" uid="uid://baqhel15fh4r5" path="res://assets/animations/perso_principale/mc_profil_droit_Sheet.png" id="3_84n5n"]
 [ext_resource type="Texture2D" uid="uid://due4hqqxekxm4" path="res://assets/animations/perso_principale/mc_profil_gauche_Sheet.png" id="4_qkcnk"]
 [ext_resource type="Texture2D" uid="uid://c468bt7468ye2" path="res://assets/animations/perso_principale/mc_dos_Sheet.png" id="5_16x4e"]
@@ -279,6 +279,6 @@ shape = SubResource("RectangleShape2D_dij2g")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 ignore_rotation = false
-zoom = Vector2(2, 2)
+zoom = Vector2(5, 5)
 
 [node name="Control" parent="." instance=ExtResource("3_2o3bu")]

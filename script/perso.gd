@@ -52,13 +52,13 @@ func _physics_process(delta: float) -> void:
 	#------------------------------------------------------
 	#sound
 	
-	if Global.in_bubble_world:
-		$AudioStreamPlayer.play("res://musiques/Monde_bulle.wav")
-		$AudioStreamPlayer.play("res://musiques/Monde_bulle_ambiance.mp3")
-	else:
-		$AudioStreamPlayer.stop("res://musiques/Monde_bulle.wav")
-		$AudioStreamPlayer.stop("res://musiques/Monde_bulle_ambiance.mp3")
-		$AudioStreamPlayer.play()
+	#if Global.in_bubble_world:
+	#	$AudioStreamPlayer.play("res://musiques/Monde_bulle.wav")
+	#	$AudioStreamPlayer.play("res://musiques/Monde_bulle_ambiance.mp3")
+	#else:
+		#$AudioStreamPlayer.stop("res://musiques/Monde_bulle.wav")
+		#$AudioStreamPlayer.stop("res://musiques/Monde_bulle_ambiance.mp3")
+		#$AudioStreamPlayer.play()
 
 		# Arrête le son après 5 secondes
 		#yield(get_tree().create_timer(5), "timeout")
