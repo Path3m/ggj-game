@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkx1u1wsuunlb"]
+
+[sub_resource type="TileSet" id="TileSet_sowen"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="BubbleMap" type="Node2D" parent="."]
+
+[node name="add-ons" type="Node2D" parent="BubbleMap"]
+
+[node name="bubble_floor" type="TextureRect" parent="BubbleMap"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RealMap" type="Node2D" parent="."]
+
+[node name="real_tilemap" type="TileMap" parent="RealMap"]
+position = Vector2(207, 122)
+tile_set = SubResource("TileSet_sowen")
+format = 2
+
+[node name="Obstacles" type="Node2D" parent="."]
