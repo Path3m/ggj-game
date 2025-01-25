@@ -3,11 +3,11 @@ extends Node2D
 const ENNEMY_SPEED = 45;
 var direction = Vector2(0,0);
 var wander_size = 200;
+var enemy_timeout : int = 5;
 
 @onready var init_position = global_position;
 @onready var detection_area = $detection_area;
 @onready var colleague_sprite = $AnimatedSprite2D;
-@onready var boring_dialogue = preload("res://scene/enemy/boring_dialogue.tscn");
 
 # Ray cast to check collision with environnement
 @onready var collide_detect = $CollideDetect;
@@ -18,6 +18,9 @@ func _on_changed_world() -> void:
 		hide();
 	else:
 		show();
+
+func _on_end_dialogue() -> void:
+	pass
 
 # -----------------------------------------------
 # Checking if the character has entered the area
@@ -40,16 +43,25 @@ func _on_detection_area_body_exited(body: Node2D) -> void:
 	print("Stop the hunt");
 	is_hunting = false;
 	prey = null;
-
-func _on_collide_shape_area_entered(area: Area2D) -> void:
-	DialogueManager.show_dialogue_balloon(load("res://dialogues/complotiste.dialogue"));
-	await get_tree().create_timer(5);
 	
+func _on_collide_shape_body_entered(body: Node2D) -> void:
+	var dialogue : String = Global.select_random_dialogue();
+	DialogueManager.show_dialogue_balloon(load(dialogue));
+	Global.began_dialogue.emit();
+
+func _on_dialogue_began() -> void:
+	set_process(false);
+
+func _on_dialogue_end() -> void:
+	await get_tree().create_timer(enemy_timeout).timeout;
+	set_process(true);
 
 # -----------------------------------------------
 # Main process
 func _ready() -> void:
 	Global.changed_world.connect(_on_changed_world);
+	Global.began_dialogue.connect(_on_dialogue_began);
+	Global.end_dialogue.connect(_on_end_dialogue);
 
 func _process(delta: float) -> void:
 	direction = collide_detect.collide_check();

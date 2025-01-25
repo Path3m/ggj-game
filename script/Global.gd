@@ -1,7 +1,7 @@
 extends Node
 
 const dialogue_list : Array[String] = [
-	"res://dialogue/complotiste.dialogue"
+	"res://dialogues/complotiste.dialogue"
 ];
 
 var in_bubble_world : bool = false;
@@ -14,3 +14,5 @@ func select_random_dialogue() -> String:
 	return dialogue_list[i];
 
 signal changed_world;
+signal began_dialogue;
+signal end_dialogue;
