@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://bkx1u1wsuunlb"]
+[gd_scene load_steps=13 format=3 uid="uid://dbbhpc1dfbkfq"]
 
+[ext_resource type="Script" path="res://script/level1.gd" id="1_4ov7l"]
 [ext_resource type="Texture2D" uid="uid://c2bimpjmqv2pt" path="res://textures/mure blanc 1.png" id="1_ygvrr"]
 [ext_resource type="PackedScene" uid="uid://dj6hwkrm8834a" path="res://scene/perso/perso.tscn" id="2_lo4ni"]
 [ext_resource type="Texture2D" uid="uid://kntbc1dsopox" path="res://textures/sol.png" id="2_tfobk"]
 [ext_resource type="PackedScene" uid="uid://ceqnv83xerj10" path="res://scene/obstacles/chair.tscn" id="4_1u4w8"]
-[ext_resource type="PackedScene" uid="uid://bbvb3sarknr0y" path="res://scene/menu_pause.tscn" id="5_8fvor"]
+[ext_resource type="PackedScene" uid="uid://ddcsnf356ihbu" path="res://scene/menu_pause.tscn" id="5_8fvor"]
 [ext_resource type="PackedScene" uid="uid://bjvu6haff4888" path="res://scene/enemy/colleague_enemy.tscn" id="6_2uunk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_72jiu"]
@@ -313,6 +314,7 @@ sources/0 = SubResource("TileSetAtlasSource_uq024")
 sources/1 = SubResource("TileSetAtlasSource_e8i3f")
 
 [node name="Level1" type="Node2D"]
+script = ExtResource("1_4ov7l")
 
 [node name="BubbleMap" type="Node2D" parent="."]
 
@@ -355,10 +357,8 @@ position = Vector2(640, 96)
 position = Vector2(640, 224)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-visible = false
 
 [node name="MenuPause" parent="CanvasLayer" instance=ExtResource("5_8fvor")]
-visible = false
 
 [node name="colleague_enemy" parent="." instance=ExtResource("6_2uunk")]
 position = Vector2(880, 88)
