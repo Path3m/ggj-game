@@ -1,8 +1,6 @@
 extends CharacterBody2D
 
-
 const SPEED = 230.0
-
 
 func _physics_process(delta: float) -> void:
 
@@ -33,4 +31,7 @@ func _physics_process(delta: float) -> void:
 		#$Sprite2D.play("NomTODO")
 	#if Input.is_action_pressed("ui_down"):
 		#$Sprite2D.play("NomTODO")
-		
+	
+	if Input.is_action_just_pressed("change_world"):
+		Global.switch_world();
+		Global.changed_world.emit();

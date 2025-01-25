@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6tmrljrqr125"]
+
+[ext_resource type="Script" path="res://script/bubble_map.gd" id="1_dp2yw"]
+
+[sub_resource type="Gradient" id="Gradient_32iwf"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_8fl1t"]
+gradient = SubResource("Gradient_32iwf")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0.769231, 0.337607)
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_jdqak"]
+diffuse_texture = SubResource("GradientTexture2D_8fl1t")
+specular_color = Color(1, 0.52, 0.52, 1)
+
+[node name="BubbleMap" type="Node2D"]
+script = ExtResource("1_dp2yw")
+
+[node name="add-ons" type="Node2D" parent="."]
+
+[node name="bubble_floor2" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(2000, 2000)
+offset_left = -433.0
+offset_top = -586.0
+offset_right = 1567.0
+offset_bottom = 1414.0
+texture = SubResource("CanvasTexture_jdqak")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true

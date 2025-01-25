@@ -1,10 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b6h5501gcr477"]
+[gd_scene load_steps=3 format=3 uid="uid://b6h5501gcr477"]
+
+[ext_resource type="Script" path="res://script/obstacle_hide.gd" id="1_q4t0q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tvwio"]
 size = Vector2(64, 64)
 
 [node name="Printer" type="StaticBody2D"]
 collision_layer = 2
+script = ExtResource("1_q4t0q")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_top = -32.0

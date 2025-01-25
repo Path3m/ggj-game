@@ -5,7 +5,7 @@ var direction = Vector2(0,0);
 var wander_size = 200;
 
 @onready var init_position = global_position;
-@onready var detection_area = $Area2D
+@onready var detection_area = $detection_area
 @onready var colleague_sprite = $AnimatedSprite2D
 
 # Ray cast to check collision with environnement
@@ -37,10 +37,12 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 # Main process
 func _process(delta: float) -> void:
 	direction = collide_detect.collide_check();
-	if is_hunting:
+	if is_hunting && !Global.in_bubble_world:
 		assert(prey != null);
 		direction += dir2pt(prey.global_position);
-	else:
+	elif !Global.in_bubble_world:
 		direction += dir2pt(init_position);
+	else:
+		direction = Vector2(0,0);
 	position += delta * ENNEMY_SPEED * direction;
 	
