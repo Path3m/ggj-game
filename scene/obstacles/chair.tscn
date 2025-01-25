@@ -1,15 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://ceqnv83xerj10"]
+[gd_scene load_steps=3 format=3 uid="uid://ceqnv83xerj10"]
+
+[ext_resource type="Texture2D" uid="uid://d18wwgy4fsaxb" path="res://textures/chaise.png" id="1_koppq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
-size = Vector2(65, 64)
+size = Vector2(30, 36)
 
 [node name="Chair" type="StaticBody2D"]
 collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(31.5, 32)
+position = Vector2(1, 14)
 shape = SubResource("RectangleShape2D_hg8ti")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 64.0
-offset_bottom = 64.0
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_koppq")

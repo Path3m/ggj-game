@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqvd7ps5cogi4"]
+
+[ext_resource type="Texture2D" uid="uid://dpdoiucuksl10" path="res://textures/extincteur.png" id="1_gepip"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
+size = Vector2(23, 55)
+
+[node name="Extinctor" type="StaticBody2D"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.5, 0.5)
+shape = SubResource("RectangleShape2D_hg8ti")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gepip")

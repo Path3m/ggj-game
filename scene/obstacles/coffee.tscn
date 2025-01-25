@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmqfmxup8eywp"]
+
+[ext_resource type="Texture2D" uid="uid://dt3k843clolya" path="res://textures/machine_cafe.png" id="1_h2meg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
+size = Vector2(30, 44)
+
+[node name="Coffee" type="StaticBody2D"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 11)
+shape = SubResource("RectangleShape2D_hg8ti")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_h2meg")

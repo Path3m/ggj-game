@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://4wx2pt8xjiel"]
+
+[ext_resource type="Texture2D" uid="uid://3pskpqyc6kyl" path="res://textures/poubelle3.png" id="1_ptq7c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_srwgy"]
+size = Vector2(22, 25)
+
+[node name="Bin3" type="StaticBody2D"]
+collision_layer = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ptq7c")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(0, 19.5)
+shape = SubResource("RectangleShape2D_srwgy")
