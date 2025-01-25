@@ -41,6 +41,7 @@ func _process(delta: float) -> void:
 	if is_hunting:
 		position += delta * ENNEMY_SPEED * (collide + direction_to_prey());
 	else:
-		if collide != Vector2(0,0): direction = collide;
+		#if collide != Vector2(0,0): 
+			#direction = collide;
 		position += delta * ENNEMY_SPEED * direction;
 	

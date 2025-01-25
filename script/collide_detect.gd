@@ -29,5 +29,5 @@ func collide_check() -> Vector2:
 		collide.x += -1;
 	if west_collide: 
 		print("Collide west");
-		collide.y += 1;
+		collide.x += 1;
 	return collide;
