@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://blqinn5smxgsj"]
+[gd_scene load_steps=4 format=3 uid="uid://blqinn5smxgsj"]
 
+[ext_resource type="Script" path="res://script/bubbling_hide.gd" id="1_ax0j3"]
 [ext_resource type="Texture2D" uid="uid://8v7sv1gjdlem" path="res://textures/poubelle1.png" id="1_n8hni"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
@@ -7,10 +8,12 @@ size = Vector2(22, 25)
 
 [node name="Bin1" type="StaticBody2D"]
 collision_layer = 2
+script = ExtResource("1_ax0j3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 19.5)
 shape = SubResource("RectangleShape2D_hg8ti")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+light_mask = 0
 texture = ExtResource("1_n8hni")

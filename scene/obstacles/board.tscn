@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://qq1w8bqqypau"]
+[gd_scene load_steps=4 format=3 uid="uid://qq1w8bqqypau"]
 
 [ext_resource type="Texture2D" uid="uid://bv17yflhwwtqa" path="res://textures/tableau.png" id="1_3qlfh"]
+[ext_resource type="Script" path="res://script/bubbling_hide.gd" id="1_hrvec"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
 size = Vector2(39, 36)
 
 [node name="Board" type="StaticBody2D"]
 collision_layer = 2
+script = ExtResource("1_hrvec")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(3.5, 13)

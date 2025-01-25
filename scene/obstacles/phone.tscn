@@ -1,5 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://uujosyjfddch"]
+[gd_scene load_steps=4 format=3 uid="uid://uujosyjfddch"]
 
+[ext_resource type="Script" path="res://script/bubbling_hide.gd" id="1_mu6qp"]
 [ext_resource type="Texture2D" uid="uid://45hjki3007on" path="res://textures/telepone.png" id="1_p80nr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
@@ -7,6 +8,7 @@ size = Vector2(16, 12)
 
 [node name="Phone" type="StaticBody2D"]
 collision_layer = 2
+script = ExtResource("1_mu6qp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_hg8ti")

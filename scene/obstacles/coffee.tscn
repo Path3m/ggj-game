@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmqfmxup8eywp"]
+[gd_scene load_steps=4 format=3 uid="uid://bmqfmxup8eywp"]
 
 [ext_resource type="Texture2D" uid="uid://dt3k843clolya" path="res://textures/machine_cafe.png" id="1_h2meg"]
+[ext_resource type="Script" path="res://script/bubbling_hide.gd" id="1_s623l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
 size = Vector2(30, 44)
 
 [node name="Coffee" type="StaticBody2D"]
 collision_layer = 2
+script = ExtResource("1_s623l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 11)
