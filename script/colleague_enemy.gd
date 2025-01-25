@@ -1,6 +1,6 @@
-extends Area2D
+extends Node2D
 
-const ENNEMY_SPEED = 0;
+const ENNEMY_SPEED = 30;
 var direction = Vector2(0,0);
  
 @onready var detection_area = $Area2D
@@ -9,18 +9,18 @@ var direction = Vector2(0,0);
 # Ray cast to check collision with environnement
 
 @onready var ray_cast = [
-	$RayCast2D, #north
-	$RayCast2D2, #south
-	$RayCast2D3, #east
-	$RayCast2D4 #west
+	$North, #north
+	$South, #south
+	$East, #east
+	$West #west
 ];
 
 func collide_check() -> Vector2:
 	var collide = Vector2(0,0);
-	if ray_cast[0].is_colliding(): collide.x += -1;
-	if ray_cast[1].is_colliding(): collide.x += 1;
-	if ray_cast[2].is_colliding(): collide.y += -1;
-	if ray_cast[3].is_colliding(): collide.y += 1;
+	if ray_cast[0].is_colliding(): collide.y += -1;
+	if ray_cast[1].is_colliding(): collide.y += 1;
+	if ray_cast[2].is_colliding(): collide.x += -1;
+	if ray_cast[3].is_colliding(): collide.x += 1;
 	return collide;
 
 # -----------------------------------------------
@@ -30,16 +30,20 @@ var prey = null;
 
 func direction_to_prey() -> Vector2:
 	assert(prey != null);
-	return Vector2(
-		sign(position.x - prey.position.x),
-		sign(position.y - prey.position.y)
+	var dirtoprey = Vector2(
+		sign(prey.global_position.x - position.x),
+		sign(prey.global_position.y - position.y)
 	);
+	print("Enemy :", position, "| Char :", prey.position, " | D2P : ", dirtoprey );
+	return dirtoprey;
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
+	print("Currently hunting");
 	is_hunting = true;
 	prey = body;
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
+	print("Stop the hunt");
 	is_hunting = false;
 	prey = null;
 
@@ -48,8 +52,8 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 func _process(delta: float) -> void:
 	var collide = collide_check();
 	if is_hunting:
-		position += delta * (collide + direction_to_prey());
+		position += delta * ENNEMY_SPEED * (collide + direction_to_prey());
 	else:
 		if collide != Vector2(0,0): direction = collide;
-		position += direction;
+		position += delta * ENNEMY_SPEED * direction;
 	

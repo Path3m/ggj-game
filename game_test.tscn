@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bbh0swh4sduwi"]
+
+[ext_resource type="PackedScene" uid="uid://bjvu6haff4888" path="res://enemy/colleague_enemy.tscn" id="1_efh7a"]
+[ext_resource type="Script" path="res://game_test.gd" id="1_xre5j"]
+[ext_resource type="PackedScene" uid="uid://cd7xjr3ufiw60" path="res://false_player.tscn" id="2_ukg6m"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_xre5j")
+
+[node name="colleague_enemy" parent="." instance=ExtResource("1_efh7a")]
+position = Vector2(57, 57)
+
+[node name="false_player" parent="." instance=ExtResource("2_ukg6m")]
+position = Vector2(536, 417)
