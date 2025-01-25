@@ -2,6 +2,7 @@ extends Node2D
 
 const ENNEMY_SPEED = 45;
 var direction = Vector2(0,0);
+var wander_size = 200;
 
 @onready var init_position = global_position;
 @onready var detection_area = $Area2D
@@ -16,11 +17,11 @@ var is_hunting = false;
 var prey = null;
 
 func dir2pt(point: Vector2) -> Vector2:
-	var dir2pt = Vector2(
+	var res = Vector2(
 		sign(point.x - position.x),
 		sign(point.y - position.y)
 	);
-	return dir2pt;
+	return res;
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	print("Currently hunting");
