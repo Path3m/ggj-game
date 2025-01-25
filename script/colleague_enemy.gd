@@ -52,7 +52,7 @@ func _on_collide_shape_body_entered(body: Node2D) -> void:
 func _on_dialogue_began() -> void:
 	set_process(false);
 
-func _on_dialogue_end() -> void:
+func _on_dialogue_end(ressource: DialogueResource) -> void:
 	await get_tree().create_timer(enemy_timeout).timeout;
 	set_process(true);
 
@@ -61,7 +61,7 @@ func _on_dialogue_end() -> void:
 func _ready() -> void:
 	Global.changed_world.connect(_on_changed_world);
 	Global.began_dialogue.connect(_on_dialogue_began);
-	Global.end_dialogue.connect(_on_end_dialogue);
+	DialogueManager.dialogue_ended.connect(_on_dialogue_end);
 
 func _process(delta: float) -> void:
 	direction = collide_detect.collide_check();

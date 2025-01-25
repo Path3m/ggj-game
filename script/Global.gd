@@ -15,4 +15,3 @@ func select_random_dialogue() -> String:
 
 signal changed_world;
 signal began_dialogue;
-signal end_dialogue;

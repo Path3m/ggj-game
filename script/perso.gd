@@ -2,6 +2,16 @@ extends CharacterBody2D
 
 const SPEED = 230.0
 
+func _on_began_dialogue() -> void:
+	set_physics_process(false);
+	
+func _on_end_dialogue(ressource: DialogueResource) -> void:
+	set_physics_process(true);
+
+func _ready() -> void:
+	Global.began_dialogue.connect(_on_began_dialogue);
+	DialogueManager.dialogue_ended.connect(_on_end_dialogue);
+
 func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
