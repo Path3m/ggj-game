@@ -14,5 +14,4 @@ func _input(event: InputEvent) -> void:
 			position.y += speed;
 
 func _process(delta: float) -> void:
-	print(position);
 	pass

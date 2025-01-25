@@ -1,0 +1,38 @@
+[gd_scene load_steps=2 format=3 uid="uid://1auypjtsxo3j"]
+
+[ext_resource type="Script" path="res://script/collide_detect.gd" id="1_kgqpf"]
+
+[node name="CollideDetect" type="Node2D"]
+script = ExtResource("1_kgqpf")
+
+[node name="North" type="RayCast2D" parent="."]
+target_position = Vector2(0, -34)
+collision_mask = 2
+
+[node name="South" type="RayCast2D" parent="."]
+target_position = Vector2(0, 34)
+collision_mask = 2
+
+[node name="East" type="RayCast2D" parent="."]
+target_position = Vector2(-34, 0)
+collision_mask = 2
+
+[node name="West" type="RayCast2D" parent="."]
+target_position = Vector2(34, 0)
+collision_mask = 2
+
+[node name="NorthEast" type="RayCast2D" parent="."]
+target_position = Vector2(34, -34)
+collision_mask = 2
+
+[node name="NorthWest" type="RayCast2D" parent="."]
+target_position = Vector2(-34, -34)
+collision_mask = 2
+
+[node name="SouthEast" type="RayCast2D" parent="."]
+target_position = Vector2(34, 34)
+collision_mask = 2
+
+[node name="SouthWest" type="RayCast2D" parent="."]
+target_position = Vector2(-34, 34)
+collision_mask = 2
