@@ -5,8 +5,9 @@ var direction = Vector2(0,0);
 var wander_size = 200;
 
 @onready var init_position = global_position;
-@onready var detection_area = $detection_area
-@onready var colleague_sprite = $AnimatedSprite2D
+@onready var detection_area = $detection_area;
+@onready var colleague_sprite = $AnimatedSprite2D;
+@onready var boring_dialogue = preload("res://scene/enemy/boring_dialogue.tscn");
 
 # Ray cast to check collision with environnement
 @onready var collide_detect = $CollideDetect;
@@ -30,15 +31,20 @@ func dir2pt(point: Vector2) -> Vector2:
 	);
 	return res;
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
+func _on_detection_area_body_entered(body: Node2D) -> void:
 	print("Currently hunting");
 	is_hunting = true;
 	prey = body;
 
-func _on_area_2d_body_exited(body: Node2D) -> void:
+func _on_detection_area_body_exited(body: Node2D) -> void:
 	print("Stop the hunt");
 	is_hunting = false;
 	prey = null;
+
+func _on_collide_shape_area_entered(area: Area2D) -> void:
+	DialogueManager.show_dialogue_balloon(load("res://dialogues/complotiste.dialogue"));
+	await get_tree().create_timer(5);
+	
 
 # -----------------------------------------------
 # Main process
@@ -55,4 +61,3 @@ func _process(delta: float) -> void:
 	else:
 		direction = Vector2(0,0);
 	position += delta * ENNEMY_SPEED * direction;
-	
