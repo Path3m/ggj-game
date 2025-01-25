@@ -11,6 +11,13 @@ var wander_size = 200;
 # Ray cast to check collision with environnement
 @onready var collide_detect = $CollideDetect;
 
+# Hiding enemy when going in bubble world
+func _on_changed_world() -> void:
+	if Global.in_bubble_world:
+		hide();
+	else:
+		show();
+
 # -----------------------------------------------
 # Checking if the character has entered the area
 var is_hunting = false;
@@ -35,6 +42,9 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 
 # -----------------------------------------------
 # Main process
+func _ready() -> void:
+	Global.changed_world.connect(_on_changed_world);
+
 func _process(delta: float) -> void:
 	direction = collide_detect.collide_check();
 	if is_hunting && !Global.in_bubble_world:
