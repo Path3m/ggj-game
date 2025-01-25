@@ -2,6 +2,16 @@ extends CharacterBody2D
 
 const SPEED = 230.0
 
+func _on_began_dialogue() -> void:
+	set_physics_process(false);
+	
+func _on_end_dialogue(ressource: DialogueResource) -> void:
+	set_physics_process(true);
+
+func _ready() -> void:
+	Global.began_dialogue.connect(_on_began_dialogue);
+	DialogueManager.dialogue_ended.connect(_on_end_dialogue);
+
 func _physics_process(delta: float) -> void:
 
 	# Get the input direction and handle the movement/deceleration.
@@ -21,17 +31,18 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	
 	#sprite deplacement
-	if Input.is_action_pressed("ui_right"):
-		$Sprite2D.flip_h = false
-		#$Sprite2D.play("NomTODO")
-	elif Input.is_action_pressed("ui_left"):
-		$Sprite2D.flip_h = true
-		#$Sprite2D.play("NomTODO")
-	#if Input.is_action_pressed("ui_up"):
-		#$Sprite2D.play("NomTODO")
-	#if Input.is_action_pressed("ui_down"):
-		#$Sprite2D.play("NomTODO")
-	
+	if Input.is_action_pressed("ui_right") or Input.is_action_pressed ("ui_left") or Input.is_action_pressed ("ui_up") or Input.is_action_pressed ("ui_down"):
+		if Input.is_action_pressed("ui_right"):
+			$MC_mouv.play("MC_droite")
+		if Input.is_action_pressed("ui_left"):
+			$MC_mouv.play("MC_gauche")
+		if Input.is_action_pressed("ui_up"):
+			$MC_mouv.play("MC_haut")
+		if Input.is_action_pressed("ui_down"):
+			$MC_mouv.play("MC_bas")
+	else:
+		$MC_mouv.play("MC_bas")
+		
 	if Input.is_action_just_pressed("change_world"):
 		Global.switch_world();
 		Global.changed_world.emit();

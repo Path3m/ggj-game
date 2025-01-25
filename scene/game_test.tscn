@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://script/game_test.gd" id="1_acsqv"]
 [ext_resource type="PackedScene" uid="uid://bjvu6haff4888" path="res://scene/enemy/colleague_enemy.tscn" id="2_4qkui"]
 [ext_resource type="PackedScene" uid="uid://cd7xjr3ufiw60" path="res://scene/false_player.tscn" id="3_v7741"]
-[ext_resource type="PackedScene" uid="uid://b6h5501gcr477" path="res://obstacles/printer.tscn" id="5_bl30x"]
+[ext_resource type="PackedScene" uid="uid://b6h5501gcr477" path="res://scene/obstacles/printer.tscn" id="5_bl30x"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_acsqv")

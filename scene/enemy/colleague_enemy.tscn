@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjvu6haff4888"]
+[gd_scene load_steps=7 format=3 uid="uid://bjvu6haff4888"]
 
 [ext_resource type="Script" path="res://script/colleague_enemy.gd" id="1_hcbsy"]
 [ext_resource type="PackedScene" uid="uid://dw0873tjomhe6" path="res://scene/enemy/detection_area.tscn" id="1_ujunv"]
 [ext_resource type="PackedScene" uid="uid://1auypjtsxo3j" path="res://scene/enemy/collide_detect.tscn" id="3_wd5of"]
+[ext_resource type="Texture2D" uid="uid://n6qr0yq61rrx" path="res://textures/boss.png" id="4_h7nnu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yqmyo"]
 animations = [{
@@ -26,12 +27,12 @@ animation = &"new_animation"
 
 [node name="collide_shape" type="Area2D" parent="."]
 collision_layer = 4
-collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="collide_shape"]
 shape = SubResource("RectangleShape2D_63mk3")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 custom_minimum_size = Vector2(64, 64)
 offset_left = -32.0
 offset_top = -32.0
@@ -40,5 +41,9 @@ offset_bottom = 32.0
 
 [node name="CollideDetect" parent="." instance=ExtResource("3_wd5of")]
 
-[connection signal="body_entered" from="detection_area" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_exited" from="detection_area" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]
+[connection signal="body_entered" from="collide_shape" to="." method="_on_collide_shape_body_entered"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("4_h7nnu")

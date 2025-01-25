@@ -3,10 +3,11 @@ extends Node2D
 const ENNEMY_SPEED = 45;
 var direction = Vector2(0,0);
 var wander_size = 200;
+var enemy_timeout : int = 5;
 
 @onready var init_position = global_position;
-@onready var detection_area = $detection_area
-@onready var colleague_sprite = $AnimatedSprite2D
+@onready var detection_area = $detection_area;
+@onready var colleague_sprite = $AnimatedSprite2D;
 
 # Ray cast to check collision with environnement
 @onready var collide_detect = $CollideDetect;
@@ -17,6 +18,9 @@ func _on_changed_world() -> void:
 		hide();
 	else:
 		show();
+
+func _on_end_dialogue() -> void:
+	pass
 
 # -----------------------------------------------
 # Checking if the character has entered the area
@@ -30,20 +34,34 @@ func dir2pt(point: Vector2) -> Vector2:
 	);
 	return res;
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
+func _on_detection_area_body_entered(body: Node2D) -> void:
 	print("Currently hunting");
 	is_hunting = true;
 	prey = body;
 
-func _on_area_2d_body_exited(body: Node2D) -> void:
+func _on_detection_area_body_exited(body: Node2D) -> void:
 	print("Stop the hunt");
 	is_hunting = false;
 	prey = null;
+	
+func _on_collide_shape_body_entered(body: Node2D) -> void:
+	var dialogue : String = Global.select_random_dialogue();
+	DialogueManager.show_dialogue_balloon(load(dialogue));
+	Global.began_dialogue.emit();
+
+func _on_dialogue_began() -> void:
+	set_process(false);
+
+func _on_dialogue_end(ressource: DialogueResource) -> void:
+	await get_tree().create_timer(enemy_timeout).timeout;
+	set_process(true);
 
 # -----------------------------------------------
 # Main process
 func _ready() -> void:
 	Global.changed_world.connect(_on_changed_world);
+	Global.began_dialogue.connect(_on_dialogue_began);
+	DialogueManager.dialogue_ended.connect(_on_dialogue_end);
 
 func _process(delta: float) -> void:
 	direction = collide_detect.collide_check();
@@ -55,4 +73,3 @@ func _process(delta: float) -> void:
 	else:
 		direction = Vector2(0,0);
 	position += delta * ENNEMY_SPEED * direction;
-	

@@ -1,0 +1,28 @@
+~ start
+Complotist: [[They can hear us you know... | They have eyes everywhere...]]
+- Who ...?
+	Complotist: Shhh... don't talk that loud, they are never far !
+	- Like I care about your shit !
+		Complotist: Ah ! When they will kidnapp you to...
+		Complotist: [[Open your brain ! | Experiment 5G vaccines on you !]]
+		Complotist: I'll be there to say : "I warned you boy !"
+		- Damn, you've got some crazy stuff !
+			Complotist: More than you can ever imagine ! => start
+		- LOOK ! AN UFO FLYING BY !
+			Complotist: AH AH I KNEW IT !
+			Complotist: Wait, were is it ...? => END
+	- Yeah yeah, of course. => start
+- Just get away, freak !
+	Complotist: Me a freak ?! I bet you're with THEM ! 
+	Complotist: Controlling the flat earth and the reincarnated dinosaurs !
+	- Stop it already, I'm tired of your nonsense !
+		Complotist: Trying to hide, hmmm !
+		Complotist: You cowards ! One day I will reveal all your secret !
+		- Look at me, do I seem to bear heavy secret ??
+			Complotist: Yeah you're right... => start
+		- I swear, I will call the boss, tell him you're slacking off again !
+			Complotist: Grmpf... It's your lucky day...
+			Complotist: I'll let you go for this time ! => END 
+	- OH MY GOD ! A REPTILIAN BEHIND YOU !
+		Complotist: WHAT ! WHERE ?! => END 
+=> END
