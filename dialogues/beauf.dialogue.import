@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://df66fnj7wxr4k"
+path="res://.godot/imported/beauf.dialogue-190cf532d2f0b400012d83888065d318.tres"
+
+[deps]
+
+source_file="res://dialogues/beauf.dialogue"
+dest_files=["res://.godot/imported/beauf.dialogue-190cf532d2f0b400012d83888065d318.tres"]
+
+[params]
+
+defaults=true

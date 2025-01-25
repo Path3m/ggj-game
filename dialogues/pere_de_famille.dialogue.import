@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://ipqdcnm5tq64"
+path="res://.godot/imported/pere_de_famille.dialogue-5d17026d5b674000720f91f3b646af55.tres"
+
+[deps]
+
+source_file="res://dialogues/pere_de_famille.dialogue"
+dest_files=["res://.godot/imported/pere_de_famille.dialogue-5d17026d5b674000720f91f3b646af55.tres"]
+
+[params]
+
+defaults=true
