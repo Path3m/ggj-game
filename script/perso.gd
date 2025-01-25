@@ -46,3 +46,20 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("change_world"):
 		Global.switch_world();
 		Global.changed_world.emit();
+		#TODO $AudioStreamPlayer.play()
+		#TODO transistion
+		
+	#------------------------------------------------------
+	#sound
+	
+	if Global.in_bubble_world:
+		$AudioStreamPlayer.play("res://musiques/Monde_bulle.wav")
+		$AudioStreamPlayer.play("res://musiques/Monde_bulle_ambiance.mp3")
+	else:
+		$AudioStreamPlayer.stop("res://musiques/Monde_bulle.wav")
+		$AudioStreamPlayer.stop("res://musiques/Monde_bulle_ambiance.mp3")
+		$AudioStreamPlayer.play()
+
+		# Arrête le son après 5 secondes
+		#yield(get_tree().create_timer(5), "timeout")
+		#$AudioStreamPlayer.stop()
