@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://bjvu6haff4888"]
+[gd_scene load_steps=7 format=3 uid="uid://bjvu6haff4888"]
 
 [ext_resource type="Script" path="res://script/colleague_enemy.gd" id="1_hcbsy"]
 [ext_resource type="PackedScene" uid="uid://dw0873tjomhe6" path="res://scene/enemy/detection_area.tscn" id="1_ujunv"]
 [ext_resource type="PackedScene" uid="uid://1auypjtsxo3j" path="res://scene/enemy/collide_detect.tscn" id="3_wd5of"]
+[ext_resource type="Texture2D" uid="uid://n6qr0yq61rrx" path="res://textures/boss.png" id="4_h7nnu"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yqmyo"]
 animations = [{
@@ -31,6 +32,7 @@ collision_layer = 4
 shape = SubResource("RectangleShape2D_63mk3")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 custom_minimum_size = Vector2(64, 64)
 offset_left = -32.0
 offset_top = -32.0
