@@ -1,10 +1,11 @@
-
-[gd_scene load_steps=9 format=3 uid="uid://bkx1u1wsuunlb"]
+[gd_scene load_steps=11 format=3 uid="uid://bkx1u1wsuunlb"]
 
 [ext_resource type="PackedScene" uid="uid://ceqnv83xerj10" path="res://obstacles/chair.tscn" id="1_ptg44"]
 [ext_resource type="Texture2D" uid="uid://c2bimpjmqv2pt" path="res://textures/mure blanc 1.png" id="1_ygvrr"]
 [ext_resource type="PackedScene" uid="uid://bbvb3sarknr0y" path="res://menu_pause.tscn" id="2_syy5l"]
 [ext_resource type="Texture2D" uid="uid://kntbc1dsopox" path="res://textures/sol.png" id="2_tfobk"]
+[ext_resource type="PackedScene" uid="uid://dj6hwkrm8834a" path="res://perso/perso.tscn" id="5_3lrps"]
+[ext_resource type="PackedScene" uid="uid://bjvu6haff4888" path="res://enemy/colleague_enemy.tscn" id="6_2uunk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_72jiu"]
 texture = ExtResource("2_tfobk")
@@ -196,7 +197,6 @@ terrain_set_0/terrain_0/name = "autotile 0"
 terrain_set_0/terrain_0/color = Color(1, 0, 0.25098, 1)
 sources/0 = SubResource("TileSetAtlasSource_uq024")
 
-
 [node name="Level1" type="Node2D"]
 
 [node name="BubbleMap" type="Node2D" parent="."]
@@ -206,14 +206,11 @@ sources/0 = SubResource("TileSetAtlasSource_uq024")
 [node name="bubble_floor" type="TextureRect" parent="BubbleMap"]
 offset_right = 40.0
 offset_bottom = 40.0
-
 metadata/_edit_use_anchors_ = true
-
 
 [node name="RealMap" type="Node2D" parent="."]
 
 [node name="real_tilemap" type="TileMap" parent="RealMap"]
-
 texture_filter = 1
 tile_set = SubResource("TileSet_sowen")
 format = 2
@@ -228,18 +225,25 @@ layer_0/tile_data = PackedInt32Array(327684, 327680, 0, 327686, 65536, 0, 327685
 [node name="Obstacles" type="Node2D" parent="."]
 
 [node name="Chair" parent="Obstacles" instance=ExtResource("1_ptg44")]
+position = Vector2(448, 224)
 
 [node name="Chair2" parent="Obstacles" instance=ExtResource("1_ptg44")]
-position = Vector2(0, 64)
+position = Vector2(448, 96)
 
 [node name="Chair3" parent="Obstacles" instance=ExtResource("1_ptg44")]
-position = Vector2(0, 128)
+position = Vector2(640, 96)
 
 [node name="Chair4" parent="Obstacles" instance=ExtResource("1_ptg44")]
-position = Vector2(0, 192)
+position = Vector2(640, 224)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 visible = false
 
 [node name="MenuPause" parent="CanvasLayer" instance=ExtResource("2_syy5l")]
 visible = false
+
+[node name="perso" parent="." instance=ExtResource("5_3lrps")]
+position = Vector2(-152, -120)
+
+[node name="colleague_enemy" parent="." instance=ExtResource("6_2uunk")]
+position = Vector2(880, 88)
