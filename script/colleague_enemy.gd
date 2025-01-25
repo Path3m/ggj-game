@@ -2,7 +2,8 @@ extends Node2D
 
 const ENNEMY_SPEED = 45;
 var direction = Vector2(0,0);
- 
+
+@onready var init_position = global_position;
 @onready var detection_area = $Area2D
 @onready var colleague_sprite = $AnimatedSprite2D
 
@@ -14,14 +15,12 @@ var direction = Vector2(0,0);
 var is_hunting = false;
 var prey = null;
 
-func direction_to_prey() -> Vector2:
-	assert(prey != null);
-	var dirtoprey = Vector2(
-		sign(prey.global_position.x - position.x),
-		sign(prey.global_position.y - position.y)
+func dir2pt(point: Vector2) -> Vector2:
+	var dir2pt = Vector2(
+		sign(point.x - position.x),
+		sign(point.y - position.y)
 	);
-	print("Enemy :", position, "| Char :", prey.position, " | D2P : ", dirtoprey );
-	return dirtoprey;
+	return dir2pt;
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	print("Currently hunting");
@@ -36,12 +35,11 @@ func _on_area_2d_body_exited(body: Node2D) -> void:
 # -----------------------------------------------
 # Main process
 func _process(delta: float) -> void:
-	var collide = collide_detect.collide_check();
-	print("Collide on side : ", collide);
+	direction = collide_detect.collide_check();
 	if is_hunting:
-		position += delta * ENNEMY_SPEED * (collide + direction_to_prey());
+		assert(prey != null);
+		direction += dir2pt(prey.global_position);
 	else:
-		#if collide != Vector2(0,0): 
-			#direction = collide;
-		position += delta * ENNEMY_SPEED * direction;
+		direction += dir2pt(init_position);
+	position += delta * ENNEMY_SPEED * direction;
 	
