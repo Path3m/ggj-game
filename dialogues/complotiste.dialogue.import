@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://cgu3wiqxmb2ox"
+path="res://.godot/imported/complotiste.dialogue-853329af8f12d13b594413941782aa22.tres"
+
+[deps]
+
+source_file="res://dialogues/complotiste.dialogue"
+dest_files=["res://.godot/imported/complotiste.dialogue-853329af8f12d13b594413941782aa22.tres"]
+
+[params]
+
+defaults=true
