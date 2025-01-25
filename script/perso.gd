@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 450.0
+const SPEED = 230.0
 
 
 func _physics_process(delta: float) -> void:
@@ -21,3 +21,16 @@ func _physics_process(delta: float) -> void:
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 
 	move_and_slide()
+	
+	#sprite deplacement
+	if Input.is_action_pressed("ui_right"):
+		$Sprite2D.flip_h = false
+		#$Sprite2D.play("NomTODO")
+	elif Input.is_action_pressed("ui_left"):
+		$Sprite2D.flip_h = true
+		#$Sprite2D.play("NomTODO")
+	#if Input.is_action_pressed("ui_up"):
+		#$Sprite2D.play("NomTODO")
+	#if Input.is_action_pressed("ui_down"):
+		#$Sprite2D.play("NomTODO")
+		

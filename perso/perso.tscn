@@ -4,18 +4,21 @@
 [ext_resource type="Texture2D" uid="uid://cpt0bae57k35f" path="res://assets/asset test/texture 1.png" id="2_2iipu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dij2g"]
-size = Vector2(130, 130)
+size = Vector2(66, 66)
 
 [node name="perso" type="CharacterBody2D"]
+position = Vector2(391, 262)
 collision_mask = 2
 script = ExtResource("1_264pp")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(354, 226)
-scale = Vector2(0.126953, 0.126953)
+scale = Vector2(0.0644531, 0.0644531)
 texture = ExtResource("2_2iipu")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(354, 226)
 shape = SubResource("RectangleShape2D_dij2g")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+ignore_rotation = false
+zoom = Vector2(2, 2)
