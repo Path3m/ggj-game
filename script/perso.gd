@@ -41,7 +41,8 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("ui_down"):
 			$MC_mouv.play("MC_bas")
 	else:
-		$MC_mouv.play("MC_bas")
+		$MC_mouv.pause()
+		
 		
 	if Input.is_action_just_pressed("change_world"):
 		Global.switch_world();

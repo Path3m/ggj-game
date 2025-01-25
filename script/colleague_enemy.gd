@@ -16,9 +16,11 @@ var enemy_timeout : int = 3;
 # Hiding enemy when going in bubble world
 func _on_changed_world() -> void:
 	if Global.in_bubble_world:
+		set_process(false);
 		hide();
 	else:
 		show();
+		set_process(true);
 
 # -----------------------------------------------
 # Checking if the character has entered the area
@@ -50,10 +52,13 @@ func _on_collide_shape_body_entered(body: Node2D) -> void:
 
 func _on_dialogue_began() -> void:
 	set_process(false);
+	colleague_sprite.show();
+	colleague_anim.hide();
 
 func _on_dialogue_end(ressource: DialogueResource) -> void:
 	await get_tree().create_timer(enemy_timeout).timeout;
 	set_process(true);
+	colleague_anim.show();
 
 # -----------------------------------------------
 # Main process
@@ -79,12 +84,10 @@ func display_animation(direction : Vector2) -> void:
 
 func _process(delta: float) -> void:
 	direction = collide_detect.collide_check();
-	if is_hunting && !Global.in_bubble_world:
+	if is_hunting:
 		assert(prey != null);
 		direction += dir2pt(prey.global_position);
-	elif !Global.in_bubble_world:
-		direction += dir2pt(init_position);
 	else:
-		direction = Vector2(0,0);
+		direction += dir2pt(init_position);
 	position += delta * ENNEMY_SPEED * direction;
 	display_animation(direction);
