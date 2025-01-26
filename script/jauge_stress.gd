@@ -21,8 +21,8 @@ func _process(delta: float) -> void:
 		if timer < timer_max:
 			timer += increment_rate * delta
 			#print(timer)
-			$Label.text = str(timer)
+			#$Label.text = str(timer)
 			
-		if timer >= timer_max:
-			get_tree().quit()
+		#if timer >= timer_max:
+		#	get_tree().quit()
 	
