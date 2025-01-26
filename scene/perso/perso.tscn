@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://dj6hwkrm8834a"]
+[gd_scene load_steps=62 format=3 uid="uid://dj6hwkrm8834a"]
 
 [ext_resource type="Script" path="res://script/perso.gd" id="1_264pp"]
 [ext_resource type="Texture2D" uid="uid://c1tyiofburlq5" path="res://assets/animations/perso_principale/mc_Sheet_face.png" id="2_2l0iw"]
@@ -6,6 +6,26 @@
 [ext_resource type="Texture2D" uid="uid://baqhel15fh4r5" path="res://assets/animations/perso_principale/mc_profil_droit_Sheet.png" id="3_84n5n"]
 [ext_resource type="Texture2D" uid="uid://due4hqqxekxm4" path="res://assets/animations/perso_principale/mc_profil_gauche_Sheet.png" id="4_qkcnk"]
 [ext_resource type="Texture2D" uid="uid://c468bt7468ye2" path="res://assets/animations/perso_principale/mc_dos_Sheet.png" id="5_16x4e"]
+[ext_resource type="Texture2D" uid="uid://dnk10vsq66wjw" path="res://assets/animations/transition/in-1.png" id="7_oakya"]
+[ext_resource type="Texture2D" uid="uid://b64ov25q5l8y1" path="res://assets/animations/transition/in-2.png" id="8_ebbjb"]
+[ext_resource type="Texture2D" uid="uid://cqtalupbmeekg" path="res://assets/animations/transition/in-3.png" id="9_5q4cx"]
+[ext_resource type="Texture2D" uid="uid://no6vhks02ppt" path="res://assets/animations/transition/in-4.png" id="10_hm62e"]
+[ext_resource type="Texture2D" uid="uid://6tii7srl7v56" path="res://assets/animations/transition/in-5.png" id="11_ptb23"]
+[ext_resource type="Texture2D" uid="uid://ds7d5whx6dw61" path="res://assets/animations/transition/in-6.png" id="12_wrgur"]
+[ext_resource type="Texture2D" uid="uid://bfhub7rf8p7gj" path="res://assets/animations/transition/in-7.png" id="13_8xq45"]
+[ext_resource type="Texture2D" uid="uid://dvwe0ud2hd04p" path="res://assets/animations/transition/in-8.png" id="14_56715"]
+[ext_resource type="Texture2D" uid="uid://fmwshgtgxqr0" path="res://assets/animations/transition/in-9.png" id="15_m1qyi"]
+[ext_resource type="Texture2D" uid="uid://c8pdhm56l2clr" path="res://assets/animations/transition/in-10.png" id="16_8lq3a"]
+[ext_resource type="Texture2D" uid="uid://bgxjr4qaebpgk" path="res://assets/animations/transition/in-11.png" id="17_wsi1o"]
+[ext_resource type="Texture2D" uid="uid://cfxf5vd0jtr27" path="res://assets/animations/transition/in-12.png" id="18_ato3l"]
+[ext_resource type="Texture2D" uid="uid://c1r8xmwhajvw2" path="res://assets/animations/transition/in-13.png" id="19_kdf16"]
+[ext_resource type="Texture2D" uid="uid://cykddfq2h5m7s" path="res://assets/animations/transition/in-15.png" id="21_wa5g1"]
+[ext_resource type="Texture2D" uid="uid://e7rrvof55dj6" path="res://assets/animations/transition/in-16.png" id="22_2l3xk"]
+[ext_resource type="Texture2D" uid="uid://ct0tushs0841c" path="res://assets/animations/transition/in-17.png" id="23_noplq"]
+[ext_resource type="Texture2D" uid="uid://cnqeboaun7j50" path="res://assets/animations/transition/in-18.png" id="24_1xess"]
+[ext_resource type="Texture2D" uid="uid://dmfkndkvhm8d4" path="res://assets/animations/transition/in-19.png" id="25_wdi2d"]
+[ext_resource type="Texture2D" uid="uid://cvgehd0t1bvf4" path="res://assets/animations/transition/in-20.png" id="26_f3xph"]
+[ext_resource type="Texture2D" uid="uid://b5lp1xo1le47p" path="res://assets/animations/transition/in-21.png" id="27_mv6hy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_je2w8"]
 atlas = ExtResource("2_2l0iw")
@@ -262,8 +282,82 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dij2g"]
 size = Vector2(34, 61)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_2kuof"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_oakya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ebbjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_5q4cx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_hm62e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ptb23")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_wrgur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8xq45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_56715")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_m1qyi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8lq3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_wsi1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ato3l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_kdf16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_kdf16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_kdf16")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_wa5g1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_2l3xk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_noplq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_1xess")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_wdi2d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_f3xph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_mv6hy")
+}],
+"loop": false,
+"name": &"world_transition",
+"speed": 10.0
+}]
+
 [node name="perso" type="CharacterBody2D"]
-position = Vector2(392, 256)
+position = Vector2(333, 165)
 collision_mask = 2
 script = ExtResource("1_264pp")
 metadata/_edit_group_ = true
@@ -282,3 +376,10 @@ ignore_rotation = false
 zoom = Vector2(5, 5)
 
 [node name="Control" parent="." instance=ExtResource("3_2o3bu")]
+
+[node name="ChangeWorld" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.458333, 0.52963)
+sprite_frames = SubResource("SpriteFrames_2kuof")
+animation = &"world_transition"
+
+[connection signal="animation_finished" from="ChangeWorld" to="." method="_on_change_world_animation_finished"]

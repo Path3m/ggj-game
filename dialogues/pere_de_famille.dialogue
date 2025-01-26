@@ -1,0 +1,21 @@
+~ start
+Jeune Papa: Hé Hé Hé ! Tu devineras JAMAIS !
+Jeune Papa: Hier soir, je changeais la couche de mon bébé...
+Jeune Papa: Et tu sais comment il est propre mon bébé !
+Jeune Papa: Enfin bref, je divague !
+Jeune Papa: Donc j'étais en train de lui changer sa couche...
+Jeune Papa: Et là, il a dit un truc !
+Jeune Papa: J'ai cru que j'allais pleurer...
+Jeune Papa: Son premier mot, tu te rends compte ?!
+Jeune Papa: J'étais si heureux...
+Jeune Papa: J'ai cru que j'allais m'évanouir de bonheur !
+Jeune Papa: Et, vraiment, tu n'imagineras jamais ce qu'il a dit !
+- ... oui oui je vais déposer le dossier du client 42 sur le ...
+	Jeune Papa: Mais non je parlais pas de ça !
+	Jeune Papa: T'as rien écouté en fait ! Bon je reprends... => start
+- Papa, maman, un truc comme ça ?
+	Jeune Papa: Il a dit : "amour" ! 
+	Jeune Papa: T'as vu comme c'est beau ??
+	Jeune Papa: Bon je file, j'ai des trucs à faire.
+	Jeune Papa: J'aurais des photos à te montrer demain ! => END 
+=> END

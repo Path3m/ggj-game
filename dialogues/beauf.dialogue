@@ -1,0 +1,32 @@
+~ start
+Beauf: Yo gros, ça roule ma poule ?
+Beauf: Oh attends j'en ai un bon : tire sur mon doigts !
+Beauf: Alleeeeeeeez ...!
+- *Tirer sur son doigts*
+	Beauf: OUAH ça fait du bien !
+- *Ne pas tirer sur son doigts*
+	Beauf: Oh, aucun hum... OUAH !
+	Beauf: Aucun humour.
+Beauf: Faut que j'te raconte...
+Beauf: Tu vois Géraldine de la compta ?
+Beauf: Celle avec la paire de -
+- J'ai compris, c'est bon !
+	Beauf: Roooh, ça va mais quel prude !
+	Beauf: Bon et bah l'autre jour on était à l'afterwork...
+	Beauf: et elle est venue me parler
+	Beauf: Tu vois un peu le genre quoi...
+	- Non je vois pas, je veux pas voir, fous moi la paix !
+		Beauf: Mais quel rabats-joi !
+		Beauf: C'est pour ça que t'as pas de meuf tu sais !
+		Beauf: T'es trop relou, trop has been mec...
+		Beauf: Faut que tu te détendes le slip un peu !
+		- Sérieux, lâche moi bordel...
+			Beauf: T'es pas obligé de lacher ta mauvaise humeur partout !
+			Beauf: Sérieux tu niques l'ambiance, je me casse ! => END 
+		- Faut que j'aille chier.
+			Beauf: Ah ouais ok, bon bah vas y je te retiens pas !
+			Beauf: Pas envie que t'en foutes partout ! Ah ah ah ! => END 
+- MAIS TA GUEULE !!!
+	Beauf: Oh t'es chafouin toi... => END
+
+=> END

@@ -3,11 +3,12 @@ extends Node2D
 const ENNEMY_SPEED = 45;
 var direction = Vector2(0,0);
 var wander_size = 200;
-var enemy_timeout : int = 5;
+var enemy_timeout : int = 3;
 
 @onready var init_position = global_position;
 @onready var detection_area = $detection_area;
-@onready var colleague_sprite = $AnimatedSprite2D;
+@onready var colleague_anim = $enemy_animation;
+@onready var colleague_sprite = $Sprite2D;
 
 # Ray cast to check collision with environnement
 @onready var collide_detect = $CollideDetect;
@@ -15,12 +16,12 @@ var enemy_timeout : int = 5;
 # Hiding enemy when going in bubble world
 func _on_changed_world() -> void:
 	if Global.in_bubble_world:
+		set_process(false);
 		hide();
 	else:
+		await get_tree().create_timer(Global.wait_transition).timeout;
 		show();
-
-func _on_end_dialogue() -> void:
-	pass
+		set_process(true);
 
 # -----------------------------------------------
 # Checking if the character has entered the area
@@ -45,16 +46,20 @@ func _on_detection_area_body_exited(body: Node2D) -> void:
 	prey = null;
 	
 func _on_collide_shape_body_entered(body: Node2D) -> void:
-	var dialogue : String = Global.select_random_dialogue();
-	DialogueManager.show_dialogue_balloon(load(dialogue));
-	Global.began_dialogue.emit();
+	if !Global.in_bubble_world:
+		var dialogue : String = Global.select_random_dialogue();
+		DialogueManager.show_dialogue_balloon(load(dialogue));
+		Global.began_dialogue.emit();
 
 func _on_dialogue_began() -> void:
 	set_process(false);
+	colleague_sprite.show();
+	colleague_anim.hide();
 
 func _on_dialogue_end(ressource: DialogueResource) -> void:
 	await get_tree().create_timer(enemy_timeout).timeout;
 	set_process(true);
+	colleague_anim.show();
 
 # -----------------------------------------------
 # Main process
@@ -62,14 +67,28 @@ func _ready() -> void:
 	Global.changed_world.connect(_on_changed_world);
 	Global.began_dialogue.connect(_on_dialogue_began);
 	DialogueManager.dialogue_ended.connect(_on_dialogue_end);
+	
+func display_animation(direction : Vector2) -> void:
+	if direction == Vector2(0,0):
+		colleague_anim.pause();
+		colleague_sprite.show();
+	else:
+		colleague_sprite.hide();
+		if direction.x <= 0 && direction.y <= 0:
+			colleague_anim.play("enemy_up");
+		if direction.x >= 0 && direction.y <= 0:
+			colleague_anim.play("enemy_right");
+		if direction.x >= 0 && direction.y >= 0:
+			colleague_anim.play("enemy_down");
+		if direction.x <= 0 && direction.y >= 0:
+			colleague_anim.play("enemy_left");
 
 func _process(delta: float) -> void:
 	direction = collide_detect.collide_check();
-	if is_hunting && !Global.in_bubble_world:
+	if is_hunting:
 		assert(prey != null);
 		direction += dir2pt(prey.global_position);
-	elif !Global.in_bubble_world:
-		direction += dir2pt(init_position);
 	else:
-		direction = Vector2(0,0);
+		direction += dir2pt(init_position);
 	position += delta * ENNEMY_SPEED * direction;
+	display_animation(direction);

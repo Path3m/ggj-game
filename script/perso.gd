@@ -7,10 +7,14 @@ func _on_began_dialogue() -> void:
 	
 func _on_end_dialogue(ressource: DialogueResource) -> void:
 	set_physics_process(true);
+	
+func _on_change_world_animation_finished() -> void:
+	$ChangeWorld.hide();
 
 func _ready() -> void:
 	Global.began_dialogue.connect(_on_began_dialogue);
 	DialogueManager.dialogue_ended.connect(_on_end_dialogue);
+	$ChangeWorld.hide();
 
 func _physics_process(delta: float) -> void:
 
@@ -41,13 +45,15 @@ func _physics_process(delta: float) -> void:
 		if Input.is_action_pressed("ui_down"):
 			$MC_mouv.play("MC_bas")
 	else:
-		$MC_mouv.play("MC_bas")
+		$MC_mouv.pause()
 		
 	if Input.is_action_just_pressed("change_world"):
 		Global.switch_world();
 		Global.changed_world.emit();
 		#TODO $AudioStreamPlayer.play()
 		#TODO transistion
+		$ChangeWorld.show();
+		$ChangeWorld.play("world_transition");
 		
 	#------------------------------------------------------
 	#sound
