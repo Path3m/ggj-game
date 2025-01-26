@@ -52,6 +52,8 @@ func _physics_process(delta: float) -> void:
 		Global.changed_world.emit();
 		#TODO $AudioStreamPlayer.play()
 		#TODO transistion
+		$ChangeWorld.show();
+		$ChangeWorld.play("world_transition");
 		
 	#------------------------------------------------------
 	#sound
@@ -67,5 +69,3 @@ func _physics_process(delta: float) -> void:
 		# Arrête le son après 5 secondes
 		#yield(get_tree().create_timer(5), "timeout")
 		#$AudioStreamPlayer.stop()
-		$ChangeWorld.show();
-		$ChangeWorld.play("world_transition");
