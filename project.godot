@@ -48,4 +48,4 @@ change_world={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://dialogues/complotiste.dialogue")
+locale/translations_pot_files=PackedStringArray("res://dialogues/complotiste.dialogue", "res://dialogues/pere_de_famille.dialogue", "res://dialogues/beauf.dialogue")

@@ -19,6 +19,7 @@ func _on_changed_world() -> void:
 		set_process(false);
 		hide();
 	else:
+		await get_tree().create_timer(Global.wait_transition).timeout;
 		show();
 		set_process(true);
 

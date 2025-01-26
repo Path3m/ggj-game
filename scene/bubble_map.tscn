@@ -1,29 +1,27 @@
 [gd_scene load_steps=5 format=3 uid="uid://b6tmrljrqr125"]
 
 [ext_resource type="Script" path="res://script/bubble_map.gd" id="1_dp2yw"]
+[ext_resource type="Texture2D" uid="uid://b0gm2frwy6no1" path="res://textures/dreem.png" id="2_1j1nv"]
 
-[sub_resource type="Gradient" id="Gradient_32iwf"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_q1f4w"]
+texture = ExtResource("2_1j1nv")
+texture_region_size = Vector2i(5120, 5120)
+use_texture_padding = false
+137:158/0 = 0
+141:157/0 = 0
+78:160/0 = 0
+0:0/0 = 0
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_8fl1t"]
-gradient = SubResource("Gradient_32iwf")
-fill_from = Vector2(0, 1)
-fill_to = Vector2(0.769231, 0.337607)
-
-[sub_resource type="CanvasTexture" id="CanvasTexture_jdqak"]
-diffuse_texture = SubResource("GradientTexture2D_8fl1t")
-specular_color = Color(1, 0.52, 0.52, 1)
+[sub_resource type="TileSet" id="TileSet_wfhkp"]
+tile_size = Vector2i(5120, 5120)
+sources/0 = SubResource("TileSetAtlasSource_q1f4w")
 
 [node name="BubbleMap" type="Node2D"]
 script = ExtResource("1_dp2yw")
 
 [node name="add-ons" type="Node2D" parent="."]
 
-[node name="bubble_floor2" type="TextureRect" parent="."]
-custom_minimum_size = Vector2(2000, 2000)
-offset_left = -433.0
-offset_top = -586.0
-offset_right = 1567.0
-offset_bottom = 1414.0
-texture = SubResource("CanvasTexture_jdqak")
-expand_mode = 1
-metadata/_edit_use_anchors_ = true
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_wfhkp")
+format = 2
+layer_0/tile_data = PackedInt32Array(65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 65539, 0, 0, 65538, 0, 0, 65537, 0, 0, 65536, 0, 0, 131071, 0, 0, 131070, 0, 0, 65534, 0, 0, -2, 0, 0, -1, 0, 0, -65536, 0, 0, -131072, 0, 0, -65537, 0, 0, -65538, 0, 0, -65539, 0, 0, -3, 0, 0, 65533, 0, 0, 131069, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -131069, 0, 0, -131070, 0, 0, -131071, 0, 0, -65540, 0, 0, -4, 0, 0, 65532, 0, 0, 131068, 0, 0, 196604, 0, 0, 196605, 0, 0, 196606, 0, 0, 196607, 0, 0, 131072, 0, 0, 131073, 0, 0, 131074, 0, 0, 131075, 0, 0, -196606, 0, 0, -196605, 0, 0, -196607, 0, 0, -196608, 0, 0, -131073, 0, 0, -131074, 0, 0, -131075, 0, 0, -131076, 0, 0)

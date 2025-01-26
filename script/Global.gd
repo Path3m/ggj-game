@@ -7,6 +7,7 @@ const dialogue_list : Array[String] = [
 ];
 
 var in_bubble_world : bool = false;
+var wait_transition = 1.6;
 
 func switch_world() -> void:
 	in_bubble_world = !in_bubble_world;
