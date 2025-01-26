@@ -1,9 +1,9 @@
-[gd_scene load_steps=107 format=3 uid="uid://dj6hwkrm8834a"]
+[gd_scene load_steps=843 format=3 uid="uid://dj6hwkrm8834a"]
 
 [ext_resource type="Script" path="res://script/perso.gd" id="1_264pp"]
 [ext_resource type="Texture2D" uid="uid://c1tyiofburlq5" path="res://assets/animations/perso_principale/mc_Sheet_face.png" id="2_2l0iw"]
 [ext_resource type="Texture2D" uid="uid://ddcmtlfflintu" path="res://assets/animations/perso_principale/mc_34_facedroit_Sheet.png" id="2_dr744"]
-[ext_resource type="PackedScene" path="res://scene/stress.tscn" id="3_2o3bu"]
+[ext_resource type="PackedScene" uid="uid://c8wg5cbng7tqu" path="res://scene/stress.tscn" id="3_2o3bu"]
 [ext_resource type="Texture2D" uid="uid://baqhel15fh4r5" path="res://assets/animations/perso_principale/mc_profil_droit_Sheet.png" id="3_84n5n"]
 [ext_resource type="Texture2D" uid="uid://bscwe30nrysb3" path="res://assets/animations/perso_principale/mc_34_facegauche_Sheet.png" id="3_f6rjx"]
 [ext_resource type="Texture2D" uid="uid://c20yxw6pgah1u" path="res://assets/animations/perso_principale/mc_34_dosdroit_Sheet.png" id="4_0j2yd"]
@@ -32,6 +32,742 @@
 [ext_resource type="Texture2D" uid="uid://dmfkndkvhm8d4" path="res://assets/animations/transition/in-19.png" id="25_wdi2d"]
 [ext_resource type="Texture2D" uid="uid://cvgehd0t1bvf4" path="res://assets/animations/transition/in-20.png" id="26_f3xph"]
 [ext_resource type="Texture2D" uid="uid://b5lp1xo1le47p" path="res://assets/animations/transition/in-21.png" id="27_mv6hy"]
+[ext_resource type="Texture2D" uid="uid://c4f8q8fhawg6b" path="res://assets/animations/coeur/a-batement-de-coeurs-3000.png" id="33_ejhtm"]
+[ext_resource type="Texture2D" uid="uid://cic21wncewjwc" path="res://assets/animations/coeur/a-batement-de-coeurs-3001.png" id="34_qipsu"]
+[ext_resource type="Texture2D" uid="uid://cqcokagbdxhuc" path="res://assets/animations/coeur/a-batement-de-coeurs-3002.png" id="35_ufune"]
+[ext_resource type="Texture2D" uid="uid://ctm3g8b2i3up5" path="res://assets/animations/coeur/a-batement-de-coeurs-3003.png" id="36_e34rv"]
+[ext_resource type="Texture2D" uid="uid://crx7gkprmcm10" path="res://assets/animations/coeur/a-batement-de-coeurs-3004.png" id="37_oxobr"]
+[ext_resource type="Texture2D" uid="uid://bxn1dqx1r8tyk" path="res://assets/animations/coeur/a-batement-de-coeurs-3005.png" id="38_ib538"]
+[ext_resource type="Texture2D" uid="uid://x0ur4bj5slvc" path="res://assets/animations/coeur/a-batement-de-coeurs-3006.png" id="39_ib245"]
+[ext_resource type="Texture2D" uid="uid://v3yhoiyw3plq" path="res://assets/animations/coeur/a-batement-de-coeurs-3007.png" id="40_b2mdn"]
+[ext_resource type="Texture2D" uid="uid://fm42rs60puna" path="res://assets/animations/coeur/a-batement-de-coeurs-3008.png" id="41_xgt5p"]
+[ext_resource type="Texture2D" uid="uid://bhmt74emaf8g7" path="res://assets/animations/coeur/a-batement-de-coeurs-3009.png" id="42_5ah3n"]
+[ext_resource type="Texture2D" uid="uid://dw0jr7l52j0oy" path="res://assets/animations/coeur/a-batement-de-coeurs-3010.png" id="43_a4omv"]
+[ext_resource type="Texture2D" uid="uid://c4rq6iss1xcq5" path="res://assets/animations/coeur/a-batement-de-coeurs-3011.png" id="44_pitbh"]
+[ext_resource type="Texture2D" uid="uid://bey2jds6fx1cv" path="res://assets/animations/coeur/a-batement-de-coeurs-3012.png" id="45_q722a"]
+[ext_resource type="Texture2D" uid="uid://dc6tnmcf2mvxd" path="res://assets/animations/coeur/a-batement-de-coeurs-3013.png" id="46_weauw"]
+[ext_resource type="Texture2D" uid="uid://doumsgksepk5u" path="res://assets/animations/coeur/a-batement-de-coeurs-3014.png" id="47_7atyy"]
+[ext_resource type="Texture2D" uid="uid://c68vmjw46accl" path="res://assets/animations/coeur/a-batement-de-coeurs-3015.png" id="48_yiw62"]
+[ext_resource type="Texture2D" uid="uid://bk305dlh8fh6w" path="res://assets/animations/coeur/a-batement-de-coeurs-3016.png" id="49_h3wt0"]
+[ext_resource type="Texture2D" uid="uid://bj16h84s20ada" path="res://assets/animations/coeur/a-batement-de-coeurs-3017.png" id="50_shef7"]
+[ext_resource type="Texture2D" uid="uid://dg0kehxda23yd" path="res://assets/animations/coeur/a-batement-de-coeurs-3018.png" id="51_2fkgu"]
+[ext_resource type="Texture2D" uid="uid://wsqyc8lyho1r" path="res://assets/animations/coeur/a-batement-de-coeurs-3019.png" id="52_1ir8m"]
+[ext_resource type="Texture2D" uid="uid://bcl60k8884ria" path="res://assets/animations/coeur/a-batement-de-coeurs-3020.png" id="53_glcsf"]
+[ext_resource type="Texture2D" uid="uid://culpobci5hpl4" path="res://assets/animations/coeur/a-batement-de-coeurs-3021.png" id="54_x785g"]
+[ext_resource type="Texture2D" uid="uid://ctvvae51fcm5f" path="res://assets/animations/coeur/a-batement-de-coeurs-3022.png" id="55_tvypt"]
+[ext_resource type="Texture2D" uid="uid://b01j47hix8aja" path="res://assets/animations/coeur/a-batement-de-coeurs-3023.png" id="56_e0a8q"]
+[ext_resource type="Texture2D" uid="uid://bmr0tflhohkvd" path="res://assets/animations/coeur/a-batement-de-coeurs-3024.png" id="57_802k3"]
+[ext_resource type="Texture2D" uid="uid://dptsnbr5r5dy4" path="res://assets/animations/coeur/a-batement-de-coeurs-3025.png" id="58_lfjsw"]
+[ext_resource type="Texture2D" uid="uid://bywa5dvpgwti" path="res://assets/animations/coeur/a-batement-de-coeurs-3026.png" id="59_3nfpc"]
+[ext_resource type="Texture2D" uid="uid://b70incbm8nwsw" path="res://assets/animations/coeur/a-batement-de-coeurs-3027.png" id="60_ptal4"]
+[ext_resource type="Texture2D" uid="uid://b34upwxvnpank" path="res://assets/animations/coeur/a-batement-de-coeurs-3028.png" id="61_jk38c"]
+[ext_resource type="Texture2D" uid="uid://c7w35ip0b8jej" path="res://assets/animations/coeur/a-batement-de-coeurs-3029.png" id="62_mrcjf"]
+[ext_resource type="Texture2D" uid="uid://shbih10m2mk5" path="res://assets/animations/coeur/a-batement-de-coeurs-3030.png" id="63_56rre"]
+[ext_resource type="Texture2D" uid="uid://cxxylyrhdq8ly" path="res://assets/animations/coeur/a-batement-de-coeurs-3031.png" id="64_hmwsj"]
+[ext_resource type="Texture2D" uid="uid://bsvm0fimgldtb" path="res://assets/animations/coeur/a-batement-de-coeurs-3032.png" id="65_57p5v"]
+[ext_resource type="Texture2D" uid="uid://bmqgdnylp5qyi" path="res://assets/animations/coeur/a-batement-de-coeurs-3033.png" id="66_n47id"]
+[ext_resource type="Texture2D" uid="uid://dcc5hqslvm8n8" path="res://assets/animations/coeur/a-batement-de-coeurs-3034.png" id="67_4bkdm"]
+[ext_resource type="Texture2D" uid="uid://bw80opyswvogu" path="res://assets/animations/coeur/a-batement-de-coeurs-3035.png" id="68_fj2r5"]
+[ext_resource type="Texture2D" uid="uid://dy1n8b2tmvjhy" path="res://assets/animations/coeur/a-batement-de-coeurs-3036.png" id="69_4mhha"]
+[ext_resource type="Texture2D" uid="uid://bmg5su4uds8pt" path="res://assets/animations/coeur/a-batement-de-coeurs-3037.png" id="70_22jtf"]
+[ext_resource type="Texture2D" uid="uid://do60pbn4fjap1" path="res://assets/animations/coeur/a-batement-de-coeurs-3038.png" id="71_h78uj"]
+[ext_resource type="Texture2D" uid="uid://caiskyclcp5t4" path="res://assets/animations/coeur/a-batement-de-coeurs-3039.png" id="72_e1bja"]
+[ext_resource type="Texture2D" uid="uid://7mrcrb2r5wl6" path="res://assets/animations/coeur/a-batement-de-coeurs-3040.png" id="73_7mw71"]
+[ext_resource type="Texture2D" uid="uid://b5onfaheg0i6g" path="res://assets/animations/coeur/a-batement-de-coeurs-3041.png" id="74_6xpkw"]
+[ext_resource type="Texture2D" uid="uid://ceamv2k3vv3qj" path="res://assets/animations/coeur/a-batement-de-coeurs-3042.png" id="75_jn5fr"]
+[ext_resource type="Texture2D" uid="uid://ca4q3kdajodji" path="res://assets/animations/coeur/a-batement-de-coeurs-3043.png" id="76_6053x"]
+[ext_resource type="Texture2D" uid="uid://dpfq8cnp6wppc" path="res://assets/animations/coeur/a-batement-de-coeurs-3044.png" id="77_ufjeb"]
+[ext_resource type="Texture2D" uid="uid://vxdgd42tb04d" path="res://assets/animations/coeur/a-batement-de-coeurs-3045.png" id="78_qyb17"]
+[ext_resource type="Texture2D" uid="uid://b2s32gnyn0t5g" path="res://assets/animations/coeur/a-batement-de-coeurs-3046.png" id="79_4exp7"]
+[ext_resource type="Texture2D" uid="uid://ckbhcb0b5yp5m" path="res://assets/animations/coeur/a-batement-de-coeurs-3047.png" id="80_opgv6"]
+[ext_resource type="Texture2D" uid="uid://mnm6mkxiqy50" path="res://assets/animations/coeur/a-batement-de-coeurs-3048.png" id="81_hw8my"]
+[ext_resource type="Texture2D" uid="uid://2ofg00s8tq3g" path="res://assets/animations/coeur/a-batement-de-coeurs-3049.png" id="82_uklng"]
+[ext_resource type="Texture2D" uid="uid://b1ey7yjs8a0mw" path="res://assets/animations/coeur/a-batement-de-coeurs-3050.png" id="83_4y35m"]
+[ext_resource type="Texture2D" uid="uid://c8sydngopim5g" path="res://assets/animations/coeur/a-batement-de-coeurs-3051.png" id="84_wagbg"]
+[ext_resource type="Texture2D" uid="uid://cmq6ttfobtps2" path="res://assets/animations/coeur/a-batement-de-coeurs-3052.png" id="85_fmqat"]
+[ext_resource type="Texture2D" uid="uid://du6h3kc8iqu6e" path="res://assets/animations/coeur/a-batement-de-coeurs-3053.png" id="86_xfw51"]
+[ext_resource type="Texture2D" uid="uid://dxvypekm1mi37" path="res://assets/animations/coeur/a-batement-de-coeurs-3054.png" id="87_nbhxl"]
+[ext_resource type="Texture2D" uid="uid://b04xbbogjc17i" path="res://assets/animations/coeur/a-batement-de-coeurs-3055.png" id="88_cq5al"]
+[ext_resource type="Texture2D" uid="uid://7olukd3ww884" path="res://assets/animations/coeur/a-batement-de-coeurs-3056.png" id="89_qu8uu"]
+[ext_resource type="Texture2D" uid="uid://du7imigwff82" path="res://assets/animations/coeur/a-batement-de-coeurs-3057.png" id="90_hc3n0"]
+[ext_resource type="Texture2D" uid="uid://dvhj6147jqllk" path="res://assets/animations/coeur/a-batement-de-coeurs-3058.png" id="91_c5832"]
+[ext_resource type="Texture2D" uid="uid://tj81883e4suw" path="res://assets/animations/coeur/a-batement-de-coeurs-3059.png" id="92_fvv5r"]
+[ext_resource type="Texture2D" uid="uid://b7msrgfe2u53x" path="res://assets/animations/coeur/a-batement-de-coeurs-3060.png" id="93_dsyeh"]
+[ext_resource type="Texture2D" uid="uid://bxbj70aqk7i01" path="res://assets/animations/coeur/a-batement-de-coeurs-3061.png" id="94_hrrgr"]
+[ext_resource type="Texture2D" uid="uid://dpmikbs33ikba" path="res://assets/animations/coeur/a-batement-de-coeurs-3062.png" id="95_5lbyv"]
+[ext_resource type="Texture2D" uid="uid://b73a7lr4nmv7h" path="res://assets/animations/coeur/a-batement-de-coeurs-3063.png" id="96_n73hh"]
+[ext_resource type="Texture2D" uid="uid://bghtkvfx7oai3" path="res://assets/animations/coeur/a-batement-de-coeurs-3064.png" id="97_qn0mx"]
+[ext_resource type="Texture2D" uid="uid://c7irwssj4yvxm" path="res://assets/animations/coeur/a-batement-de-coeurs-3065.png" id="98_b56ho"]
+[ext_resource type="Texture2D" uid="uid://3jxowjl1u1h5" path="res://assets/animations/coeur/a-batement-de-coeurs-3066.png" id="99_hoh5y"]
+[ext_resource type="Texture2D" uid="uid://dwuciqqee2xvb" path="res://assets/animations/coeur/a-batement-de-coeurs-3067.png" id="100_mfcoa"]
+[ext_resource type="Texture2D" uid="uid://dfqraj4x0hiha" path="res://assets/animations/coeur/a-batement-de-coeurs-3068.png" id="101_hk356"]
+[ext_resource type="Texture2D" uid="uid://boi1wk7d0rtqg" path="res://assets/animations/coeur/a-batement-de-coeurs-3069.png" id="102_pd1qc"]
+[ext_resource type="Texture2D" uid="uid://dhew2qtkqpqgf" path="res://assets/animations/coeur/a-batement-de-coeurs-3070.png" id="103_xu6we"]
+[ext_resource type="Texture2D" uid="uid://c4pbcbgk32dph" path="res://assets/animations/coeur/a-batement-de-coeurs-3071.png" id="104_x1iyx"]
+[ext_resource type="Texture2D" uid="uid://cjatvbamulrqy" path="res://assets/animations/coeur/a-batement-de-coeurs-3072.png" id="105_7yugk"]
+[ext_resource type="Texture2D" uid="uid://xrovbnvqq3ha" path="res://assets/animations/coeur/a-batement-de-coeurs-3073.png" id="106_b600g"]
+[ext_resource type="Texture2D" uid="uid://yk6o35uliojm" path="res://assets/animations/coeur/a-batement-de-coeurs-3074.png" id="107_dn4pr"]
+[ext_resource type="Texture2D" uid="uid://dfcqvbkyikdgj" path="res://assets/animations/coeur/a-batement-de-coeurs-3075.png" id="108_sps0g"]
+[ext_resource type="Texture2D" uid="uid://cceatw55lja2" path="res://assets/animations/coeur/a-batement-de-coeurs-3076.png" id="109_v2wgd"]
+[ext_resource type="Texture2D" uid="uid://de6p53luehxia" path="res://assets/animations/coeur/a-batement-de-coeurs-3077.png" id="110_fj0nm"]
+[ext_resource type="Texture2D" uid="uid://b1j1lnjj1yldk" path="res://assets/animations/coeur/a-batement-de-coeurs-3078.png" id="111_5jikl"]
+[ext_resource type="Texture2D" uid="uid://c4snqx0fcgjam" path="res://assets/animations/coeur/a-batement-de-coeurs-3079.png" id="112_bggii"]
+[ext_resource type="Texture2D" uid="uid://be32yhlknu1rk" path="res://assets/animations/coeur/a-batement-de-coeurs-3080.png" id="113_foy4t"]
+[ext_resource type="Texture2D" uid="uid://b02uvhngmgk33" path="res://assets/animations/coeur/a-batement-de-coeurs-3081.png" id="114_fdxaq"]
+[ext_resource type="Texture2D" uid="uid://c1hastfjshsre" path="res://assets/animations/coeur/a-batement-de-coeurs-3082.png" id="115_77y4l"]
+[ext_resource type="Texture2D" uid="uid://cr2i6fptym1xs" path="res://assets/animations/coeur/a-batement-de-coeurs-3083.png" id="116_p5574"]
+[ext_resource type="Texture2D" uid="uid://dsbe0uqcu2yr7" path="res://assets/animations/coeur/a-batement-de-coeurs-3084.png" id="117_y11ki"]
+[ext_resource type="Texture2D" uid="uid://b8jb4r06ktuxt" path="res://assets/animations/coeur/a-batement-de-coeurs-3085.png" id="118_5gvj2"]
+[ext_resource type="Texture2D" uid="uid://cpx6we2kd0xvv" path="res://assets/animations/coeur/a-batement-de-coeurs-3086.png" id="119_xtgse"]
+[ext_resource type="Texture2D" uid="uid://itq0nsrk5smj" path="res://assets/animations/coeur/a-batement-de-coeurs-3087.png" id="120_c8388"]
+[ext_resource type="Texture2D" uid="uid://db5uwq7c1wd5c" path="res://assets/animations/coeur/a-batement-de-coeurs-3088.png" id="121_ok7kd"]
+[ext_resource type="Texture2D" uid="uid://5ivi6hg337ec" path="res://assets/animations/coeur/a-batement-de-coeurs-3089.png" id="122_6qqdl"]
+[ext_resource type="Texture2D" uid="uid://pssh1cjlvpm2" path="res://assets/animations/coeur/a-batement-de-coeurs-3090.png" id="123_4o4ir"]
+[ext_resource type="Texture2D" uid="uid://v5nrxq1uyub2" path="res://assets/animations/coeur/a-batement-de-coeurs-3091.png" id="124_th1hh"]
+[ext_resource type="Texture2D" uid="uid://bbd6ddfq4i4fl" path="res://assets/animations/coeur/a-batement-de-coeurs-3092.png" id="125_kbset"]
+[ext_resource type="Texture2D" uid="uid://cfmotkvh06wuo" path="res://assets/animations/coeur/a-batement-de-coeurs-3093.png" id="126_ww7mq"]
+[ext_resource type="Texture2D" uid="uid://cwhlwfv6rji2s" path="res://assets/animations/coeur/a-batement-de-coeurs-3094.png" id="127_756md"]
+[ext_resource type="Texture2D" uid="uid://cqnodkcxen15d" path="res://assets/animations/coeur/a-batement-de-coeurs-3095.png" id="128_83ki0"]
+[ext_resource type="Texture2D" uid="uid://bmpggknb7s57l" path="res://assets/animations/coeur/a-batement-de-coeurs-3096.png" id="129_6s4og"]
+[ext_resource type="Texture2D" uid="uid://cupe2s65ep61u" path="res://assets/animations/coeur/a-batement-de-coeurs-3097.png" id="130_fnrww"]
+[ext_resource type="Texture2D" uid="uid://bxts63ul7a43e" path="res://assets/animations/coeur/a-batement-de-coeurs-3098.png" id="131_ashcv"]
+[ext_resource type="Texture2D" uid="uid://bega2l213tgcx" path="res://assets/animations/coeur/a-batement-de-coeurs-3099.png" id="132_he6ha"]
+[ext_resource type="Texture2D" uid="uid://dwg02l5718yst" path="res://assets/animations/coeur/a-batement-de-coeurs-3100.png" id="133_weit5"]
+[ext_resource type="Texture2D" uid="uid://b71jbqlswdwb8" path="res://assets/animations/coeur/a-batement-de-coeurs-3101.png" id="134_igkgm"]
+[ext_resource type="Texture2D" uid="uid://j7teis8xbkp4" path="res://assets/animations/coeur/a-batement-de-coeurs-3102.png" id="135_w8ovg"]
+[ext_resource type="Texture2D" uid="uid://v8h0eoohtgf5" path="res://assets/animations/coeur/a-batement-de-coeurs-3103.png" id="136_6dces"]
+[ext_resource type="Texture2D" uid="uid://d3dg17nor7tq7" path="res://assets/animations/coeur/a-batement-de-coeurs-3104.png" id="137_6tw6k"]
+[ext_resource type="Texture2D" uid="uid://dsmmaofbxdxrj" path="res://assets/animations/coeur/a-batement-de-coeurs-3105.png" id="138_ckptb"]
+[ext_resource type="Texture2D" uid="uid://dy51vi44rddth" path="res://assets/animations/coeur/a-batement-de-coeurs-3106.png" id="139_87mlq"]
+[ext_resource type="Texture2D" uid="uid://cfgotgs2xxhhv" path="res://assets/animations/coeur/a-batement-de-coeurs-3107.png" id="140_1a5s7"]
+[ext_resource type="Texture2D" uid="uid://0r4204p8qqy7" path="res://assets/animations/coeur/a-batement-de-coeurs-3108.png" id="141_sxw7m"]
+[ext_resource type="Texture2D" uid="uid://bolwwtosybtf8" path="res://assets/animations/coeur/a-batement-de-coeurs-3109.png" id="142_ul0qi"]
+[ext_resource type="Texture2D" uid="uid://vk2256btr864" path="res://assets/animations/coeur/a-batement-de-coeurs-3110.png" id="143_b2f5n"]
+[ext_resource type="Texture2D" uid="uid://bq4yr6cv7osxn" path="res://assets/animations/coeur/a-batement-de-coeurs-3111.png" id="144_ubkbe"]
+[ext_resource type="Texture2D" uid="uid://b4umvy4napor0" path="res://assets/animations/coeur/a-batement-de-coeurs-3112.png" id="145_yykw8"]
+[ext_resource type="Texture2D" uid="uid://cvgd3bjixn2pj" path="res://assets/animations/coeur/a-batement-de-coeurs-3113.png" id="146_irwfd"]
+[ext_resource type="Texture2D" uid="uid://dwvhruhel8t3i" path="res://assets/animations/coeur/a-batement-de-coeurs-3114.png" id="147_ybxqj"]
+[ext_resource type="Texture2D" uid="uid://cy1ekdj5mr60w" path="res://assets/animations/coeur/a-batement-de-coeurs-3115.png" id="148_jxk3r"]
+[ext_resource type="Texture2D" uid="uid://dsrhd4s8e52sl" path="res://assets/animations/coeur/a-batement-de-coeurs-3116.png" id="149_68k2j"]
+[ext_resource type="Texture2D" uid="uid://n13x1syw6k67" path="res://assets/animations/coeur/a-batement-de-coeurs-3117.png" id="150_ukbe8"]
+[ext_resource type="Texture2D" uid="uid://qvr4bikmu8lv" path="res://assets/animations/coeur/a-batement-de-coeurs-3118.png" id="151_0lxym"]
+[ext_resource type="Texture2D" uid="uid://81b7a6pn05p4" path="res://assets/animations/coeur/a-batement-de-coeurs-3119.png" id="152_okysy"]
+[ext_resource type="Texture2D" uid="uid://btyg3nv1opm2r" path="res://assets/animations/coeur/a-batement-de-coeurs-3120.png" id="153_na7ii"]
+[ext_resource type="Texture2D" uid="uid://b7x2ojfwo6x3v" path="res://assets/animations/coeur/a-batement-de-coeurs-3121.png" id="154_5ar0m"]
+[ext_resource type="Texture2D" uid="uid://bl3r0j317x5qu" path="res://assets/animations/coeur/a-batement-de-coeurs-3122.png" id="155_2x26n"]
+[ext_resource type="Texture2D" uid="uid://dyp12ablmbwab" path="res://assets/animations/coeur/a-batement-de-coeurs-3123.png" id="156_xsho4"]
+[ext_resource type="Texture2D" uid="uid://c6u4p2s2k6wgi" path="res://assets/animations/coeur/a-batement-de-coeurs-3124.png" id="157_wdupu"]
+[ext_resource type="Texture2D" uid="uid://bdrq4ngmunut4" path="res://assets/animations/coeur/a-batement-de-coeurs-3125.png" id="158_pastc"]
+[ext_resource type="Texture2D" uid="uid://dnkusv4i4lmmv" path="res://assets/animations/coeur/a-batement-de-coeurs-3126.png" id="159_1yxy6"]
+[ext_resource type="Texture2D" uid="uid://cfw0qtpu3e1nr" path="res://assets/animations/coeur/a-batement-de-coeurs-3127.png" id="160_unaso"]
+[ext_resource type="Texture2D" uid="uid://dxyrepc6vhwoj" path="res://assets/animations/coeur/a-batement-de-coeurs-3128.png" id="161_qib4i"]
+[ext_resource type="Texture2D" uid="uid://cb71qbnm6rg5e" path="res://assets/animations/coeur/a-batement-de-coeurs-3129.png" id="162_nvs32"]
+[ext_resource type="Texture2D" uid="uid://14sq5ouhwr5l" path="res://assets/animations/coeur/a-batement-de-coeurs-3130.png" id="163_yqfl0"]
+[ext_resource type="Texture2D" uid="uid://bo4ktoyjfndmd" path="res://assets/animations/coeur/a-batement-de-coeurs-3131.png" id="164_w8kb8"]
+[ext_resource type="Texture2D" uid="uid://deutktu7a2idr" path="res://assets/animations/coeur/a-batement-de-coeurs-3132.png" id="165_bojip"]
+[ext_resource type="Texture2D" uid="uid://cu1l7sil5gd1" path="res://assets/animations/coeur/a-batement-de-coeurs-3133.png" id="166_d5xac"]
+[ext_resource type="Texture2D" uid="uid://cddyxyg81okl4" path="res://assets/animations/coeur/a-batement-de-coeurs-3134.png" id="167_brvo5"]
+[ext_resource type="Texture2D" uid="uid://ficml553u4jt" path="res://assets/animations/coeur/a-batement-de-coeurs-3135.png" id="168_51tfu"]
+[ext_resource type="Texture2D" uid="uid://d0bcrihrx7k0q" path="res://assets/animations/coeur/a-batement-de-coeurs-3136.png" id="169_tm6cs"]
+[ext_resource type="Texture2D" uid="uid://b4w2ku6dqeq8k" path="res://assets/animations/coeur/a-batement-de-coeurs-3137.png" id="170_c3ctg"]
+[ext_resource type="Texture2D" uid="uid://cd0mnfrrble3i" path="res://assets/animations/coeur/a-batement-de-coeurs-3138.png" id="171_6kmfu"]
+[ext_resource type="Texture2D" uid="uid://b17jviba35r43" path="res://assets/animations/coeur/a-batement-de-coeurs-3139.png" id="172_72ptn"]
+[ext_resource type="Texture2D" uid="uid://0nv7nqx1unh8" path="res://assets/animations/coeur/a-batement-de-coeurs-3140.png" id="173_8l8xb"]
+[ext_resource type="Texture2D" uid="uid://clhu1xvyj212s" path="res://assets/animations/coeur/a-batement-de-coeurs-3141.png" id="174_k53cr"]
+[ext_resource type="Texture2D" uid="uid://qxgog78vcmok" path="res://assets/animations/coeur/a-batement-de-coeurs-3142.png" id="175_71jgd"]
+[ext_resource type="Texture2D" uid="uid://cydxljgbnlq3s" path="res://assets/animations/coeur/a-batement-de-coeurs-3143.png" id="176_jv3ys"]
+[ext_resource type="Texture2D" uid="uid://i3qnb61uonpc" path="res://assets/animations/coeur/a-batement-de-coeurs-3144.png" id="177_ta0ls"]
+[ext_resource type="Texture2D" uid="uid://boahyn2e4msl7" path="res://assets/animations/coeur/a-batement-de-coeurs-3145.png" id="178_ywndn"]
+[ext_resource type="Texture2D" uid="uid://xby713a2kuc7" path="res://assets/animations/coeur/a-batement-de-coeurs-3146.png" id="179_sqskn"]
+[ext_resource type="Texture2D" uid="uid://0tr7852kixw3" path="res://assets/animations/coeur/a-batement-de-coeurs-3147.png" id="180_1g3m3"]
+[ext_resource type="Texture2D" uid="uid://bjd4u4royixgu" path="res://assets/animations/coeur/a-batement-de-coeurs-3148.png" id="181_we1ya"]
+[ext_resource type="Texture2D" uid="uid://b206g7rl0748b" path="res://assets/animations/coeur/a-batement-de-coeurs-3149.png" id="182_secb6"]
+[ext_resource type="Texture2D" uid="uid://d1s22ry6784pd" path="res://assets/animations/coeur/a-batement-de-coeurs-3150.png" id="183_xklph"]
+[ext_resource type="Texture2D" uid="uid://c3fn1kspgvkc4" path="res://assets/animations/coeur/a-batement-de-coeurs-3151.png" id="184_kqev8"]
+[ext_resource type="Texture2D" uid="uid://dedysv8fmwcg5" path="res://assets/animations/coeur/a-batement-de-coeurs-3152.png" id="185_t6ian"]
+[ext_resource type="Texture2D" uid="uid://c4wtarmmktgg4" path="res://assets/animations/coeur/a-batement-de-coeurs-3153.png" id="186_bd4su"]
+[ext_resource type="Texture2D" uid="uid://cn0gfemwdlan3" path="res://assets/animations/coeur/a-batement-de-coeurs-3154.png" id="187_adeab"]
+[ext_resource type="Texture2D" uid="uid://qe8oit8wg2nd" path="res://assets/animations/coeur/a-batement-de-coeurs-3155.png" id="188_2vydx"]
+[ext_resource type="Texture2D" uid="uid://b5ne144dg20uy" path="res://assets/animations/coeur/a-batement-de-coeurs-3156.png" id="189_u2uit"]
+[ext_resource type="Texture2D" uid="uid://cwolbifxmq6a6" path="res://assets/animations/coeur/a-batement-de-coeurs-3157.png" id="190_q6gac"]
+[ext_resource type="Texture2D" uid="uid://dvyebmk58xejv" path="res://assets/animations/coeur/a-batement-de-coeurs-3158.png" id="191_oi3so"]
+[ext_resource type="Texture2D" uid="uid://brdlt1t73o20t" path="res://assets/animations/coeur/a-batement-de-coeurs-3159.png" id="192_akliv"]
+[ext_resource type="Texture2D" uid="uid://dgqsyjtgxvade" path="res://assets/animations/coeur/a-batement-de-coeurs-3160.png" id="193_05uxd"]
+[ext_resource type="Texture2D" uid="uid://w3vujxvf4rhm" path="res://assets/animations/coeur/a-batement-de-coeurs-3161.png" id="194_5euu0"]
+[ext_resource type="Texture2D" uid="uid://d4h116qu10jlh" path="res://assets/animations/coeur/a-batement-de-coeurs-3162.png" id="195_020u0"]
+[ext_resource type="Texture2D" uid="uid://dyflnwulcmvj8" path="res://assets/animations/coeur/a-batement-de-coeurs-3163.png" id="196_soni8"]
+[ext_resource type="Texture2D" uid="uid://cemu50mufg2ru" path="res://assets/animations/coeur/a-batement-de-coeurs-3164.png" id="197_sfcht"]
+[ext_resource type="Texture2D" uid="uid://cfubh13p65min" path="res://assets/animations/coeur/a-batement-de-coeurs-3165.png" id="198_xr60d"]
+[ext_resource type="Texture2D" uid="uid://c623au2ccsln6" path="res://assets/animations/coeur/a-batement-de-coeurs-3166.png" id="199_3xhyg"]
+[ext_resource type="Texture2D" uid="uid://xhlu1pdndnox" path="res://assets/animations/coeur/a-batement-de-coeurs-3167.png" id="200_w2ais"]
+[ext_resource type="Texture2D" uid="uid://k31vh3b5o6dg" path="res://assets/animations/coeur/a-batement-de-coeurs-3168.png" id="201_rstgx"]
+[ext_resource type="Texture2D" uid="uid://cqjjwgode8ulk" path="res://assets/animations/coeur/a-batement-de-coeurs-3169.png" id="202_jbad7"]
+[ext_resource type="Texture2D" uid="uid://csoxbrfkglbbg" path="res://assets/animations/coeur/a-batement-de-coeurs-3170.png" id="203_ri1b1"]
+[ext_resource type="Texture2D" uid="uid://cx2f5qv3kup74" path="res://assets/animations/coeur/a-batement-de-coeurs-3171.png" id="204_bp45b"]
+[ext_resource type="Texture2D" uid="uid://vnssr4y73eam" path="res://assets/animations/coeur/a-batement-de-coeurs-3172.png" id="205_mb8nt"]
+[ext_resource type="Texture2D" uid="uid://ndw33wwfrjh1" path="res://assets/animations/coeur/a-batement-de-coeurs-3173.png" id="206_pdkon"]
+[ext_resource type="Texture2D" uid="uid://dgqhu3hstl1tc" path="res://assets/animations/coeur/a-batement-de-coeurs-3174.png" id="207_bcyx1"]
+[ext_resource type="Texture2D" uid="uid://db8rfnev3vd0k" path="res://assets/animations/coeur/a-batement-de-coeurs-3175.png" id="208_jbqif"]
+[ext_resource type="Texture2D" uid="uid://ddyclfhi3vcqd" path="res://assets/animations/coeur/a-batement-de-coeurs-3176.png" id="209_aidsb"]
+[ext_resource type="Texture2D" uid="uid://omo7qoh8m31v" path="res://assets/animations/coeur/a-batement-de-coeurs-3177.png" id="210_2jelk"]
+[ext_resource type="Texture2D" uid="uid://qvqcnaaa806l" path="res://assets/animations/coeur/a-batement-de-coeurs-3178.png" id="211_gls1q"]
+[ext_resource type="Texture2D" uid="uid://iq4hncjotmja" path="res://assets/animations/coeur/a-batement-de-coeurs-3179.png" id="212_y4iro"]
+[ext_resource type="Texture2D" uid="uid://cbu4xr3qxv7n5" path="res://assets/animations/coeur/a-batement-de-coeurs-3180.png" id="213_4t0f0"]
+[ext_resource type="Texture2D" uid="uid://bdp0spet25a8q" path="res://assets/animations/coeur/a-batement-de-coeurs-3181.png" id="214_n7eoa"]
+[ext_resource type="Texture2D" uid="uid://dnk5nk0ir046r" path="res://assets/animations/coeur/a-batement-de-coeurs-3182.png" id="215_b4obt"]
+[ext_resource type="Texture2D" uid="uid://ir3ra30134oc" path="res://assets/animations/coeur/a-batement-de-coeurs-3183.png" id="216_gneed"]
+[ext_resource type="Texture2D" uid="uid://de2ep7ongpfk4" path="res://assets/animations/coeur/a-batement-de-coeurs-3184.png" id="217_jd7cd"]
+[ext_resource type="Texture2D" uid="uid://kj5xp2v5gpbu" path="res://assets/animations/coeur/a-batement-de-coeurs-3185.png" id="218_fi2m1"]
+[ext_resource type="Texture2D" uid="uid://c6ybra4dgvfom" path="res://assets/animations/coeur/a-batement-de-coeurs-3186.png" id="219_5ie86"]
+[ext_resource type="Texture2D" uid="uid://bf5pqgvh6cvyq" path="res://assets/animations/coeur/a-batement-de-coeurs-3187.png" id="220_3d502"]
+[ext_resource type="Texture2D" uid="uid://58du2ixdpudd" path="res://assets/animations/coeur/a-batement-de-coeurs-3188.png" id="221_xp0g8"]
+[ext_resource type="Texture2D" uid="uid://b80ihop5dswei" path="res://assets/animations/coeur/a-batement-de-coeurs-3189.png" id="222_af0w2"]
+[ext_resource type="Texture2D" uid="uid://5xegorercsuk" path="res://assets/animations/coeur/a-batement-de-coeurs-3190.png" id="223_fxv4j"]
+[ext_resource type="Texture2D" uid="uid://cgiby3fkyhxye" path="res://assets/animations/coeur/a-batement-de-coeurs-3191.png" id="224_ujesq"]
+[ext_resource type="Texture2D" uid="uid://dyp43q83cvgmy" path="res://assets/animations/coeur/a-batement-de-coeurs-3192.png" id="225_g20xj"]
+[ext_resource type="Texture2D" uid="uid://ckijh6jipwtm7" path="res://assets/animations/coeur/a-batement-de-coeurs-3193.png" id="226_7116b"]
+[ext_resource type="Texture2D" uid="uid://b7eigh7bbacrx" path="res://assets/animations/coeur/a-batement-de-coeurs-3194.png" id="227_wmu2s"]
+[ext_resource type="Texture2D" uid="uid://8qwebmnjfwyg" path="res://assets/animations/coeur/a-batement-de-coeurs-3195.png" id="228_w0kv2"]
+[ext_resource type="Texture2D" uid="uid://ejr1dt5d3d2d" path="res://assets/animations/coeur/a-batement-de-coeurs-3196.png" id="229_xmkmw"]
+[ext_resource type="Texture2D" uid="uid://cyjx1iexmvi14" path="res://assets/animations/coeur/a-batement-de-coeurs-3197.png" id="230_4lx4n"]
+[ext_resource type="Texture2D" uid="uid://dl0eqi11x6804" path="res://assets/animations/coeur/a-batement-de-coeurs-3198.png" id="231_ejj7k"]
+[ext_resource type="Texture2D" uid="uid://dwwbbtye21xp4" path="res://assets/animations/coeur/a-batement-de-coeurs-3199.png" id="232_sgomo"]
+[ext_resource type="Texture2D" uid="uid://cskr4iiek3xf6" path="res://assets/animations/coeur/a-batement-de-coeurs-3200.png" id="233_6wvr2"]
+[ext_resource type="Texture2D" uid="uid://civfieyoh5d2b" path="res://assets/animations/coeur/a-batement-de-coeurs-3201.png" id="234_g8q4g"]
+[ext_resource type="Texture2D" uid="uid://dxwhw0q87epyo" path="res://assets/animations/coeur/a-batement-de-coeurs-3202.png" id="235_3s0rf"]
+[ext_resource type="Texture2D" uid="uid://dk7ny41x8ext4" path="res://assets/animations/coeur/a-batement-de-coeurs-3203.png" id="236_uw5um"]
+[ext_resource type="Texture2D" uid="uid://ckunuypuwprha" path="res://assets/animations/coeur/a-batement-de-coeurs-3204.png" id="237_57pqe"]
+[ext_resource type="Texture2D" uid="uid://cv5b2eblqrooj" path="res://assets/animations/coeur/a-batement-de-coeurs-3205.png" id="238_7b3rn"]
+[ext_resource type="Texture2D" uid="uid://b7wcfd0ke1ufp" path="res://assets/animations/coeur/a-batement-de-coeurs-3206.png" id="239_4r0rv"]
+[ext_resource type="Texture2D" uid="uid://dbucrpbk2m6hg" path="res://assets/animations/coeur/a-batement-de-coeurs-3207.png" id="240_h8pwr"]
+[ext_resource type="Texture2D" uid="uid://ca6o2s2b505vm" path="res://assets/animations/coeur/a-batement-de-coeurs-3208.png" id="241_r24nj"]
+[ext_resource type="Texture2D" uid="uid://1rpd7r7c5frc" path="res://assets/animations/coeur/a-batement-de-coeurs-3209.png" id="242_yyvcf"]
+[ext_resource type="Texture2D" uid="uid://dushxkp4y6e11" path="res://assets/animations/coeur/a-batement-de-coeurs-3210.png" id="243_3nmlp"]
+[ext_resource type="Texture2D" uid="uid://pvw1xpva5572" path="res://assets/animations/coeur/a-batement-de-coeurs-3211.png" id="244_d5efx"]
+[ext_resource type="Texture2D" uid="uid://cbthj5biaguig" path="res://assets/animations/coeur/a-batement-de-coeurs-3212.png" id="245_7n1qc"]
+[ext_resource type="Texture2D" uid="uid://cuu50ifqxq8lt" path="res://assets/animations/coeur/a-batement-de-coeurs-3213.png" id="246_cxc48"]
+[ext_resource type="Texture2D" uid="uid://cgpw4dh82d60x" path="res://assets/animations/coeur/a-batement-de-coeurs-3214.png" id="247_rrf6p"]
+[ext_resource type="Texture2D" uid="uid://bnrosakw26g56" path="res://assets/animations/coeur/a-batement-de-coeurs-3215.png" id="248_eydkm"]
+[ext_resource type="Texture2D" uid="uid://bonihjnrci7ej" path="res://assets/animations/coeur/a-batement-de-coeurs-3216.png" id="249_uh7o4"]
+[ext_resource type="Texture2D" uid="uid://6u7qagaxn06c" path="res://assets/animations/coeur/a-batement-de-coeurs-3217.png" id="250_pyrou"]
+[ext_resource type="Texture2D" uid="uid://bu3vwgrhgxrcg" path="res://assets/animations/coeur/a-batement-de-coeurs-3218.png" id="251_10vbe"]
+[ext_resource type="Texture2D" uid="uid://xqjp35lr17cm" path="res://assets/animations/coeur/a-batement-de-coeurs-3219.png" id="252_4hl68"]
+[ext_resource type="Texture2D" uid="uid://c466yrkemgore" path="res://assets/animations/coeur/a-batement-de-coeurs-3220.png" id="253_2e8ko"]
+[ext_resource type="Texture2D" uid="uid://2cwwju8n01ed" path="res://assets/animations/coeur/a-batement-de-coeurs-3221.png" id="254_ea7fn"]
+[ext_resource type="Texture2D" uid="uid://dvp5kb0uhs4ym" path="res://assets/animations/coeur/a-batement-de-coeurs-3222.png" id="255_gmymq"]
+[ext_resource type="Texture2D" uid="uid://dydax7rp1mowp" path="res://assets/animations/coeur/a-batement-de-coeurs-3223.png" id="256_alph5"]
+[ext_resource type="Texture2D" uid="uid://gh55upoxduin" path="res://assets/animations/coeur/a-batement-de-coeurs-3224.png" id="257_up2ky"]
+[ext_resource type="Texture2D" uid="uid://c6a6kl2i0fjx6" path="res://assets/animations/coeur/a-batement-de-coeurs-3225.png" id="258_ffv0q"]
+[ext_resource type="Texture2D" uid="uid://b0v5l83lk1b84" path="res://assets/animations/coeur/a-batement-de-coeurs-3226.png" id="259_al0e1"]
+[ext_resource type="Texture2D" uid="uid://daldm4mtuc2p3" path="res://assets/animations/coeur/a-batement-de-coeurs-3227.png" id="260_naqmo"]
+[ext_resource type="Texture2D" uid="uid://cfr4oimstur1x" path="res://assets/animations/coeur/a-batement-de-coeurs-3228.png" id="261_yf3hl"]
+[ext_resource type="Texture2D" uid="uid://4xb78tml7wgj" path="res://assets/animations/coeur/a-batement-de-coeurs-3229.png" id="262_gilwd"]
+[ext_resource type="Texture2D" uid="uid://cr502hvt2beqr" path="res://assets/animations/coeur/a-batement-de-coeurs-3230.png" id="263_txrkm"]
+[ext_resource type="Texture2D" uid="uid://cmjqslb0mwkre" path="res://assets/animations/coeur/a-batement-de-coeurs-3231.png" id="264_tkod7"]
+[ext_resource type="Texture2D" uid="uid://c06k3mosa03ru" path="res://assets/animations/coeur/a-batement-de-coeurs-3232.png" id="265_16nvu"]
+[ext_resource type="Texture2D" uid="uid://b57d1slltmn8t" path="res://assets/animations/coeur/a-batement-de-coeurs-3233.png" id="266_725ab"]
+[ext_resource type="Texture2D" uid="uid://lkuwsfnxs41m" path="res://assets/animations/coeur/a-batement-de-coeurs-3234.png" id="267_we431"]
+[ext_resource type="Texture2D" uid="uid://sn23kxmjsfrc" path="res://assets/animations/coeur/a-batement-de-coeurs-3235.png" id="268_iusy7"]
+[ext_resource type="Texture2D" uid="uid://dh1fj65xwxaaq" path="res://assets/animations/coeur/a-batement-de-coeurs-3236.png" id="269_oauvf"]
+[ext_resource type="Texture2D" uid="uid://clcmb55qw425p" path="res://assets/animations/coeur/a-batement-de-coeurs-3237.png" id="270_t62ba"]
+[ext_resource type="Texture2D" uid="uid://bolaveqib0d5f" path="res://assets/animations/coeur/a-batement-de-coeurs-3238.png" id="271_27uho"]
+[ext_resource type="Texture2D" uid="uid://cofkp0ed5qa81" path="res://assets/animations/coeur/a-batement-de-coeurs-3239.png" id="272_4jqh6"]
+[ext_resource type="Texture2D" uid="uid://5rfsularb6d8" path="res://assets/animations/coeur/a-batement-de-coeurs-3240.png" id="273_4wgdq"]
+[ext_resource type="Texture2D" uid="uid://dawl3f4eska2s" path="res://assets/animations/coeur/a-batement-de-coeurs-3241.png" id="274_d1skj"]
+[ext_resource type="Texture2D" uid="uid://dbicj2vw0xl75" path="res://assets/animations/coeur/a-batement-de-coeurs-3242.png" id="275_p2u8l"]
+[ext_resource type="Texture2D" uid="uid://td5whjraqucx" path="res://assets/animations/coeur/a-batement-de-coeurs-3243.png" id="276_d0q2p"]
+[ext_resource type="Texture2D" uid="uid://diufgvgw1l8a0" path="res://assets/animations/coeur/a-batement-de-coeurs-3244.png" id="277_mb4sn"]
+[ext_resource type="Texture2D" uid="uid://bbfj5der816r6" path="res://assets/animations/coeur/a-batement-de-coeurs-3245.png" id="278_0am54"]
+[ext_resource type="Texture2D" uid="uid://cyookx5qmg1yh" path="res://assets/animations/coeur/a-batement-de-coeurs-3246.png" id="279_x4gua"]
+[ext_resource type="Texture2D" uid="uid://c1qo6k8p6btci" path="res://assets/animations/coeur/a-batement-de-coeurs-3247.png" id="280_ggvnx"]
+[ext_resource type="Texture2D" uid="uid://bs48hvk3r4bn1" path="res://assets/animations/coeur/a-batement-de-coeurs-3248.png" id="281_e80n6"]
+[ext_resource type="Texture2D" uid="uid://bqmhvjshpmgoi" path="res://assets/animations/coeur/a-batement-de-coeurs-3249.png" id="282_aa81o"]
+[ext_resource type="Texture2D" uid="uid://bv6bbg2bmoice" path="res://assets/animations/coeur/a-batement-de-coeurs-3250.png" id="283_6witf"]
+[ext_resource type="Texture2D" uid="uid://cl8evqkuk8se0" path="res://assets/animations/coeur/a-batement-de-coeurs-3251.png" id="284_drt3r"]
+[ext_resource type="Texture2D" uid="uid://dd7x1ix4qo0d0" path="res://assets/animations/coeur/a-batement-de-coeurs-3252.png" id="285_d5nqr"]
+[ext_resource type="Texture2D" uid="uid://cbe6qaxbixjma" path="res://assets/animations/coeur/a-batement-de-coeurs-3253.png" id="286_tn3nt"]
+[ext_resource type="Texture2D" uid="uid://x1aw5mt2uh5w" path="res://assets/animations/coeur/a-batement-de-coeurs-3254.png" id="287_4f2ws"]
+[ext_resource type="Texture2D" uid="uid://vxvrpha8v5vo" path="res://assets/animations/coeur/a-batement-de-coeurs-3255.png" id="288_l4qsx"]
+[ext_resource type="Texture2D" uid="uid://dc10lavo25gvc" path="res://assets/animations/coeur/a-batement-de-coeurs-3256.png" id="289_otuav"]
+[ext_resource type="Texture2D" uid="uid://yvaduo01rw6w" path="res://assets/animations/coeur/a-batement-de-coeurs-3257.png" id="290_ygkqr"]
+[ext_resource type="Texture2D" uid="uid://bqdsyui5736ws" path="res://assets/animations/coeur/a-batement-de-coeurs-3258.png" id="291_u212p"]
+[ext_resource type="Texture2D" uid="uid://c5lmjdi3titog" path="res://assets/animations/coeur/a-batement-de-coeurs-3259.png" id="292_liews"]
+[ext_resource type="Texture2D" uid="uid://dovwebd3sy81l" path="res://assets/animations/coeur/a-batement-de-coeurs-3260.png" id="293_krums"]
+[ext_resource type="Texture2D" uid="uid://bd6f035xmc4p8" path="res://assets/animations/coeur/a-batement-de-coeurs-3261.png" id="294_uyefo"]
+[ext_resource type="Texture2D" uid="uid://bbgaescfggjw2" path="res://assets/animations/coeur/a-batement-de-coeurs-3262.png" id="295_0563l"]
+[ext_resource type="Texture2D" uid="uid://dmnlglowiisqt" path="res://assets/animations/coeur/a-batement-de-coeurs-3263.png" id="296_73bj3"]
+[ext_resource type="Texture2D" uid="uid://s066b76rw4ks" path="res://assets/animations/coeur/a-batement-de-coeurs-3264.png" id="297_veqq0"]
+[ext_resource type="Texture2D" uid="uid://bsj4kxq5avrux" path="res://assets/animations/coeur/a-batement-de-coeurs-3265.png" id="298_cdlcb"]
+[ext_resource type="Texture2D" uid="uid://cttrikqwu32cf" path="res://assets/animations/coeur/a-batement-de-coeurs-3266.png" id="299_jg2u6"]
+[ext_resource type="Texture2D" uid="uid://c7v56l07241g1" path="res://assets/animations/coeur/a-batement-de-coeurs-3267.png" id="300_12gv5"]
+[ext_resource type="Texture2D" uid="uid://cfiqdtk516g1y" path="res://assets/animations/coeur/a-batement-de-coeurs-3268.png" id="301_7jknv"]
+[ext_resource type="Texture2D" uid="uid://bh7teqyxewkii" path="res://assets/animations/coeur/a-batement-de-coeurs-3269.png" id="302_4r6h1"]
+[ext_resource type="Texture2D" uid="uid://duwioite0wr1d" path="res://assets/animations/coeur/a-batement-de-coeurs-3270.png" id="303_743ko"]
+[ext_resource type="Texture2D" uid="uid://5pniqpsjroaq" path="res://assets/animations/coeur/a-batement-de-coeurs-3271.png" id="304_6vyde"]
+[ext_resource type="Texture2D" uid="uid://b6rdkilrc0mmo" path="res://assets/animations/coeur/a-batement-de-coeurs-3272.png" id="305_e07uj"]
+[ext_resource type="Texture2D" uid="uid://diehvhuh7lk3l" path="res://assets/animations/coeur/a-batement-de-coeurs-3273.png" id="306_v4t4f"]
+[ext_resource type="Texture2D" uid="uid://da8svum8m7x7n" path="res://assets/animations/coeur/a-batement-de-coeurs-3274.png" id="307_6h4gr"]
+[ext_resource type="Texture2D" uid="uid://d2pqrvoy0t8pu" path="res://assets/animations/coeur/a-batement-de-coeurs-3275.png" id="308_0utms"]
+[ext_resource type="Texture2D" uid="uid://dus1wdneay78k" path="res://assets/animations/coeur/a-batement-de-coeurs-3276.png" id="309_rh5w3"]
+[ext_resource type="Texture2D" uid="uid://dyy5ull78avw5" path="res://assets/animations/coeur/a-batement-de-coeurs-3277.png" id="310_5b6b4"]
+[ext_resource type="Texture2D" uid="uid://dm4e0mjybplfc" path="res://assets/animations/coeur/a-batement-de-coeurs-3278.png" id="311_5qn7j"]
+[ext_resource type="Texture2D" uid="uid://csvmxkoft5tv7" path="res://assets/animations/coeur/a-batement-de-coeurs-3279.png" id="312_me0kg"]
+[ext_resource type="Texture2D" uid="uid://c1yua58l3y57h" path="res://assets/animations/coeur/a-batement-de-coeurs-3280.png" id="313_b7pg8"]
+[ext_resource type="Texture2D" uid="uid://cy7etnkffykv2" path="res://assets/animations/coeur/a-batement-de-coeurs-3281.png" id="314_7jbtg"]
+[ext_resource type="Texture2D" uid="uid://qg1cfpcf7d1q" path="res://assets/animations/coeur/a-batement-de-coeurs-3282.png" id="315_uohyc"]
+[ext_resource type="Texture2D" uid="uid://bfnodxyu64ht" path="res://assets/animations/coeur/a-batement-de-coeurs-3283.png" id="316_3jvbp"]
+[ext_resource type="Texture2D" uid="uid://sd7wqju50itv" path="res://assets/animations/coeur/a-batement-de-coeurs-3284.png" id="317_qmslj"]
+[ext_resource type="Texture2D" uid="uid://8jcndyqr05w3" path="res://assets/animations/coeur/a-batement-de-coeurs-3285.png" id="318_1w4tg"]
+[ext_resource type="Texture2D" uid="uid://b6fk1nhab17ir" path="res://assets/animations/coeur/a-batement-de-coeurs-3286.png" id="319_7ut6y"]
+[ext_resource type="Texture2D" uid="uid://chtmbc82grkds" path="res://assets/animations/coeur/a-batement-de-coeurs-3287.png" id="320_4ech5"]
+[ext_resource type="Texture2D" uid="uid://bqh0p7wt035vx" path="res://assets/animations/coeur/a-batement-de-coeurs-3288.png" id="321_ksvlv"]
+[ext_resource type="Texture2D" uid="uid://c2ykxncxsu3f" path="res://assets/animations/coeur/a-batement-de-coeurs-3289.png" id="322_0r7ye"]
+[ext_resource type="Texture2D" uid="uid://niwk0lgib7rm" path="res://assets/animations/coeur/a-batement-de-coeurs-3290.png" id="323_opsel"]
+[ext_resource type="Texture2D" uid="uid://cvowaifr3mims" path="res://assets/animations/coeur/a-batement-de-coeurs-3291.png" id="324_gt00s"]
+[ext_resource type="Texture2D" uid="uid://c3xjtxesjbgha" path="res://assets/animations/coeur/a-batement-de-coeurs-3292.png" id="325_jrjjm"]
+[ext_resource type="Texture2D" uid="uid://bv24srp3wena0" path="res://assets/animations/coeur/a-batement-de-coeurs-3293.png" id="326_ffabt"]
+[ext_resource type="Texture2D" uid="uid://ckhj5mcguwcv0" path="res://assets/animations/coeur/a-batement-de-coeurs-3294.png" id="327_krn0n"]
+[ext_resource type="Texture2D" uid="uid://b24ofyudxpdhe" path="res://assets/animations/coeur/a-batement-de-coeurs-3295.png" id="328_ktqph"]
+[ext_resource type="Texture2D" uid="uid://rd22pwra3vtf" path="res://assets/animations/coeur/a-batement-de-coeurs-3296.png" id="329_gy5vx"]
+[ext_resource type="Texture2D" uid="uid://b2jq2ffrsfovj" path="res://assets/animations/coeur/a-batement-de-coeurs-3297.png" id="330_4tvr7"]
+[ext_resource type="Texture2D" uid="uid://0qj7u86vq7fg" path="res://assets/animations/coeur/a-batement-de-coeurs-3298.png" id="331_n0vg8"]
+[ext_resource type="Texture2D" uid="uid://d1mjohdf1lhkq" path="res://assets/animations/coeur/a-batement-de-coeurs-3299.png" id="332_rnmgm"]
+[ext_resource type="Texture2D" uid="uid://dag1hp3taqba7" path="res://assets/animations/coeur/a-batement-de-coeurs-3300.png" id="333_ev64s"]
+[ext_resource type="Texture2D" uid="uid://b3c0ffbq5jtwx" path="res://assets/animations/coeur/a-batement-de-coeurs-3301.png" id="334_0f0hl"]
+[ext_resource type="Texture2D" uid="uid://yai8v77drq87" path="res://assets/animations/coeur/a-batement-de-coeurs-3302.png" id="335_wibh5"]
+[ext_resource type="Texture2D" uid="uid://d0s23s43v6k2x" path="res://assets/animations/coeur/a-batement-de-coeurs-3303.png" id="336_r248a"]
+[ext_resource type="Texture2D" uid="uid://deyn12cn58f3e" path="res://assets/animations/coeur/a-batement-de-coeurs-3304.png" id="337_78qh1"]
+[ext_resource type="Texture2D" uid="uid://7uvgabnu8add" path="res://assets/animations/coeur/a-batement-de-coeurs-3305.png" id="338_jmctp"]
+[ext_resource type="Texture2D" uid="uid://dpxtproijdymv" path="res://assets/animations/coeur/a-batement-de-coeurs-3306.png" id="339_2lhsb"]
+[ext_resource type="Texture2D" uid="uid://dkjcnitvdwil0" path="res://assets/animations/coeur/a-batement-de-coeurs-3307.png" id="340_jm6jc"]
+[ext_resource type="Texture2D" uid="uid://dkn550fyx8gl" path="res://assets/animations/coeur/a-batement-de-coeurs-3308.png" id="341_4lo6g"]
+[ext_resource type="Texture2D" uid="uid://devn750hipifm" path="res://assets/animations/coeur/a-batement-de-coeurs-3309.png" id="342_nthvq"]
+[ext_resource type="Texture2D" uid="uid://5v7k3odnpteu" path="res://assets/animations/coeur/a-batement-de-coeurs-3310.png" id="343_p6k0e"]
+[ext_resource type="Texture2D" uid="uid://bcqa5wqpblwf6" path="res://assets/animations/coeur/a-batement-de-coeurs-3311.png" id="344_fcsdg"]
+[ext_resource type="Texture2D" uid="uid://bqjwppcxqe6yw" path="res://assets/animations/coeur/a-batement-de-coeurs-3312.png" id="345_ou4b2"]
+[ext_resource type="Texture2D" uid="uid://bdgoo6x0fia1k" path="res://assets/animations/coeur/a-batement-de-coeurs-3313.png" id="346_5u6p0"]
+[ext_resource type="Texture2D" uid="uid://3moq6gdi260i" path="res://assets/animations/coeur/a-batement-de-coeurs-3314.png" id="347_td3yq"]
+[ext_resource type="Texture2D" uid="uid://bt7ati5bkdry6" path="res://assets/animations/coeur/a-batement-de-coeurs-3315.png" id="348_b3tfq"]
+[ext_resource type="Texture2D" uid="uid://dolu44gbm7tgs" path="res://assets/animations/coeur/a-batement-de-coeurs-3316.png" id="349_n18nr"]
+[ext_resource type="Texture2D" uid="uid://vdtb0lkrvhbx" path="res://assets/animations/coeur/a-batement-de-coeurs-3317.png" id="350_uw8dx"]
+[ext_resource type="Texture2D" uid="uid://br3qhetu46dix" path="res://assets/animations/coeur/a-batement-de-coeurs-3318.png" id="351_3m2f7"]
+[ext_resource type="Texture2D" uid="uid://db0ji025c6fdw" path="res://assets/animations/coeur/a-batement-de-coeurs-3319.png" id="352_agt07"]
+[ext_resource type="Texture2D" uid="uid://k0ssmvkflfcv" path="res://assets/animations/coeur/a-batement-de-coeurs-3320.png" id="353_kspsx"]
+[ext_resource type="Texture2D" uid="uid://bfqx4frle7epf" path="res://assets/animations/coeur/a-batement-de-coeurs-3321.png" id="354_poeqo"]
+[ext_resource type="Texture2D" uid="uid://c48ynbn7cvl6b" path="res://assets/animations/coeur/a-batement-de-coeurs-3322.png" id="355_3gyun"]
+[ext_resource type="Texture2D" uid="uid://3g1xomb6ir60" path="res://assets/animations/coeur/a-batement-de-coeurs-3323.png" id="356_lepib"]
+[ext_resource type="Texture2D" uid="uid://b8vcexbea833i" path="res://assets/animations/coeur/a-batement-de-coeurs-3324.png" id="357_fd43e"]
+[ext_resource type="Texture2D" uid="uid://ccbnlsafh481h" path="res://assets/animations/coeur/a-batement-de-coeurs-3325.png" id="358_11j7c"]
+[ext_resource type="Texture2D" uid="uid://bayyxaisi7uwv" path="res://assets/animations/coeur/a-batement-de-coeurs-3326.png" id="359_k4um8"]
+[ext_resource type="Texture2D" uid="uid://chgn7sfaw57cs" path="res://assets/animations/coeur/a-batement-de-coeurs-3327.png" id="360_w7xcy"]
+[ext_resource type="Texture2D" uid="uid://oxl0vdwvai75" path="res://assets/animations/coeur/a-batement-de-coeurs-3328.png" id="361_x4p5d"]
+[ext_resource type="Texture2D" uid="uid://dikdbwenriwpw" path="res://assets/animations/coeur/a-batement-de-coeurs-3329.png" id="362_3moh8"]
+[ext_resource type="Texture2D" uid="uid://bheyeq6qlux0m" path="res://assets/animations/coeur/a-batement-de-coeurs-3330.png" id="363_6i5hu"]
+[ext_resource type="Texture2D" uid="uid://b3dav554shx7f" path="res://assets/animations/coeur/a-batement-de-coeurs-3331.png" id="364_3uyxi"]
+[ext_resource type="Texture2D" uid="uid://djdesuawidev4" path="res://assets/animations/coeur/a-batement-de-coeurs-3332.png" id="365_r1fp0"]
+[ext_resource type="Texture2D" uid="uid://d302murxmouwu" path="res://assets/animations/coeur/a-batement-de-coeurs-3333.png" id="366_axhp1"]
+[ext_resource type="Texture2D" uid="uid://buhspsspnsara" path="res://assets/animations/coeur/a-batement-de-coeurs-3334.png" id="367_itut7"]
+[ext_resource type="Texture2D" uid="uid://cvqlnktf1kkm4" path="res://assets/animations/coeur/a-batement-de-coeurs-3335.png" id="368_7v3fa"]
+[ext_resource type="Texture2D" uid="uid://bs48w27dt530x" path="res://assets/animations/coeur/a-batement-de-coeurs-3336.png" id="369_4xeur"]
+[ext_resource type="Texture2D" uid="uid://b6yojwi1yipr1" path="res://assets/animations/coeur/a-batement-de-coeurs-3337.png" id="370_ht2r0"]
+[ext_resource type="Texture2D" uid="uid://le3rei1sw0or" path="res://assets/animations/coeur/a-batement-de-coeurs-3338.png" id="371_njb63"]
+[ext_resource type="Texture2D" uid="uid://bvik2uqqiejks" path="res://assets/animations/coeur/a-batement-de-coeurs-3339.png" id="372_elgid"]
+[ext_resource type="Texture2D" uid="uid://dgpe7ptypciij" path="res://assets/animations/coeur/a-batement-de-coeurs-3340.png" id="373_h5ko4"]
+[ext_resource type="Texture2D" uid="uid://d0rqo7dycqthj" path="res://assets/animations/coeur/a-batement-de-coeurs-3341.png" id="374_d7b8o"]
+[ext_resource type="Texture2D" uid="uid://bo8fgr65dteu5" path="res://assets/animations/coeur/a-batement-de-coeurs-3342.png" id="375_0ftpk"]
+[ext_resource type="Texture2D" uid="uid://pn8l5evowqiv" path="res://assets/animations/coeur/a-batement-de-coeurs-3343.png" id="376_iub8n"]
+[ext_resource type="Texture2D" uid="uid://c2lddlk1744ne" path="res://assets/animations/coeur/a-batement-de-coeurs-3344.png" id="377_jmhvo"]
+[ext_resource type="Texture2D" uid="uid://cav3ykkq8jh4n" path="res://assets/animations/coeur/a-batement-de-coeurs-3345.png" id="378_nl41n"]
+[ext_resource type="Texture2D" uid="uid://b04grw0k5f1mg" path="res://assets/animations/coeur/a-batement-de-coeurs-3346.png" id="379_a0wqx"]
+[ext_resource type="Texture2D" uid="uid://de212nbe0m7x3" path="res://assets/animations/coeur/a-batement-de-coeurs-3347.png" id="380_s53kw"]
+[ext_resource type="Texture2D" uid="uid://bm7esicuojeeh" path="res://assets/animations/coeur/a-batement-de-coeurs-3348.png" id="381_dkeob"]
+[ext_resource type="Texture2D" uid="uid://bar0jscayvs1n" path="res://assets/animations/coeur/a-batement-de-coeurs-3349.png" id="382_uw0mu"]
+[ext_resource type="Texture2D" uid="uid://cdrpgur7m3slg" path="res://assets/animations/coeur/a-batement-de-coeurs-3350.png" id="383_gexip"]
+[ext_resource type="Texture2D" uid="uid://d2o0toir85s1a" path="res://assets/animations/coeur/a-batement-de-coeurs-3351.png" id="384_v6ky6"]
+[ext_resource type="Texture2D" uid="uid://bwd0t2qb8acks" path="res://assets/animations/coeur/a-batement-de-coeurs-3352.png" id="385_x1hm3"]
+[ext_resource type="Texture2D" uid="uid://byxffucc5donn" path="res://assets/animations/coeur/a-batement-de-coeurs-3353.png" id="386_lqqae"]
+[ext_resource type="Texture2D" uid="uid://c7ldc3avf3stb" path="res://assets/animations/coeur/a-batement-de-coeurs-3354.png" id="387_hejff"]
+[ext_resource type="Texture2D" uid="uid://ctxxsywwutd3h" path="res://assets/animations/coeur/a-batement-de-coeurs-3355.png" id="388_m2a6p"]
+[ext_resource type="Texture2D" uid="uid://dwjee2tb2lbht" path="res://assets/animations/coeur/a-batement-de-coeurs-3356.png" id="389_hho4o"]
+[ext_resource type="Texture2D" uid="uid://cgca120favp1k" path="res://assets/animations/coeur/a-batement-de-coeurs-3357.png" id="390_is1dx"]
+[ext_resource type="Texture2D" uid="uid://dmge0c328yxs" path="res://assets/animations/coeur/a-batement-de-coeurs-3358.png" id="391_rm23h"]
+[ext_resource type="Texture2D" uid="uid://1qcncybrrtcn" path="res://assets/animations/coeur/a-batement-de-coeurs-3359.png" id="392_ankjy"]
+[ext_resource type="Texture2D" uid="uid://dfjy3wfqhtc62" path="res://assets/animations/coeur/a-batement-de-coeurs-3360.png" id="393_k8gl6"]
+[ext_resource type="Texture2D" uid="uid://dnk3s1exj0e5n" path="res://assets/animations/coeur/a-batement-de-coeurs-3361.png" id="394_xuqua"]
+[ext_resource type="Texture2D" uid="uid://c2nmc4lhg0426" path="res://assets/animations/coeur/a-batement-de-coeurs-3362.png" id="395_lsuc5"]
+[ext_resource type="Texture2D" uid="uid://2t67e1g54jho" path="res://assets/animations/coeur/a-batement-de-coeurs-3363.png" id="396_ewq00"]
+[ext_resource type="Texture2D" uid="uid://f7ss8tld472g" path="res://assets/animations/coeur/a-batement-de-coeurs-3364.png" id="397_xxfwa"]
+[ext_resource type="Texture2D" uid="uid://b2dywmen8rrx" path="res://assets/animations/coeur/a-batement-de-coeurs-3365.png" id="398_en02y"]
+[ext_resource type="Texture2D" uid="uid://boqvxyixvd3op" path="res://assets/animations/coeur/a-batement-de-coeurs-3366.png" id="399_wi87f"]
+[ext_resource type="Texture2D" uid="uid://bi56ovmexl5ji" path="res://assets/animations/coeur/a-batement-de-coeurs-3367.png" id="400_f5o3v"]
+[ext_resource type="Texture2D" uid="uid://b7q1s2acimw1" path="res://assets/animations/coeur/a-batement-de-coeurs-3368.png" id="401_tu1dk"]
+[ext_resource type="Texture2D" uid="uid://xm71rl3qrone" path="res://assets/animations/coeur/a-batement-de-coeurs-3369.png" id="402_bd2ll"]
+[ext_resource type="Texture2D" uid="uid://ceqyjj5j2x7if" path="res://assets/animations/coeur/a-batement-de-coeurs-3370.png" id="403_j8op5"]
+[ext_resource type="Texture2D" uid="uid://bquevarfufoan" path="res://assets/animations/coeur/a-batement-de-coeurs-3371.png" id="404_snmg1"]
+[ext_resource type="Texture2D" uid="uid://c5oe4lwjwrk6k" path="res://assets/animations/coeur/a-batement-de-coeurs-3372.png" id="405_7oouw"]
+[ext_resource type="Texture2D" uid="uid://bo6as40on6d11" path="res://assets/animations/coeur/a-batement-de-coeurs-3373.png" id="406_153md"]
+[ext_resource type="Texture2D" uid="uid://dw2l1srljmx1y" path="res://assets/animations/coeur/a-batement-de-coeurs-3374.png" id="407_u6hvk"]
+[ext_resource type="Texture2D" uid="uid://dsd74px8ux1fd" path="res://assets/animations/coeur/a-batement-de-coeurs-3375.png" id="408_ude41"]
+[ext_resource type="Texture2D" uid="uid://cn4g1axav6qrk" path="res://assets/animations/coeur/a-batement-de-coeurs-3376.png" id="409_m6sp7"]
+[ext_resource type="Texture2D" uid="uid://cs60bb37qpd5g" path="res://assets/animations/coeur/a-batement-de-coeurs-3377.png" id="410_jlhuh"]
+[ext_resource type="Texture2D" uid="uid://x2tpdhoyyuqg" path="res://assets/animations/coeur/a-batement-de-coeurs-3378.png" id="411_kunb7"]
+[ext_resource type="Texture2D" uid="uid://xiwl2thnbw" path="res://assets/animations/coeur/a-batement-de-coeurs-3379.png" id="412_4a4r4"]
+[ext_resource type="Texture2D" uid="uid://b5l1upun6w0l4" path="res://assets/animations/coeur/a-batement-de-coeurs-3380.png" id="413_oxlx1"]
+[ext_resource type="Texture2D" uid="uid://l84keylyb0ef" path="res://assets/animations/coeur/a-batement-de-coeurs-3381.png" id="414_48k3g"]
+[ext_resource type="Texture2D" uid="uid://cnqwk50akymq4" path="res://assets/animations/coeur/a-batement-de-coeurs-3382.png" id="415_e5p34"]
+[ext_resource type="Texture2D" uid="uid://cm3piuf45vbm4" path="res://assets/animations/coeur/a-batement-de-coeurs-3383.png" id="416_nbkxr"]
+[ext_resource type="Texture2D" uid="uid://b1g8dchmxuwdq" path="res://assets/animations/coeur/a-batement-de-coeurs-3384.png" id="417_woh4q"]
+[ext_resource type="Texture2D" uid="uid://mlymnls8go8a" path="res://assets/animations/coeur/a-batement-de-coeurs-3385.png" id="418_0yh06"]
+[ext_resource type="Texture2D" uid="uid://br8g5fbqyiqg5" path="res://assets/animations/coeur/a-batement-de-coeurs-3386.png" id="419_bslrg"]
+[ext_resource type="Texture2D" uid="uid://ey71ysgee84o" path="res://assets/animations/coeur/a-batement-de-coeurs-3387.png" id="420_ok3yh"]
+[ext_resource type="Texture2D" uid="uid://bum0sd26an4ij" path="res://assets/animations/coeur/a-batement-de-coeurs-3388.png" id="421_47l0m"]
+[ext_resource type="Texture2D" uid="uid://dkka3pjyvxisa" path="res://assets/animations/coeur/a-batement-de-coeurs-3389.png" id="422_u6a6i"]
+[ext_resource type="Texture2D" uid="uid://btll61hv5hrwp" path="res://assets/animations/coeur/a-batement-de-coeurs-3390.png" id="423_h1in7"]
+[ext_resource type="Texture2D" uid="uid://disvf2ua5tnla" path="res://assets/animations/coeur/a-batement-de-coeurs-3391.png" id="424_yspxd"]
+[ext_resource type="Texture2D" uid="uid://dog0sqjkjc366" path="res://assets/animations/coeur/a-batement-de-coeurs-3392.png" id="425_jrxqw"]
+[ext_resource type="Texture2D" uid="uid://82u5stw367a6" path="res://assets/animations/coeur/a-batement-de-coeurs-3393.png" id="426_xc2g2"]
+[ext_resource type="Texture2D" uid="uid://r48om0k1k8u1" path="res://assets/animations/coeur/a-batement-de-coeurs-3394.png" id="427_wdoh8"]
+[ext_resource type="Texture2D" uid="uid://1ntx0rxcgjs" path="res://assets/animations/coeur/a-batement-de-coeurs-3395.png" id="428_sfpah"]
+[ext_resource type="Texture2D" uid="uid://7fwmeljljfwb" path="res://assets/animations/coeur/a-batement-de-coeurs-3396.png" id="429_8dqb5"]
+[ext_resource type="Texture2D" uid="uid://dd2otq8xmyek6" path="res://assets/animations/coeur/a-batement-de-coeurs-3397.png" id="430_d2tnr"]
+[ext_resource type="Texture2D" uid="uid://byxxei1mm1y62" path="res://assets/animations/coeur/a-batement-de-coeurs-3398.png" id="431_bscv1"]
+[ext_resource type="Texture2D" uid="uid://bafyraxtgs2hs" path="res://assets/animations/coeur/a-batement-de-coeurs-3399.png" id="432_7g3qa"]
+[ext_resource type="Texture2D" uid="uid://brf2nfxyske45" path="res://assets/animations/coeur/a-batement-de-coeurs-3400.png" id="433_11g6p"]
+[ext_resource type="Texture2D" uid="uid://b4bob45iaxnp8" path="res://assets/animations/coeur/a-batement-de-coeurs-3401.png" id="434_w83r8"]
+[ext_resource type="Texture2D" uid="uid://cquufp15gcw1y" path="res://assets/animations/coeur/a-batement-de-coeurs-3402.png" id="435_swu1n"]
+[ext_resource type="Texture2D" uid="uid://cg57gi08njsdd" path="res://assets/animations/coeur/a-batement-de-coeurs-3403.png" id="436_53e44"]
+[ext_resource type="Texture2D" uid="uid://msarb1vbxi4v" path="res://assets/animations/coeur/a-batement-de-coeurs-3404.png" id="437_mmhdw"]
+[ext_resource type="Texture2D" uid="uid://b13xe00wmaere" path="res://assets/animations/coeur/a-batement-de-coeurs-3405.png" id="438_3erl2"]
+[ext_resource type="Texture2D" uid="uid://dskr4sd2a5p8i" path="res://assets/animations/coeur/a-batement-de-coeurs-3406.png" id="439_b2wmy"]
+[ext_resource type="Texture2D" uid="uid://d0uml80iuyh73" path="res://assets/animations/coeur/a-batement-de-coeurs-3407.png" id="440_h356c"]
+[ext_resource type="Texture2D" uid="uid://bkckyyra403ws" path="res://assets/animations/coeur/a-batement-de-coeurs-3408.png" id="441_gefe4"]
+[ext_resource type="Texture2D" uid="uid://ukoffqj4cokm" path="res://assets/animations/coeur/a-batement-de-coeurs-3409.png" id="442_1qan8"]
+[ext_resource type="Texture2D" uid="uid://cxxjcedgxrpiq" path="res://assets/animations/coeur/a-batement-de-coeurs-3410.png" id="443_1aa0o"]
+[ext_resource type="Texture2D" uid="uid://dpciuhf8h734g" path="res://assets/animations/coeur/a-batement-de-coeurs-3411.png" id="444_h5ktq"]
+[ext_resource type="Texture2D" uid="uid://bkaxyujey62dk" path="res://assets/animations/coeur/a-batement-de-coeurs-3412.png" id="445_gwkhf"]
+[ext_resource type="Texture2D" uid="uid://jksvx6sclwl6" path="res://assets/animations/coeur/a-batement-de-coeurs-3413.png" id="446_fmy8o"]
+[ext_resource type="Texture2D" uid="uid://c5831k8wygrbb" path="res://assets/animations/coeur/a-batement-de-coeurs-3414.png" id="447_mupy6"]
+[ext_resource type="Texture2D" uid="uid://dr4bf04v8fpyi" path="res://assets/animations/coeur/a-batement-de-coeurs-3415.png" id="448_euuja"]
+[ext_resource type="Texture2D" uid="uid://qvqd5j8ig6ax" path="res://assets/animations/coeur/a-batement-de-coeurs-3416.png" id="449_ep16y"]
+[ext_resource type="Texture2D" uid="uid://erhuicgcrf10" path="res://assets/animations/coeur/a-batement-de-coeurs-3417.png" id="450_23teu"]
+[ext_resource type="Texture2D" uid="uid://s5lh4vlksm3i" path="res://assets/animations/coeur/a-batement-de-coeurs-3418.png" id="451_y8jph"]
+[ext_resource type="Texture2D" uid="uid://8w2ewbe34fj3" path="res://assets/animations/coeur/a-batement-de-coeurs-3419.png" id="452_iptqv"]
+[ext_resource type="Texture2D" uid="uid://dta0oifu61yr3" path="res://assets/animations/coeur/a-batement-de-coeurs-3420.png" id="453_4334h"]
+[ext_resource type="Texture2D" uid="uid://ct1rm4nxk7xnf" path="res://assets/animations/coeur/a-batement-de-coeurs-3421.png" id="454_ke6xc"]
+[ext_resource type="Texture2D" uid="uid://btrtpt6xtb1t8" path="res://assets/animations/coeur/a-batement-de-coeurs-3422.png" id="455_8s1sj"]
+[ext_resource type="Texture2D" uid="uid://dofk7xqsjlofr" path="res://assets/animations/coeur/a-batement-de-coeurs-3423.png" id="456_m4708"]
+[ext_resource type="Texture2D" uid="uid://5d68cbv12mvq" path="res://assets/animations/coeur/a-batement-de-coeurs-3424.png" id="457_rdbt3"]
+[ext_resource type="Texture2D" uid="uid://br8144oj03rwp" path="res://assets/animations/coeur/a-batement-de-coeurs-3425.png" id="458_qnsfg"]
+[ext_resource type="Texture2D" uid="uid://bj2fwa07d5l62" path="res://assets/animations/coeur/a-batement-de-coeurs-3426.png" id="459_i72l1"]
+[ext_resource type="Texture2D" uid="uid://bimhqs4xc3epd" path="res://assets/animations/coeur/a-batement-de-coeurs-3427.png" id="460_rdfey"]
+[ext_resource type="Texture2D" uid="uid://2msbu2u0y0h2" path="res://assets/animations/coeur/a-batement-de-coeurs-3428.png" id="461_fhguv"]
+[ext_resource type="Texture2D" uid="uid://btkhvg7m5budk" path="res://assets/animations/coeur/a-batement-de-coeurs-3429.png" id="462_emw8c"]
+[ext_resource type="Texture2D" uid="uid://bxhav3ugwltvj" path="res://assets/animations/coeur/a-batement-de-coeurs-3430.png" id="463_muwpw"]
+[ext_resource type="Texture2D" uid="uid://btdqh0ly3k4i7" path="res://assets/animations/coeur/a-batement-de-coeurs-3431.png" id="464_8n020"]
+[ext_resource type="Texture2D" uid="uid://banqgxirw51pw" path="res://assets/animations/coeur/a-batement-de-coeurs-3432.png" id="465_ngvox"]
+[ext_resource type="Texture2D" uid="uid://ehusnep167mq" path="res://assets/animations/coeur/a-batement-de-coeurs-3433.png" id="466_r234v"]
+[ext_resource type="Texture2D" uid="uid://brjq7nlpo7nn0" path="res://assets/animations/coeur/a-batement-de-coeurs-3434.png" id="467_vpdny"]
+[ext_resource type="Texture2D" uid="uid://4ehxcw2i1o7a" path="res://assets/animations/coeur/a-batement-de-coeurs-3435.png" id="468_8jnfi"]
+[ext_resource type="Texture2D" uid="uid://bx1ok2hv6we2l" path="res://assets/animations/coeur/a-batement-de-coeurs-3436.png" id="469_2fsx0"]
+[ext_resource type="Texture2D" uid="uid://d0mbuqdfcuyaq" path="res://assets/animations/coeur/a-batement-de-coeurs-3437.png" id="470_0qw4v"]
+[ext_resource type="Texture2D" uid="uid://dobu7hphf46w7" path="res://assets/animations/coeur/a-batement-de-coeurs-3438.png" id="471_sqkhy"]
+[ext_resource type="Texture2D" uid="uid://bew1x0bhs3m33" path="res://assets/animations/coeur/a-batement-de-coeurs-3439.png" id="472_fxtqh"]
+[ext_resource type="Texture2D" uid="uid://c4voqkktpm8q7" path="res://assets/animations/coeur/a-batement-de-coeurs-3440.png" id="473_fids0"]
+[ext_resource type="Texture2D" uid="uid://dreq1tmnqgahh" path="res://assets/animations/coeur/a-batement-de-coeurs-3441.png" id="474_xh425"]
+[ext_resource type="Texture2D" uid="uid://c6t51hly1euis" path="res://assets/animations/coeur/a-batement-de-coeurs-3442.png" id="475_dure0"]
+[ext_resource type="Texture2D" uid="uid://crax185cd1ym2" path="res://assets/animations/coeur/a-batement-de-coeurs-3443.png" id="476_7ft8r"]
+[ext_resource type="Texture2D" uid="uid://dwkidk5io73qf" path="res://assets/animations/coeur/a-batement-de-coeurs-3444.png" id="477_tmyjo"]
+[ext_resource type="Texture2D" uid="uid://cmf1ojc4pputh" path="res://assets/animations/coeur/a-batement-de-coeurs-3445.png" id="478_nbyv2"]
+[ext_resource type="Texture2D" uid="uid://ca1x34nsjr5vi" path="res://assets/animations/coeur/a-batement-de-coeurs-3446.png" id="479_1g2iu"]
+[ext_resource type="Texture2D" uid="uid://biq4ta7gojt0d" path="res://assets/animations/coeur/a-batement-de-coeurs-3447.png" id="480_2npyw"]
+[ext_resource type="Texture2D" uid="uid://b0rmywrs4fna" path="res://assets/animations/coeur/a-batement-de-coeurs-3448.png" id="481_c0fs6"]
+[ext_resource type="Texture2D" uid="uid://c5rjw6d4fr2dl" path="res://assets/animations/coeur/a-batement-de-coeurs-3449.png" id="482_ctoww"]
+[ext_resource type="Texture2D" uid="uid://csckflm0xcme7" path="res://assets/animations/coeur/a-batement-de-coeurs-3450.png" id="483_5uxpy"]
+[ext_resource type="Texture2D" uid="uid://6sbfmd06hsjv" path="res://assets/animations/coeur/a-batement-de-coeurs-3451.png" id="484_ujc57"]
+[ext_resource type="Texture2D" uid="uid://bmg63efjw7gss" path="res://assets/animations/coeur/a-batement-de-coeurs-3452.png" id="485_t4hwp"]
+[ext_resource type="Texture2D" uid="uid://k1mtputfk0d3" path="res://assets/animations/coeur/a-batement-de-coeurs-3453.png" id="486_beql1"]
+[ext_resource type="Texture2D" uid="uid://dxw8w5r0d0koj" path="res://assets/animations/coeur/a-batement-de-coeurs-3454.png" id="487_k0gah"]
+[ext_resource type="Texture2D" uid="uid://v6i83dv4dkmm" path="res://assets/animations/coeur/a-batement-de-coeurs-3455.png" id="488_4mdu0"]
+[ext_resource type="Texture2D" uid="uid://c3gheqi87ga6m" path="res://assets/animations/coeur/a-batement-de-coeurs-3456.png" id="489_0qmeq"]
+[ext_resource type="Texture2D" uid="uid://gfmi0lq38n45" path="res://assets/animations/coeur/a-batement-de-coeurs-3457.png" id="490_gyxf5"]
+[ext_resource type="Texture2D" uid="uid://ccx5lcyf7i1db" path="res://assets/animations/coeur/a-batement-de-coeurs-3458.png" id="491_y6p3n"]
+[ext_resource type="Texture2D" uid="uid://c0s444dy0fiar" path="res://assets/animations/coeur/a-batement-de-coeurs-3459.png" id="492_bypkg"]
+[ext_resource type="Texture2D" uid="uid://132ycnqw58t5" path="res://assets/animations/coeur/a-batement-de-coeurs-3460.png" id="493_m2gis"]
+[ext_resource type="Texture2D" uid="uid://b3seg4fo2ovpi" path="res://assets/animations/coeur/a-batement-de-coeurs-3461.png" id="494_evs82"]
+[ext_resource type="Texture2D" uid="uid://cwss0c56rt8ct" path="res://assets/animations/coeur/a-batement-de-coeurs-3462.png" id="495_1o6x1"]
+[ext_resource type="Texture2D" uid="uid://cx8lry5ummkbr" path="res://assets/animations/coeur/a-batement-de-coeurs-3463.png" id="496_5w6oi"]
+[ext_resource type="Texture2D" uid="uid://wrxah0d8wrce" path="res://assets/animations/coeur/a-batement-de-coeurs-3464.png" id="497_ko7d1"]
+[ext_resource type="Texture2D" uid="uid://dmd661c2c2qt3" path="res://assets/animations/coeur/a-batement-de-coeurs-3465.png" id="498_sp7ym"]
+[ext_resource type="Texture2D" uid="uid://s26nlp21141u" path="res://assets/animations/coeur/a-batement-de-coeurs-3466.png" id="499_8xuu1"]
+[ext_resource type="Texture2D" uid="uid://cfllh6gb007yu" path="res://assets/animations/coeur/a-batement-de-coeurs-3467.png" id="500_qbyy1"]
+[ext_resource type="Texture2D" uid="uid://dw55o36u5ftwd" path="res://assets/animations/coeur/a-batement-de-coeurs-3468.png" id="501_johgy"]
+[ext_resource type="Texture2D" uid="uid://ftodofvvrl8n" path="res://assets/animations/coeur/a-batement-de-coeurs-3469.png" id="502_c1aqt"]
+[ext_resource type="Texture2D" uid="uid://dkasqm4hq7xo6" path="res://assets/animations/coeur/a-batement-de-coeurs-3470.png" id="503_5wom5"]
+[ext_resource type="Texture2D" uid="uid://280sa3d1w26n" path="res://assets/animations/coeur/a-batement-de-coeurs-3471.png" id="504_g8fq8"]
+[ext_resource type="Texture2D" uid="uid://c36eo00sl61cp" path="res://assets/animations/coeur/a-batement-de-coeurs-3472.png" id="505_x8cdc"]
+[ext_resource type="Texture2D" uid="uid://foo2p4baqlvf" path="res://assets/animations/coeur/a-batement-de-coeurs-3473.png" id="506_q07jo"]
+[ext_resource type="Texture2D" uid="uid://bv0ouc6hejs1h" path="res://assets/animations/coeur/a-batement-de-coeurs-3474.png" id="507_8l0fm"]
+[ext_resource type="Texture2D" uid="uid://rpa5cwnf0ppx" path="res://assets/animations/coeur/a-batement-de-coeurs-3475.png" id="508_74cxo"]
+[ext_resource type="Texture2D" uid="uid://dxbuymwn1xgh4" path="res://assets/animations/coeur/a-batement-de-coeurs-3476.png" id="509_wyj7f"]
+[ext_resource type="Texture2D" uid="uid://dntxijcle1yte" path="res://assets/animations/coeur/a-batement-de-coeurs-3477.png" id="510_cdbj1"]
+[ext_resource type="Texture2D" uid="uid://7spnk8vy1uvr" path="res://assets/animations/coeur/a-batement-de-coeurs-3478.png" id="511_82a3u"]
+[ext_resource type="Texture2D" uid="uid://bi02amuswc3ih" path="res://assets/animations/coeur/a-batement-de-coeurs-3479.png" id="512_gdbir"]
+[ext_resource type="Texture2D" uid="uid://cj3ojjpjnrf10" path="res://assets/animations/coeur/a-batement-de-coeurs-3480.png" id="513_3blnk"]
+[ext_resource type="Texture2D" uid="uid://b237rp8p13bqc" path="res://assets/animations/coeur/a-batement-de-coeurs-3481.png" id="514_ysxd1"]
+[ext_resource type="Texture2D" uid="uid://j0gdohf5osfa" path="res://assets/animations/coeur/a-batement-de-coeurs-3482.png" id="515_87wps"]
+[ext_resource type="Texture2D" uid="uid://ck3v3nu7ari6h" path="res://assets/animations/coeur/a-batement-de-coeurs-3483.png" id="516_8vhcv"]
+[ext_resource type="Texture2D" uid="uid://d4d5rxmjd0b28" path="res://assets/animations/coeur/a-batement-de-coeurs-3484.png" id="517_hlvey"]
+[ext_resource type="Texture2D" uid="uid://cp0cw01b52vpi" path="res://assets/animations/coeur/a-batement-de-coeurs-3485.png" id="518_iuab5"]
+[ext_resource type="Texture2D" uid="uid://dxqcvupkc1q4" path="res://assets/animations/coeur/a-batement-de-coeurs-3486.png" id="519_2auf3"]
+[ext_resource type="Texture2D" uid="uid://c73keu5td8pb5" path="res://assets/animations/coeur/a-batement-de-coeurs-3487.png" id="520_vg6am"]
+[ext_resource type="Texture2D" uid="uid://dn365rm2bhyew" path="res://assets/animations/coeur/a-batement-de-coeurs-3488.png" id="521_2u6oc"]
+[ext_resource type="Texture2D" uid="uid://du6yahrut3c7u" path="res://assets/animations/coeur/a-batement-de-coeurs-3489.png" id="522_jk407"]
+[ext_resource type="Texture2D" uid="uid://dbhjaaxhfgaug" path="res://assets/animations/coeur/a-batement-de-coeurs-3490.png" id="523_bqxhn"]
+[ext_resource type="Texture2D" uid="uid://cc2ypwgnhf2o8" path="res://assets/animations/coeur/a-batement-de-coeurs-3491.png" id="524_wmmwr"]
+[ext_resource type="Texture2D" uid="uid://bx21j6t4rvw0p" path="res://assets/animations/coeur/a-batement-de-coeurs-3492.png" id="525_fsqjo"]
+[ext_resource type="Texture2D" uid="uid://48735jeoriw0" path="res://assets/animations/coeur/a-batement-de-coeurs-3493.png" id="526_mmxml"]
+[ext_resource type="Texture2D" uid="uid://do482tv45y1v3" path="res://assets/animations/coeur/a-batement-de-coeurs-3494.png" id="527_qyvpv"]
+[ext_resource type="Texture2D" uid="uid://kj0sofnqch2" path="res://assets/animations/coeur/a-batement-de-coeurs-3495.png" id="528_va7yd"]
+[ext_resource type="Texture2D" uid="uid://csuwbjs2ckxjs" path="res://assets/animations/coeur/a-batement-de-coeurs-3496.png" id="529_olndd"]
+[ext_resource type="Texture2D" uid="uid://b4krywoo63s7o" path="res://assets/animations/coeur/a-batement-de-coeurs-3497.png" id="530_v7eao"]
+[ext_resource type="Texture2D" uid="uid://bpnqjgfqpkw17" path="res://assets/animations/coeur/a-batement-de-coeurs-3498.png" id="531_g0rfj"]
+[ext_resource type="Texture2D" uid="uid://rwbyn4ba2sko" path="res://assets/animations/coeur/a-batement-de-coeurs-3499.png" id="532_xke64"]
+[ext_resource type="Texture2D" uid="uid://dubt3135yf5fy" path="res://assets/animations/coeur/a-batement-de-coeurs-3500.png" id="533_256fg"]
+[ext_resource type="Texture2D" uid="uid://bdakd03xkft3" path="res://assets/animations/coeur/a-batement-de-coeurs-3501.png" id="534_g8vo5"]
+[ext_resource type="Texture2D" uid="uid://bvmbu5340xts" path="res://assets/animations/coeur/a-batement-de-coeurs-3502.png" id="535_j6bu3"]
+[ext_resource type="Texture2D" uid="uid://dwv5fvcqts2ae" path="res://assets/animations/coeur/a-batement-de-coeurs-3503.png" id="536_u02j1"]
+[ext_resource type="Texture2D" uid="uid://e1bdmnd7cdo4" path="res://assets/animations/coeur/a-batement-de-coeurs-3504.png" id="537_6m3wv"]
+[ext_resource type="Texture2D" uid="uid://viap486xijwk" path="res://assets/animations/coeur/a-batement-de-coeurs-3505.png" id="538_7eq27"]
+[ext_resource type="Texture2D" uid="uid://10cy64mts7ut" path="res://assets/animations/coeur/a-batement-de-coeurs-3506.png" id="539_eny7n"]
+[ext_resource type="Texture2D" uid="uid://dplplp6ia6roy" path="res://assets/animations/coeur/a-batement-de-coeurs-3507.png" id="540_y5ktg"]
+[ext_resource type="Texture2D" uid="uid://bub2oarmln2mk" path="res://assets/animations/coeur/a-batement-de-coeurs-3508.png" id="541_ssixy"]
+[ext_resource type="Texture2D" uid="uid://d3juq8fnjp3dv" path="res://assets/animations/coeur/a-batement-de-coeurs-3509.png" id="542_7ioab"]
+[ext_resource type="Texture2D" uid="uid://dtjj5w7wohcme" path="res://assets/animations/coeur/a-batement-de-coeurs-3510.png" id="543_qretd"]
+[ext_resource type="Texture2D" uid="uid://ckt1cvh2xg7es" path="res://assets/animations/coeur/a-batement-de-coeurs-3511.png" id="544_nbbsn"]
+[ext_resource type="Texture2D" uid="uid://cguytwaa3ohht" path="res://assets/animations/coeur/a-batement-de-coeurs-3512.png" id="545_qrea5"]
+[ext_resource type="Texture2D" uid="uid://bcypjfwvxw1aw" path="res://assets/animations/coeur/a-batement-de-coeurs-3513.png" id="546_ab4uf"]
+[ext_resource type="Texture2D" uid="uid://dou27dbtpe7r" path="res://assets/animations/coeur/a-batement-de-coeurs-3514.png" id="547_fhfyl"]
+[ext_resource type="Texture2D" uid="uid://bvxx1ilaf4gbx" path="res://assets/animations/coeur/a-batement-de-coeurs-3515.png" id="548_py7je"]
+[ext_resource type="Texture2D" uid="uid://dhwif5kckhybg" path="res://assets/animations/coeur/a-batement-de-coeurs-3516.png" id="549_qa7si"]
+[ext_resource type="Texture2D" uid="uid://di4bor1fq6qrd" path="res://assets/animations/coeur/a-batement-de-coeurs-3517.png" id="550_kvcg4"]
+[ext_resource type="Texture2D" uid="uid://bsmqo38l2flv8" path="res://assets/animations/coeur/a-batement-de-coeurs-3518.png" id="551_170ku"]
+[ext_resource type="Texture2D" uid="uid://cg514o15de10n" path="res://assets/animations/coeur/a-batement-de-coeurs-3519.png" id="552_i7hpa"]
+[ext_resource type="Texture2D" uid="uid://d0kmnwyvj4lkl" path="res://assets/animations/coeur/a-batement-de-coeurs-3520.png" id="553_3t4ps"]
+[ext_resource type="Texture2D" uid="uid://dycqwn6cql3st" path="res://assets/animations/coeur/a-batement-de-coeurs-3521.png" id="554_ja7kt"]
+[ext_resource type="Texture2D" uid="uid://clcdtkv51n1mo" path="res://assets/animations/coeur/a-batement-de-coeurs-3522.png" id="555_hbou6"]
+[ext_resource type="Texture2D" uid="uid://vrwn1oq45bif" path="res://assets/animations/coeur/a-batement-de-coeurs-3523.png" id="556_vjquu"]
+[ext_resource type="Texture2D" uid="uid://bj8oe2pgsfi8m" path="res://assets/animations/coeur/a-batement-de-coeurs-3524.png" id="557_xmb8y"]
+[ext_resource type="Texture2D" uid="uid://b7ir8b13i0ybg" path="res://assets/animations/coeur/a-batement-de-coeurs-3525.png" id="558_uns0r"]
+[ext_resource type="Texture2D" uid="uid://eagwxgrx7nd" path="res://assets/animations/coeur/a-batement-de-coeurs-3526.png" id="559_dbb2k"]
+[ext_resource type="Texture2D" uid="uid://bijxm17jmpc8b" path="res://assets/animations/coeur/a-batement-de-coeurs-3527.png" id="560_xv6ik"]
+[ext_resource type="Texture2D" uid="uid://bronp7dopxoto" path="res://assets/animations/coeur/a-batement-de-coeurs-3528.png" id="561_djf5t"]
+[ext_resource type="Texture2D" uid="uid://cs81va73pgo3d" path="res://assets/animations/coeur/a-batement-de-coeurs-3529.png" id="562_aiako"]
+[ext_resource type="Texture2D" uid="uid://7wfabx4hpgfi" path="res://assets/animations/coeur/a-batement-de-coeurs-3530.png" id="563_8npu7"]
+[ext_resource type="Texture2D" uid="uid://b8a03a3sfseur" path="res://assets/animations/coeur/a-batement-de-coeurs-3531.png" id="564_ao48r"]
+[ext_resource type="Texture2D" uid="uid://cm4pkxbp7lv88" path="res://assets/animations/coeur/a-batement-de-coeurs-3532.png" id="565_3xxs5"]
+[ext_resource type="Texture2D" uid="uid://bdcg5kegrhj1e" path="res://assets/animations/coeur/a-batement-de-coeurs-3533.png" id="566_dk1pr"]
+[ext_resource type="Texture2D" uid="uid://baf12ni3n7l8b" path="res://assets/animations/coeur/a-batement-de-coeurs-3534.png" id="567_kg1tr"]
+[ext_resource type="Texture2D" uid="uid://bjvi74ndh2db8" path="res://assets/animations/coeur/a-batement-de-coeurs-3535.png" id="568_8h5by"]
+[ext_resource type="Texture2D" uid="uid://b88xvoq4dutok" path="res://assets/animations/coeur/a-batement-de-coeurs-3536.png" id="569_vm0oy"]
+[ext_resource type="Texture2D" uid="uid://cyos6soyhhkid" path="res://assets/animations/coeur/a-batement-de-coeurs-3537.png" id="570_55q6k"]
+[ext_resource type="Texture2D" uid="uid://cirqpw22t8dlr" path="res://assets/animations/coeur/a-batement-de-coeurs-3538.png" id="571_75tki"]
+[ext_resource type="Texture2D" uid="uid://b84qdivk1yvk2" path="res://assets/animations/coeur/a-batement-de-coeurs-3539.png" id="572_k5kxj"]
+[ext_resource type="Texture2D" uid="uid://ba8dgr61q54gw" path="res://assets/animations/coeur/a-batement-de-coeurs-3540.png" id="573_bbk0c"]
+[ext_resource type="Texture2D" uid="uid://d1f62a0t0dxg7" path="res://assets/animations/coeur/a-batement-de-coeurs-3541.png" id="574_xkdjj"]
+[ext_resource type="Texture2D" uid="uid://b08efolbu3r6h" path="res://assets/animations/coeur/a-batement-de-coeurs-3542.png" id="575_25yiu"]
+[ext_resource type="Texture2D" uid="uid://2ad0ihf4r8ee" path="res://assets/animations/coeur/a-batement-de-coeurs-3543.png" id="576_ftdxb"]
+[ext_resource type="Texture2D" uid="uid://ci7fukxumxe8g" path="res://assets/animations/coeur/a-batement-de-coeurs-3544.png" id="577_rd5ek"]
+[ext_resource type="Texture2D" uid="uid://dkisys56x8wrt" path="res://assets/animations/coeur/a-batement-de-coeurs-3545.png" id="578_k2h3k"]
+[ext_resource type="Texture2D" uid="uid://2gci6t2371cx" path="res://assets/animations/coeur/a-batement-de-coeurs-3546.png" id="579_ca30j"]
+[ext_resource type="Texture2D" uid="uid://c5vxgn0ya7gyw" path="res://assets/animations/coeur/a-batement-de-coeurs-3547.png" id="580_tf5ht"]
+[ext_resource type="Texture2D" uid="uid://c73qi6o61ox5e" path="res://assets/animations/coeur/a-batement-de-coeurs-3548.png" id="581_v2we3"]
+[ext_resource type="Texture2D" uid="uid://bq373p10sipvk" path="res://assets/animations/coeur/a-batement-de-coeurs-3549.png" id="582_ev1rs"]
+[ext_resource type="Texture2D" uid="uid://biroqc1qge63d" path="res://assets/animations/coeur/a-batement-de-coeurs-3550.png" id="583_vla0e"]
+[ext_resource type="Texture2D" uid="uid://dtqylsavwbsqv" path="res://assets/animations/coeur/a-batement-de-coeurs-3551.png" id="584_snckf"]
+[ext_resource type="Texture2D" uid="uid://dksdnwb67g4hh" path="res://assets/animations/coeur/a-batement-de-coeurs-3552.png" id="585_3ivoo"]
+[ext_resource type="Texture2D" uid="uid://d27stovh513kf" path="res://assets/animations/coeur/a-batement-de-coeurs-3553.png" id="586_ljmuq"]
+[ext_resource type="Texture2D" uid="uid://yhx64xsqijcv" path="res://assets/animations/coeur/a-batement-de-coeurs-3554.png" id="587_lkl0b"]
+[ext_resource type="Texture2D" uid="uid://liec3e24w83f" path="res://assets/animations/coeur/a-batement-de-coeurs-3555.png" id="588_thy5o"]
+[ext_resource type="Texture2D" uid="uid://dlegge61rmu1p" path="res://assets/animations/coeur/a-batement-de-coeurs-3556.png" id="589_oux7q"]
+[ext_resource type="Texture2D" uid="uid://bjfm8ufe3m72r" path="res://assets/animations/coeur/a-batement-de-coeurs-3557.png" id="590_phddy"]
+[ext_resource type="Texture2D" uid="uid://ddnf74rugf2tj" path="res://assets/animations/coeur/a-batement-de-coeurs-3558.png" id="591_p1hp4"]
+[ext_resource type="Texture2D" uid="uid://brqal6kqkc4mx" path="res://assets/animations/coeur/a-batement-de-coeurs-3559.png" id="592_n4j64"]
+[ext_resource type="Texture2D" uid="uid://dh1dfy7ipi2wb" path="res://assets/animations/coeur/a-batement-de-coeurs-3560.png" id="593_fp3sf"]
+[ext_resource type="Texture2D" uid="uid://cacd4hckfguki" path="res://assets/animations/coeur/a-batement-de-coeurs-3561.png" id="594_pylap"]
+[ext_resource type="Texture2D" uid="uid://bp6j4j5q1jxcn" path="res://assets/animations/coeur/a-batement-de-coeurs-3562.png" id="595_la34o"]
+[ext_resource type="Texture2D" uid="uid://bqmba3jckvr6o" path="res://assets/animations/coeur/a-batement-de-coeurs-3563.png" id="596_q1woj"]
+[ext_resource type="Texture2D" uid="uid://bfbtggyi05jcy" path="res://assets/animations/coeur/a-batement-de-coeurs-3564.png" id="597_purwo"]
+[ext_resource type="Texture2D" uid="uid://c71dqxs6o3x6g" path="res://assets/animations/coeur/a-batement-de-coeurs-3565.png" id="598_n6xe4"]
+[ext_resource type="Texture2D" uid="uid://dhxi52nk1l5or" path="res://assets/animations/coeur/a-batement-de-coeurs-3566.png" id="599_2x3iq"]
+[ext_resource type="Texture2D" uid="uid://bj6mdryp81m8x" path="res://assets/animations/coeur/a-batement-de-coeurs-3567.png" id="600_ru5vi"]
+[ext_resource type="Texture2D" uid="uid://diboacihgnes5" path="res://assets/animations/coeur/a-batement-de-coeurs-3568.png" id="601_vrgw7"]
+[ext_resource type="Texture2D" uid="uid://cvq3xeufn2x0i" path="res://assets/animations/coeur/a-batement-de-coeurs-3569.png" id="602_1ltr2"]
+[ext_resource type="Texture2D" uid="uid://dhetvv0qurotc" path="res://assets/animations/coeur/a-batement-de-coeurs-3570.png" id="603_sk4a2"]
+[ext_resource type="Texture2D" uid="uid://e52105tuwir5" path="res://assets/animations/coeur/a-batement-de-coeurs-3571.png" id="604_ljy24"]
+[ext_resource type="Texture2D" uid="uid://du6lmfigtogtp" path="res://assets/animations/coeur/a-batement-de-coeurs-3572.png" id="605_2e73h"]
+[ext_resource type="Texture2D" uid="uid://dsbtefj3y5g03" path="res://assets/animations/coeur/a-batement-de-coeurs-3573.png" id="606_orpnh"]
+[ext_resource type="Texture2D" uid="uid://sij75pu2fjjt" path="res://assets/animations/coeur/a-batement-de-coeurs-3574.png" id="607_2turk"]
+[ext_resource type="Texture2D" uid="uid://c2p0dyetb55mc" path="res://assets/animations/coeur/a-batement-de-coeurs-3575.png" id="608_wnroj"]
+[ext_resource type="Texture2D" uid="uid://dng61xsih34py" path="res://assets/animations/coeur/a-batement-de-coeurs-3576.png" id="609_a5l38"]
+[ext_resource type="Texture2D" uid="uid://c1dmecocc5m1x" path="res://assets/animations/coeur/a-batement-de-coeurs-3577.png" id="610_lq3j8"]
+[ext_resource type="Texture2D" uid="uid://ksc5iwqrrfiq" path="res://assets/animations/coeur/a-batement-de-coeurs-3578.png" id="611_mfvyn"]
+[ext_resource type="Texture2D" uid="uid://p2or0kdc2nju" path="res://assets/animations/coeur/a-batement-de-coeurs-3579.png" id="612_sa842"]
+[ext_resource type="Texture2D" uid="uid://cwnlakoxfl8j7" path="res://assets/animations/coeur/a-batement-de-coeurs-3580.png" id="613_dfjsu"]
+[ext_resource type="Texture2D" uid="uid://d0c56oee6dsv5" path="res://assets/animations/coeur/a-batement-de-coeurs-3581.png" id="614_2s5ef"]
+[ext_resource type="Texture2D" uid="uid://d3xm6tw0b02fy" path="res://assets/animations/coeur/a-batement-de-coeurs-3582.png" id="615_j2ctq"]
+[ext_resource type="Texture2D" uid="uid://dd4ooq1lurf7i" path="res://assets/animations/coeur/a-batement-de-coeurs-3583.png" id="616_f4puu"]
+[ext_resource type="Texture2D" uid="uid://t76qmu24k6c0" path="res://assets/animations/coeur/a-batement-de-coeurs-3584.png" id="617_vw2cq"]
+[ext_resource type="Texture2D" uid="uid://byjkpaec5eebc" path="res://assets/animations/coeur/a-batement-de-coeurs-3585.png" id="618_5thcn"]
+[ext_resource type="Texture2D" uid="uid://b20eafo7ylgk1" path="res://assets/animations/coeur/a-batement-de-coeurs-3586.png" id="619_fguck"]
+[ext_resource type="Texture2D" uid="uid://dcvav2cn3jiqw" path="res://assets/animations/coeur/a-batement-de-coeurs-3587.png" id="620_o1ure"]
+[ext_resource type="Texture2D" uid="uid://wlidxv8ukvph" path="res://assets/animations/coeur/a-batement-de-coeurs-3588.png" id="621_c6sie"]
+[ext_resource type="Texture2D" uid="uid://bwufudolb52nc" path="res://assets/animations/coeur/a-batement-de-coeurs-3589.png" id="622_lugpj"]
+[ext_resource type="Texture2D" uid="uid://dfx6eo62qpuc4" path="res://assets/animations/coeur/a-batement-de-coeurs-3590.png" id="623_e2j75"]
+[ext_resource type="Texture2D" uid="uid://bdcuwaxn2ajrw" path="res://assets/animations/coeur/a-batement-de-coeurs-3591.png" id="624_6c8y6"]
+[ext_resource type="Texture2D" uid="uid://dqprtoi5yx07s" path="res://assets/animations/coeur/a-batement-de-coeurs-3592.png" id="625_1amko"]
+[ext_resource type="Texture2D" uid="uid://jr52dqmebttu" path="res://assets/animations/coeur/a-batement-de-coeurs-3593.png" id="626_3lxqe"]
+[ext_resource type="Texture2D" uid="uid://tcka7q2qy825" path="res://assets/animations/coeur/a-batement-de-coeurs-3594.png" id="627_ew2my"]
+[ext_resource type="Texture2D" uid="uid://c0iqdnkr8db3r" path="res://assets/animations/coeur/a-batement-de-coeurs-3595.png" id="628_kph06"]
+[ext_resource type="Texture2D" uid="uid://cesoqai3ayr65" path="res://assets/animations/coeur/a-batement-de-coeurs-3596.png" id="629_almog"]
+[ext_resource type="Texture2D" uid="uid://b6eno0kg7p6o1" path="res://assets/animations/coeur/a-batement-de-coeurs-3597.png" id="630_cwnbe"]
+[ext_resource type="Texture2D" uid="uid://0m8sineei7wl" path="res://assets/animations/coeur/a-batement-de-coeurs-3598.png" id="631_4ve6e"]
+[ext_resource type="Texture2D" uid="uid://c8kxwt5eu6eas" path="res://assets/animations/coeur/a-batement-de-coeurs-3599.png" id="632_7wm4u"]
+[ext_resource type="Texture2D" uid="uid://dlcu6qai6ccpl" path="res://assets/animations/coeur/a-batement-de-coeurs-3600.png" id="633_4c272"]
+[ext_resource type="Texture2D" uid="uid://kt86k4sqs1d4" path="res://assets/animations/coeur/a-batement-de-coeurs-3601.png" id="634_8opl6"]
+[ext_resource type="Texture2D" uid="uid://c5wcqytyp77a4" path="res://assets/animations/coeur/a-batement-de-coeurs-3602.png" id="635_8blw2"]
+[ext_resource type="Texture2D" uid="uid://crwmikylgg31w" path="res://assets/animations/coeur/a-batement-de-coeurs-3603.png" id="636_4eqvn"]
+[ext_resource type="Texture2D" uid="uid://blbro1g2pql5n" path="res://assets/animations/coeur/a-batement-de-coeurs-3604.png" id="637_lge37"]
+[ext_resource type="Texture2D" uid="uid://co7ft4xgk6eaa" path="res://assets/animations/coeur/a-batement-de-coeurs-3605.png" id="638_w1sfe"]
+[ext_resource type="Texture2D" uid="uid://3rlrcimkp554" path="res://assets/animations/coeur/a-batement-de-coeurs-3606.png" id="639_d12mq"]
+[ext_resource type="Texture2D" uid="uid://dc847fqpap6eb" path="res://assets/animations/coeur/a-batement-de-coeurs-3607.png" id="640_en13q"]
+[ext_resource type="Texture2D" uid="uid://dxr30dh2u5dxf" path="res://assets/animations/coeur/a-batement-de-coeurs-3608.png" id="641_aq7w2"]
+[ext_resource type="Texture2D" uid="uid://bfpjn2s6wwr0e" path="res://assets/animations/coeur/a-batement-de-coeurs-3609.png" id="642_ix50u"]
+[ext_resource type="Texture2D" uid="uid://c82ishged7wl3" path="res://assets/animations/coeur/a-batement-de-coeurs-3610.png" id="643_d54gm"]
+[ext_resource type="Texture2D" uid="uid://d3ifksfjp13g8" path="res://assets/animations/coeur/a-batement-de-coeurs-3611.png" id="644_eetsb"]
+[ext_resource type="Texture2D" uid="uid://doxee1cw50a3a" path="res://assets/animations/coeur/a-batement-de-coeurs-3612.png" id="645_3o7f2"]
+[ext_resource type="Texture2D" uid="uid://c8m50f1wfv4yg" path="res://assets/animations/coeur/a-batement-de-coeurs-3613.png" id="646_d6ddf"]
+[ext_resource type="Texture2D" uid="uid://dkwixuhuilfnk" path="res://assets/animations/coeur/a-batement-de-coeurs-3614.png" id="647_k27ou"]
+[ext_resource type="Texture2D" uid="uid://cdjfg6k1dpocw" path="res://assets/animations/coeur/a-batement-de-coeurs-3615.png" id="648_vshst"]
+[ext_resource type="Texture2D" uid="uid://bet7yunhkiebp" path="res://assets/animations/coeur/a-batement-de-coeurs-3616.png" id="649_03013"]
+[ext_resource type="Texture2D" uid="uid://dhsni4yd27p4n" path="res://assets/animations/coeur/a-batement-de-coeurs-3617.png" id="650_fpsgq"]
+[ext_resource type="Texture2D" uid="uid://1ro7xw55k3b5" path="res://assets/animations/coeur/a-batement-de-coeurs-3618.png" id="651_6o4v3"]
+[ext_resource type="Texture2D" uid="uid://blnd4m8736pxx" path="res://assets/animations/coeur/a-batement-de-coeurs-3619.png" id="652_rbktn"]
+[ext_resource type="Texture2D" uid="uid://b2caguuwe3mhx" path="res://assets/animations/coeur/a-batement-de-coeurs-3620.png" id="653_f4u8h"]
+[ext_resource type="Texture2D" uid="uid://dds2pvcmpkolf" path="res://assets/animations/coeur/a-batement-de-coeurs-3621.png" id="654_10lep"]
+[ext_resource type="Texture2D" uid="uid://sy25ny53n8q8" path="res://assets/animations/coeur/a-batement-de-coeurs-3622.png" id="655_rgi5u"]
+[ext_resource type="Texture2D" uid="uid://duakxx7k2vr8j" path="res://assets/animations/coeur/a-batement-de-coeurs-3623.png" id="656_w54vh"]
+[ext_resource type="Texture2D" uid="uid://bhk6x6sgikm5u" path="res://assets/animations/coeur/a-batement-de-coeurs-3624.png" id="657_ws5qo"]
+[ext_resource type="Texture2D" uid="uid://c5hx7diebv1ga" path="res://assets/animations/coeur/a-batement-de-coeurs-3625.png" id="658_r22rp"]
+[ext_resource type="Texture2D" uid="uid://jkhndy86hyxo" path="res://assets/animations/coeur/a-batement-de-coeurs-3626.png" id="659_vatqa"]
+[ext_resource type="Texture2D" uid="uid://b2eovokrlxapq" path="res://assets/animations/coeur/a-batement-de-coeurs-3627.png" id="660_p7d1o"]
+[ext_resource type="Texture2D" uid="uid://sdds2mm6viyy" path="res://assets/animations/coeur/a-batement-de-coeurs-3628.png" id="661_q8h3p"]
+[ext_resource type="Texture2D" uid="uid://dj3tcy3m2b8my" path="res://assets/animations/coeur/a-batement-de-coeurs-3629.png" id="662_0yggq"]
+[ext_resource type="Texture2D" uid="uid://ddag1kcxuer04" path="res://assets/animations/coeur/a-batement-de-coeurs-3630.png" id="663_e2w0x"]
+[ext_resource type="Texture2D" uid="uid://crjownusdlc73" path="res://assets/animations/coeur/a-batement-de-coeurs-3631.png" id="664_giwt2"]
+[ext_resource type="Texture2D" uid="uid://coaklpiw6nwh0" path="res://assets/animations/coeur/a-batement-de-coeurs-3632.png" id="665_vddtp"]
+[ext_resource type="Texture2D" uid="uid://du75kklvot714" path="res://assets/animations/coeur/a-batement-de-coeurs-3633.png" id="666_6utiq"]
+[ext_resource type="Texture2D" uid="uid://l8rvq0kj1m00" path="res://assets/animations/coeur/a-batement-de-coeurs-3634.png" id="667_vbli5"]
+[ext_resource type="Texture2D" uid="uid://dsug1mqpbcd5o" path="res://assets/animations/coeur/a-batement-de-coeurs-3635.png" id="668_tg3ug"]
+[ext_resource type="Texture2D" uid="uid://mrfx3ld402fr" path="res://assets/animations/coeur/a-batement-de-coeurs-3636.png" id="669_b4wh1"]
+[ext_resource type="Texture2D" uid="uid://cxgmco03eaaud" path="res://assets/animations/coeur/a-batement-de-coeurs-3637.png" id="670_geuqa"]
+[ext_resource type="Texture2D" uid="uid://bh5q57tlhoxkq" path="res://assets/animations/coeur/a-batement-de-coeurs-3638.png" id="671_4li6b"]
+[ext_resource type="Texture2D" uid="uid://dxjit5kk4o2nf" path="res://assets/animations/coeur/a-batement-de-coeurs-3639.png" id="672_u4qb0"]
+[ext_resource type="Texture2D" uid="uid://cfxrd58441ctq" path="res://assets/animations/coeur/a-batement-de-coeurs-3640.png" id="673_utsgq"]
+[ext_resource type="Texture2D" uid="uid://ck2fdltpqssb" path="res://assets/animations/coeur/a-batement-de-coeurs-3641.png" id="674_sy8td"]
+[ext_resource type="Texture2D" uid="uid://brvqikja7qus6" path="res://assets/animations/coeur/a-batement-de-coeurs-3642.png" id="675_06e4y"]
+[ext_resource type="Texture2D" uid="uid://c234ql8andh1q" path="res://assets/animations/coeur/a-batement-de-coeurs-3643.png" id="676_on0b6"]
+[ext_resource type="Texture2D" uid="uid://bfb37qtu0d4r3" path="res://assets/animations/coeur/a-batement-de-coeurs-3644.png" id="677_boawf"]
+[ext_resource type="Texture2D" uid="uid://d3lb7gbic5jqk" path="res://assets/animations/coeur/a-batement-de-coeurs-3645.png" id="678_vpytn"]
+[ext_resource type="Texture2D" uid="uid://c824p85obbnw8" path="res://assets/animations/coeur/a-batement-de-coeurs-3646.png" id="679_cvirs"]
+[ext_resource type="Texture2D" uid="uid://ct1n8n4smb1v1" path="res://assets/animations/coeur/a-batement-de-coeurs-3647.png" id="680_hi1nt"]
+[ext_resource type="Texture2D" uid="uid://dd0ciaoqnpgtb" path="res://assets/animations/coeur/a-batement-de-coeurs-3648.png" id="681_awuts"]
+[ext_resource type="Texture2D" uid="uid://bjjps1llohv1u" path="res://assets/animations/coeur/a-batement-de-coeurs-3649.png" id="682_lpstq"]
+[ext_resource type="Texture2D" uid="uid://c0ra1s1rsr4ms" path="res://assets/animations/coeur/a-batement-de-coeurs-3650.png" id="683_isl13"]
+[ext_resource type="Texture2D" uid="uid://c86snj47ctk8n" path="res://assets/animations/coeur/a-batement-de-coeurs-3651.png" id="684_x7507"]
+[ext_resource type="Texture2D" uid="uid://do6y267lidqif" path="res://assets/animations/coeur/a-batement-de-coeurs-3652.png" id="685_vprfa"]
+[ext_resource type="Texture2D" uid="uid://bknwgssm8n0xe" path="res://assets/animations/coeur/a-batement-de-coeurs-3653.png" id="686_aww3y"]
+[ext_resource type="Texture2D" uid="uid://b4c0e5ho02yy7" path="res://assets/animations/coeur/a-batement-de-coeurs-3654.png" id="687_cn7w7"]
+[ext_resource type="Texture2D" uid="uid://b5m6t2cund757" path="res://assets/animations/coeur/a-batement-de-coeurs-3655.png" id="688_wjxk1"]
+[ext_resource type="Texture2D" uid="uid://cxaegxkb8l2md" path="res://assets/animations/coeur/a-batement-de-coeurs-3656.png" id="689_vchj6"]
+[ext_resource type="Texture2D" uid="uid://bpqpl3xfl7x7h" path="res://assets/animations/coeur/a-batement-de-coeurs-3657.png" id="690_qem46"]
+[ext_resource type="Texture2D" uid="uid://blt8ns0anlfhc" path="res://assets/animations/coeur/a-batement-de-coeurs-3658.png" id="691_f18m4"]
+[ext_resource type="Texture2D" uid="uid://buux4v7ljukuj" path="res://assets/animations/coeur/a-batement-de-coeurs-3659.png" id="692_winj6"]
+[ext_resource type="Texture2D" uid="uid://nahjwh5eecu4" path="res://assets/animations/coeur/a-batement-de-coeurs-3660.png" id="693_fpn6h"]
+[ext_resource type="Texture2D" uid="uid://i14gtfi6hihe" path="res://assets/animations/coeur/a-batement-de-coeurs-3661.png" id="694_4ynxy"]
+[ext_resource type="Texture2D" uid="uid://ey2vwuu04upd" path="res://assets/animations/coeur/a-batement-de-coeurs-3662.png" id="695_n25v0"]
+[ext_resource type="Texture2D" uid="uid://eif6qpyw6oc8" path="res://assets/animations/coeur/a-batement-de-coeurs-3663.png" id="696_0x353"]
+[ext_resource type="Texture2D" uid="uid://csqwfqecor2tk" path="res://assets/animations/coeur/a-batement-de-coeurs-3664.png" id="697_llywj"]
+[ext_resource type="Texture2D" uid="uid://15erkj65k0th" path="res://assets/animations/coeur/a-batement-de-coeurs-3665.png" id="698_rgwtg"]
+[ext_resource type="Texture2D" uid="uid://q8w4y8s6odo3" path="res://assets/animations/coeur/a-batement-de-coeurs-3666.png" id="699_u8rrt"]
+[ext_resource type="Texture2D" uid="uid://bf06v3avqajl6" path="res://assets/animations/coeur/a-batement-de-coeurs-3667.png" id="700_yxkgf"]
+[ext_resource type="Texture2D" uid="uid://biq3urw6ysydy" path="res://assets/animations/coeur/a-batement-de-coeurs-3668.png" id="701_inhhb"]
+[ext_resource type="Texture2D" uid="uid://38h0a22elt8k" path="res://assets/animations/coeur/a-batement-de-coeurs-3669.png" id="702_rlwb8"]
+[ext_resource type="Texture2D" uid="uid://dchc8mnqxuibd" path="res://assets/animations/coeur/a-batement-de-coeurs-3670.png" id="703_4clq4"]
+[ext_resource type="Texture2D" uid="uid://5qjtw68dms8f" path="res://assets/animations/coeur/a-batement-de-coeurs-3671.png" id="704_myt3t"]
+[ext_resource type="Texture2D" uid="uid://ct0qao2g730je" path="res://assets/animations/coeur/a-batement-de-coeurs-3672.png" id="705_y30r7"]
+[ext_resource type="Texture2D" uid="uid://cc7kpl4gjc2yw" path="res://assets/animations/coeur/a-batement-de-coeurs-3673.png" id="706_xmasj"]
+[ext_resource type="Texture2D" uid="uid://y50klom0r3d1" path="res://assets/animations/coeur/a-batement-de-coeurs-3674.png" id="707_qj7ps"]
+[ext_resource type="Texture2D" uid="uid://ckb11eir3ln0t" path="res://assets/animations/coeur/a-batement-de-coeurs-3675.png" id="708_nirfp"]
+[ext_resource type="Texture2D" uid="uid://bsixjovymnhr7" path="res://assets/animations/coeur/a-batement-de-coeurs-3676.png" id="709_tcxfk"]
+[ext_resource type="Texture2D" uid="uid://bxds75xk8fppx" path="res://assets/animations/coeur/a-batement-de-coeurs-3677.png" id="710_kk3xr"]
+[ext_resource type="Texture2D" uid="uid://03maq5gqfx8a" path="res://assets/animations/coeur/a-batement-de-coeurs-3678.png" id="711_0g5an"]
+[ext_resource type="Texture2D" uid="uid://bxcosqcqo3jsq" path="res://assets/animations/coeur/a-batement-de-coeurs-3679.png" id="712_pjcqj"]
+[ext_resource type="Texture2D" uid="uid://oy63sm1r55wj" path="res://assets/animations/coeur/a-batement-de-coeurs-3680.png" id="713_dd6up"]
+[ext_resource type="Texture2D" uid="uid://dawrl0t7mcq4h" path="res://assets/animations/coeur/a-batement-de-coeurs-3681.png" id="714_dff2b"]
+[ext_resource type="Texture2D" uid="uid://gs7ngr20g7qn" path="res://assets/animations/coeur/a-batement-de-coeurs-3682.png" id="715_svx0b"]
+[ext_resource type="Texture2D" uid="uid://73ffcer7tjt8" path="res://assets/animations/coeur/a-batement-de-coeurs-3683.png" id="716_0l083"]
+[ext_resource type="Texture2D" uid="uid://os2fsdm4kxhs" path="res://assets/animations/coeur/a-batement-de-coeurs-3684.png" id="717_f2hfj"]
+[ext_resource type="Texture2D" uid="uid://bsl2yme4aales" path="res://assets/animations/coeur/a-batement-de-coeurs-3685.png" id="718_roqna"]
+[ext_resource type="Texture2D" uid="uid://bavy6am1vys8x" path="res://assets/animations/coeur/a-batement-de-coeurs-3686.png" id="719_578ip"]
+[ext_resource type="Texture2D" uid="uid://bt833gfritveu" path="res://assets/animations/coeur/a-batement-de-coeurs-3687.png" id="720_i21t6"]
+[ext_resource type="Texture2D" uid="uid://bj25qdti7k2mf" path="res://assets/animations/coeur/a-batement-de-coeurs-3688.png" id="721_ume7l"]
+[ext_resource type="Texture2D" uid="uid://oq2bdciskadq" path="res://assets/animations/coeur/a-batement-de-coeurs-3689.png" id="722_m636x"]
+[ext_resource type="Texture2D" uid="uid://cs5rm6euw6pv8" path="res://assets/animations/coeur/a-batement-de-coeurs-3690.png" id="723_6hok3"]
+[ext_resource type="Texture2D" uid="uid://bh17ovuqlvnra" path="res://assets/animations/coeur/a-batement-de-coeurs-3691.png" id="724_snkvf"]
+[ext_resource type="Texture2D" uid="uid://bnhfwopq0fk07" path="res://assets/animations/coeur/a-batement-de-coeurs-3692.png" id="725_yiagd"]
+[ext_resource type="Texture2D" uid="uid://c8e34nbhnqd6t" path="res://assets/animations/coeur/a-batement-de-coeurs-3693.png" id="726_sbcog"]
+[ext_resource type="Texture2D" uid="uid://66dhegfb4pd" path="res://assets/animations/coeur/a-batement-de-coeurs-3694.png" id="727_bh3yb"]
+[ext_resource type="Texture2D" uid="uid://qur3bxniugyu" path="res://assets/animations/coeur/a-batement-de-coeurs-3695.png" id="728_0abfi"]
+[ext_resource type="Texture2D" uid="uid://bd8qajugkhbkn" path="res://assets/animations/coeur/a-batement-de-coeurs-3696.png" id="729_ad201"]
+[ext_resource type="Texture2D" uid="uid://c1ycueos0812h" path="res://assets/animations/coeur/a-batement-de-coeurs-3697.png" id="730_1hm7r"]
+[ext_resource type="Texture2D" uid="uid://cjvuijriu563r" path="res://assets/animations/coeur/a-batement-de-coeurs-3698.png" id="731_oyvw8"]
+[ext_resource type="Texture2D" uid="uid://b2rqvksmorq8i" path="res://assets/animations/coeur/a-batement-de-coeurs-3699.png" id="732_pw2p0"]
+[ext_resource type="Texture2D" uid="uid://bdba20gj8up6c" path="res://assets/animations/coeur/a-batement-de-coeurs-3700.png" id="733_o8ibg"]
+[ext_resource type="Texture2D" uid="uid://1h72jr6j23au" path="res://assets/animations/coeur/a-batement-de-coeurs-3701.png" id="734_jstve"]
+[ext_resource type="Texture2D" uid="uid://bpgu32musphus" path="res://assets/animations/coeur/a-batement-de-coeurs-3702.png" id="735_mf1nu"]
+[ext_resource type="Texture2D" uid="uid://cncrhsvffiuga" path="res://assets/animations/coeur/a-batement-de-coeurs-3703.png" id="736_aht08"]
+[ext_resource type="Texture2D" uid="uid://cf4ywdknyskb0" path="res://assets/animations/coeur/a-batement-de-coeurs-3704.png" id="737_608xb"]
+[ext_resource type="Texture2D" uid="uid://v8pfy4ckhslv" path="res://assets/animations/coeur/a-batement-de-coeurs-3705.png" id="738_4ykwx"]
+[ext_resource type="Texture2D" uid="uid://buk5u0g5oxlxj" path="res://assets/animations/coeur/a-batement-de-coeurs-3706.png" id="739_ya1y6"]
+[ext_resource type="Texture2D" uid="uid://d0djsj1tbtrro" path="res://assets/animations/coeur/a-batement-de-coeurs-3707.png" id="740_subhe"]
+[ext_resource type="Texture2D" uid="uid://ccyjgeve5qhoy" path="res://assets/animations/coeur/a-batement-de-coeurs-3708.png" id="741_dpoqp"]
+[ext_resource type="Texture2D" uid="uid://cjwtyh4jeuutq" path="res://assets/animations/coeur/a-batement-de-coeurs-3709.png" id="742_1mhn0"]
+[ext_resource type="Texture2D" uid="uid://3b1medfcay4k" path="res://assets/animations/coeur/a-batement-de-coeurs-3710.png" id="743_vetms"]
+[ext_resource type="Texture2D" uid="uid://bwgb7dqjcxo2a" path="res://assets/animations/coeur/a-batement-de-coeurs-3711.png" id="744_phtfm"]
+[ext_resource type="Texture2D" uid="uid://dmw4b4k78annc" path="res://assets/animations/coeur/a-batement-de-coeurs-3712.png" id="745_hnw7r"]
+[ext_resource type="Texture2D" uid="uid://c8l7hyr46txhy" path="res://assets/animations/coeur/a-batement-de-coeurs-3713.png" id="746_v838w"]
+[ext_resource type="Texture2D" uid="uid://c7moda8rtnblf" path="res://assets/animations/coeur/a-batement-de-coeurs-3714.png" id="747_1grow"]
+[ext_resource type="Texture2D" uid="uid://bjs06cfamefu7" path="res://assets/animations/coeur/a-batement-de-coeurs-3715.png" id="748_gyv5o"]
+[ext_resource type="Texture2D" uid="uid://cq27idss7onhq" path="res://assets/animations/coeur/a-batement-de-coeurs-3716.png" id="749_405go"]
+[ext_resource type="Texture2D" uid="uid://bvj7u11m70j1y" path="res://assets/animations/coeur/a-batement-de-coeurs-3717.png" id="750_tyvhv"]
+[ext_resource type="Texture2D" uid="uid://b7tmoquo1peea" path="res://assets/animations/coeur/a-batement-de-coeurs-3718.png" id="751_l1eg8"]
+[ext_resource type="Texture2D" uid="uid://cbwlal4wm26x7" path="res://assets/animations/coeur/a-batement-de-coeurs-3719.png" id="752_gekpn"]
+[ext_resource type="Texture2D" uid="uid://cpkui405b577h" path="res://assets/animations/coeur/a-batement-de-coeurs-3720.png" id="753_78h8w"]
+[ext_resource type="Texture2D" uid="uid://j4bmnbojbvmn" path="res://assets/animations/coeur/a-batement-de-coeurs-3721.png" id="754_pamjn"]
+[ext_resource type="Texture2D" uid="uid://b8su5o8t60cxl" path="res://assets/animations/coeur/a-batement-de-coeurs-3722.png" id="755_l2pec"]
+[ext_resource type="Texture2D" uid="uid://ceb0naiy7m8v4" path="res://assets/animations/coeur/a-batement-de-coeurs-3723.png" id="756_how7p"]
+[ext_resource type="Texture2D" uid="uid://chh5tsnu1bkge" path="res://assets/animations/coeur/a-batement-de-coeurs-3724.png" id="757_akht6"]
+[ext_resource type="Texture2D" uid="uid://dm4ka10dwaa2q" path="res://assets/animations/coeur/a-batement-de-coeurs-3725.png" id="758_vuj88"]
+[ext_resource type="Texture2D" uid="uid://bpo62adihiv7k" path="res://assets/animations/coeur/a-batement-de-coeurs-3726.png" id="759_kvrgi"]
+[ext_resource type="Texture2D" uid="uid://cabeufxal5eh3" path="res://assets/animations/coeur/a-batement-de-coeurs-3727.png" id="760_fgptn"]
+[ext_resource type="Texture2D" uid="uid://b5gkp3ef5tgv5" path="res://assets/animations/coeur/a-batement-de-coeurs-3728.png" id="761_16fd3"]
+[ext_resource type="Texture2D" uid="uid://dt6t4newvfd27" path="res://assets/animations/coeur/a-batement-de-coeurs-3729.png" id="762_7xa6t"]
+[ext_resource type="Texture2D" uid="uid://dxif3bwcvnhyk" path="res://assets/animations/coeur/a-batement-de-coeurs-3730.png" id="763_o27wx"]
+[ext_resource type="Texture2D" uid="uid://bmoiudw6176fk" path="res://assets/animations/coeur/a-batement-de-coeurs-3731.png" id="764_a3flm"]
+[ext_resource type="Texture2D" uid="uid://d4r3j5n8s34x" path="res://assets/animations/coeur/a-batement-de-coeurs-3732.png" id="765_mtw43"]
+[ext_resource type="Texture2D" uid="uid://c0h3i4egij672" path="res://assets/animations/coeur/a-batement-de-coeurs-3733.png" id="766_b0hh0"]
+[ext_resource type="Texture2D" uid="uid://dnyhee4fnw6wc" path="res://assets/animations/coeur/a-batement-de-coeurs-3734.png" id="767_0uuuo"]
+[ext_resource type="Texture2D" uid="uid://by3ixmoo6s3mj" path="res://assets/animations/coeur/a-batement-de-coeurs-3735.png" id="768_ocpip"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1bf7c"]
 atlas = ExtResource("10_d3fmu")
@@ -649,8 +1385,2221 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_xke1h"]
-animations = []
+[sub_resource type="SpriteFrames" id="SpriteFrames_a8xwt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("33_ejhtm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_qipsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_ufune")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_e34rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_oxobr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ib538")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ib245")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_b2mdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_xgt5p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_5ah3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_a4omv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_pitbh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_q722a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_weauw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_7atyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_yiw62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_h3wt0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_shef7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_2fkgu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_1ir8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_glcsf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_x785g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_tvypt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_e0a8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_802k3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_lfjsw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_3nfpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_ptal4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_jk38c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_mrcjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_56rre")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_hmwsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_57p5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_n47id")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_4bkdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_fj2r5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_4mhha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_22jtf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_h78uj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_e1bja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_7mw71")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_6xpkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_jn5fr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_6053x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_ufjeb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_qyb17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_4exp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_opgv6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_hw8my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_uklng")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_4y35m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_wagbg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_fmqat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_xfw51")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_nbhxl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_cq5al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_qu8uu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_hc3n0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_c5832")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_fvv5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_dsyeh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_hrrgr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_5lbyv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_n73hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_qn0mx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_b56ho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_hoh5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_mfcoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_hk356")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_pd1qc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_xu6we")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_x1iyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_7yugk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_b600g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_dn4pr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_sps0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_v2wgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_fj0nm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_5jikl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_bggii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_foy4t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_fdxaq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_77y4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_p5574")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_y11ki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_5gvj2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_xtgse")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_c8388")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_ok7kd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_6qqdl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_4o4ir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_th1hh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_kbset")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_ww7mq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_756md")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_83ki0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_6s4og")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_fnrww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_ashcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_he6ha")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_weit5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_igkgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_w8ovg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_6dces")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_6tw6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_ckptb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_87mlq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("140_1a5s7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("141_sxw7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("142_ul0qi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("143_b2f5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("144_ubkbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("145_yykw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("146_irwfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("147_ybxqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("148_jxk3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("149_68k2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("150_ukbe8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("151_0lxym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("152_okysy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("153_na7ii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("154_5ar0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("155_2x26n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("156_xsho4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("157_wdupu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("158_pastc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("159_1yxy6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("160_unaso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("161_qib4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("162_nvs32")
+}, {
+"duration": 1.0,
+"texture": ExtResource("163_yqfl0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("164_w8kb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("165_bojip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("166_d5xac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("167_brvo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("168_51tfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("169_tm6cs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("170_c3ctg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("171_6kmfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("172_72ptn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("173_8l8xb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("174_k53cr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("175_71jgd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("176_jv3ys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("177_ta0ls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("178_ywndn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("179_sqskn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("180_1g3m3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("181_we1ya")
+}, {
+"duration": 1.0,
+"texture": ExtResource("182_secb6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("183_xklph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("184_kqev8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("185_t6ian")
+}, {
+"duration": 1.0,
+"texture": ExtResource("186_bd4su")
+}, {
+"duration": 1.0,
+"texture": ExtResource("187_adeab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("188_2vydx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("189_u2uit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("190_q6gac")
+}, {
+"duration": 1.0,
+"texture": ExtResource("191_oi3so")
+}, {
+"duration": 1.0,
+"texture": ExtResource("192_akliv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("193_05uxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("194_5euu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("195_020u0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("196_soni8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("197_sfcht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("198_xr60d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_3xhyg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_w2ais")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_rstgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_jbad7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_ri1b1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_bp45b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_mb8nt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_pdkon")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_bcyx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_jbqif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_aidsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("210_2jelk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("211_gls1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("212_y4iro")
+}, {
+"duration": 1.0,
+"texture": ExtResource("213_4t0f0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("214_n7eoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("215_b4obt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("216_gneed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("217_jd7cd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("218_fi2m1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("219_5ie86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("220_3d502")
+}, {
+"duration": 1.0,
+"texture": ExtResource("221_xp0g8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("222_af0w2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("223_fxv4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("224_ujesq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("225_g20xj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("226_7116b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("227_wmu2s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("228_w0kv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("229_xmkmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("230_4lx4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("231_ejj7k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("232_sgomo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("233_6wvr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("234_g8q4g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("235_3s0rf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("236_uw5um")
+}, {
+"duration": 1.0,
+"texture": ExtResource("237_57pqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("238_7b3rn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("239_4r0rv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("240_h8pwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("241_r24nj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("242_yyvcf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("243_3nmlp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("244_d5efx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("245_7n1qc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("246_cxc48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("247_rrf6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("248_eydkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("249_uh7o4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("250_pyrou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("251_10vbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("252_4hl68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("253_2e8ko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("254_ea7fn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("255_gmymq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("256_alph5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("257_up2ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("258_ffv0q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("259_al0e1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("260_naqmo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("261_yf3hl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("262_gilwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("263_txrkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("264_tkod7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("265_16nvu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("266_725ab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("267_we431")
+}, {
+"duration": 1.0,
+"texture": ExtResource("268_iusy7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("269_oauvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("270_t62ba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("271_27uho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("272_4jqh6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("273_4wgdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("274_d1skj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("275_p2u8l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("276_d0q2p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("277_mb4sn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("278_0am54")
+}, {
+"duration": 1.0,
+"texture": ExtResource("279_x4gua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("280_ggvnx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("281_e80n6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("282_aa81o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("283_6witf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("284_drt3r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("285_d5nqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("286_tn3nt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("287_4f2ws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("288_l4qsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("289_otuav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("290_ygkqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("291_u212p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("292_liews")
+}, {
+"duration": 1.0,
+"texture": ExtResource("293_krums")
+}, {
+"duration": 1.0,
+"texture": ExtResource("294_uyefo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("295_0563l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("296_73bj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("297_veqq0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("298_cdlcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("299_jg2u6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("300_12gv5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("301_7jknv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("302_4r6h1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("303_743ko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("304_6vyde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("305_e07uj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("306_v4t4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("307_6h4gr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("308_0utms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("309_rh5w3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("310_5b6b4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("311_5qn7j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("312_me0kg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("313_b7pg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("314_7jbtg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("315_uohyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("316_3jvbp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("317_qmslj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("318_1w4tg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("319_7ut6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("320_4ech5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("321_ksvlv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("322_0r7ye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("323_opsel")
+}, {
+"duration": 1.0,
+"texture": ExtResource("324_gt00s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("325_jrjjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("326_ffabt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("327_krn0n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("328_ktqph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("329_gy5vx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("330_4tvr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("331_n0vg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("332_rnmgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("333_ev64s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("334_0f0hl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("335_wibh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("336_r248a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("337_78qh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("338_jmctp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("339_2lhsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("340_jm6jc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("341_4lo6g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("342_nthvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("343_p6k0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("344_fcsdg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("345_ou4b2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("346_5u6p0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("347_td3yq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("348_b3tfq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("349_n18nr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("350_uw8dx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("351_3m2f7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("352_agt07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("353_kspsx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("354_poeqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("355_3gyun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("356_lepib")
+}, {
+"duration": 1.0,
+"texture": ExtResource("357_fd43e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("358_11j7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("359_k4um8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("360_w7xcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("361_x4p5d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("362_3moh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("363_6i5hu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("364_3uyxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("365_r1fp0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("366_axhp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("367_itut7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("368_7v3fa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("369_4xeur")
+}, {
+"duration": 1.0,
+"texture": ExtResource("370_ht2r0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("371_njb63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("372_elgid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("373_h5ko4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("374_d7b8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("375_0ftpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("376_iub8n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("377_jmhvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("378_nl41n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("379_a0wqx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("380_s53kw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("381_dkeob")
+}, {
+"duration": 1.0,
+"texture": ExtResource("382_uw0mu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("383_gexip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("384_v6ky6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("385_x1hm3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("386_lqqae")
+}, {
+"duration": 1.0,
+"texture": ExtResource("387_hejff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("388_m2a6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("389_hho4o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("390_is1dx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("391_rm23h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("392_ankjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("393_k8gl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("394_xuqua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("395_lsuc5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("396_ewq00")
+}, {
+"duration": 1.0,
+"texture": ExtResource("397_xxfwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("398_en02y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("399_wi87f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("400_f5o3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("401_tu1dk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("402_bd2ll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("403_j8op5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("404_snmg1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("405_7oouw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("406_153md")
+}, {
+"duration": 1.0,
+"texture": ExtResource("407_u6hvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("408_ude41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("409_m6sp7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("410_jlhuh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("411_kunb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("412_4a4r4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("413_oxlx1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("414_48k3g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("415_e5p34")
+}, {
+"duration": 1.0,
+"texture": ExtResource("416_nbkxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("417_woh4q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("418_0yh06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("419_bslrg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("420_ok3yh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("421_47l0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("422_u6a6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("423_h1in7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("424_yspxd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("425_jrxqw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("426_xc2g2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("427_wdoh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("428_sfpah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("429_8dqb5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("430_d2tnr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("431_bscv1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("432_7g3qa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("433_11g6p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("434_w83r8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("435_swu1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("436_53e44")
+}, {
+"duration": 1.0,
+"texture": ExtResource("437_mmhdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("438_3erl2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("439_b2wmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("440_h356c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("441_gefe4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("442_1qan8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("443_1aa0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("444_h5ktq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("445_gwkhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("446_fmy8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("447_mupy6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("448_euuja")
+}, {
+"duration": 1.0,
+"texture": ExtResource("449_ep16y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("450_23teu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("451_y8jph")
+}, {
+"duration": 1.0,
+"texture": ExtResource("452_iptqv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("453_4334h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("454_ke6xc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("455_8s1sj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("456_m4708")
+}, {
+"duration": 1.0,
+"texture": ExtResource("457_rdbt3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("458_qnsfg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("459_i72l1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("460_rdfey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("461_fhguv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("462_emw8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("463_muwpw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("464_8n020")
+}, {
+"duration": 1.0,
+"texture": ExtResource("465_ngvox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("466_r234v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("467_vpdny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("468_8jnfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("469_2fsx0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("470_0qw4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("471_sqkhy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("472_fxtqh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("473_fids0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("474_xh425")
+}, {
+"duration": 1.0,
+"texture": ExtResource("475_dure0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("476_7ft8r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("477_tmyjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("478_nbyv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("479_1g2iu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("480_2npyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("481_c0fs6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("482_ctoww")
+}, {
+"duration": 1.0,
+"texture": ExtResource("483_5uxpy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("484_ujc57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("485_t4hwp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("486_beql1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("487_k0gah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("488_4mdu0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("489_0qmeq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("490_gyxf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("491_y6p3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("492_bypkg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("493_m2gis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("494_evs82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("495_1o6x1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("496_5w6oi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("497_ko7d1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("498_sp7ym")
+}, {
+"duration": 1.0,
+"texture": ExtResource("499_8xuu1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("500_qbyy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("501_johgy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("502_c1aqt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("503_5wom5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("504_g8fq8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("505_x8cdc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("506_q07jo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("507_8l0fm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("508_74cxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("509_wyj7f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("510_cdbj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("511_82a3u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("512_gdbir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("513_3blnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("514_ysxd1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("515_87wps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("516_8vhcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("517_hlvey")
+}, {
+"duration": 1.0,
+"texture": ExtResource("518_iuab5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("519_2auf3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("520_vg6am")
+}, {
+"duration": 1.0,
+"texture": ExtResource("521_2u6oc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("522_jk407")
+}, {
+"duration": 1.0,
+"texture": ExtResource("523_bqxhn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("524_wmmwr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("525_fsqjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("526_mmxml")
+}, {
+"duration": 1.0,
+"texture": ExtResource("527_qyvpv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("528_va7yd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("529_olndd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("530_v7eao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("531_g0rfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("532_xke64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("533_256fg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("534_g8vo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("535_j6bu3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("536_u02j1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("537_6m3wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("538_7eq27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("539_eny7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("540_y5ktg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("541_ssixy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("542_7ioab")
+}, {
+"duration": 1.0,
+"texture": ExtResource("543_qretd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("544_nbbsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("545_qrea5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("546_ab4uf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("547_fhfyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("548_py7je")
+}, {
+"duration": 1.0,
+"texture": ExtResource("549_qa7si")
+}, {
+"duration": 1.0,
+"texture": ExtResource("550_kvcg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("551_170ku")
+}, {
+"duration": 1.0,
+"texture": ExtResource("552_i7hpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("553_3t4ps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("554_ja7kt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("555_hbou6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("556_vjquu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("557_xmb8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("558_uns0r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("559_dbb2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("560_xv6ik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("561_djf5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("562_aiako")
+}, {
+"duration": 1.0,
+"texture": ExtResource("563_8npu7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("564_ao48r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("565_3xxs5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("566_dk1pr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("567_kg1tr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("568_8h5by")
+}, {
+"duration": 1.0,
+"texture": ExtResource("569_vm0oy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("570_55q6k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("571_75tki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("572_k5kxj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("573_bbk0c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("574_xkdjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("575_25yiu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("576_ftdxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("577_rd5ek")
+}, {
+"duration": 1.0,
+"texture": ExtResource("578_k2h3k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("579_ca30j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("580_tf5ht")
+}, {
+"duration": 1.0,
+"texture": ExtResource("581_v2we3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("582_ev1rs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("583_vla0e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("584_snckf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("585_3ivoo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("586_ljmuq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("587_lkl0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("588_thy5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("589_oux7q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("590_phddy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("591_p1hp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("592_n4j64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("593_fp3sf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("594_pylap")
+}, {
+"duration": 1.0,
+"texture": ExtResource("595_la34o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("596_q1woj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("597_purwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("598_n6xe4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("599_2x3iq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("600_ru5vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("601_vrgw7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("602_1ltr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("603_sk4a2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("604_ljy24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("605_2e73h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("606_orpnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("607_2turk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("608_wnroj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("609_a5l38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("610_lq3j8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("611_mfvyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("612_sa842")
+}, {
+"duration": 1.0,
+"texture": ExtResource("613_dfjsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("614_2s5ef")
+}, {
+"duration": 1.0,
+"texture": ExtResource("615_j2ctq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("616_f4puu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("617_vw2cq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("618_5thcn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("619_fguck")
+}, {
+"duration": 1.0,
+"texture": ExtResource("620_o1ure")
+}, {
+"duration": 1.0,
+"texture": ExtResource("621_c6sie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("622_lugpj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("623_e2j75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("624_6c8y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("625_1amko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("626_3lxqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("627_ew2my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("628_kph06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("629_almog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("630_cwnbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("631_4ve6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("632_7wm4u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("633_4c272")
+}, {
+"duration": 1.0,
+"texture": ExtResource("634_8opl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("635_8blw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("636_4eqvn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("637_lge37")
+}, {
+"duration": 1.0,
+"texture": ExtResource("638_w1sfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("639_d12mq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("640_en13q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("641_aq7w2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("642_ix50u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("643_d54gm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("644_eetsb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("645_3o7f2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("646_d6ddf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("647_k27ou")
+}, {
+"duration": 1.0,
+"texture": ExtResource("648_vshst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("649_03013")
+}, {
+"duration": 1.0,
+"texture": ExtResource("650_fpsgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("651_6o4v3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("652_rbktn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("653_f4u8h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("654_10lep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("655_rgi5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("656_w54vh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("657_ws5qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("658_r22rp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("659_vatqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("660_p7d1o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("661_q8h3p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("662_0yggq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("663_e2w0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("664_giwt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("665_vddtp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("666_6utiq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("667_vbli5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("668_tg3ug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("669_b4wh1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("670_geuqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("671_4li6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("672_u4qb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("673_utsgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("674_sy8td")
+}, {
+"duration": 1.0,
+"texture": ExtResource("675_06e4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("676_on0b6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("677_boawf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("678_vpytn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("679_cvirs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("680_hi1nt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("681_awuts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("682_lpstq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("683_isl13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("684_x7507")
+}, {
+"duration": 1.0,
+"texture": ExtResource("685_vprfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("686_aww3y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("687_cn7w7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("688_wjxk1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("689_vchj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("690_qem46")
+}, {
+"duration": 1.0,
+"texture": ExtResource("691_f18m4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("692_winj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("693_fpn6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("694_4ynxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("695_n25v0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("696_0x353")
+}, {
+"duration": 1.0,
+"texture": ExtResource("697_llywj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("698_rgwtg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("699_u8rrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("700_yxkgf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("701_inhhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("702_rlwb8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("703_4clq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("704_myt3t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("705_y30r7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("706_xmasj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("707_qj7ps")
+}, {
+"duration": 1.0,
+"texture": ExtResource("708_nirfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("709_tcxfk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("710_kk3xr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("711_0g5an")
+}, {
+"duration": 1.0,
+"texture": ExtResource("712_pjcqj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("713_dd6up")
+}, {
+"duration": 1.0,
+"texture": ExtResource("714_dff2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("715_svx0b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("716_0l083")
+}, {
+"duration": 1.0,
+"texture": ExtResource("717_f2hfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("718_roqna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("719_578ip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("720_i21t6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("721_ume7l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("722_m636x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("723_6hok3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("724_snkvf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("725_yiagd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("726_sbcog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("727_bh3yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("728_0abfi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("729_ad201")
+}, {
+"duration": 1.0,
+"texture": ExtResource("730_1hm7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("731_oyvw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("732_pw2p0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("733_o8ibg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("734_jstve")
+}, {
+"duration": 1.0,
+"texture": ExtResource("735_mf1nu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("736_aht08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("737_608xb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("738_4ykwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("739_ya1y6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("740_subhe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("741_dpoqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("742_1mhn0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("743_vetms")
+}, {
+"duration": 1.0,
+"texture": ExtResource("744_phtfm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("745_hnw7r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("746_v838w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("747_1grow")
+}, {
+"duration": 1.0,
+"texture": ExtResource("748_gyv5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("749_405go")
+}, {
+"duration": 1.0,
+"texture": ExtResource("750_tyvhv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("751_l1eg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("752_gekpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("753_78h8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("754_pamjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("755_l2pec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("756_how7p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("757_akht6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("758_vuj88")
+}, {
+"duration": 1.0,
+"texture": ExtResource("759_kvrgi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("760_fgptn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("761_16fd3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("762_7xa6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("763_o27wx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("764_a3flm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("765_mtw43")
+}, {
+"duration": 1.0,
+"texture": ExtResource("766_b0hh0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("767_0uuuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("768_ocpip")
+}],
+"loop": false,
+"name": &"default",
+"speed": 24.0
+}]
 
 [node name="perso" type="CharacterBody2D"]
 position = Vector2(333, 165)
@@ -686,7 +3635,8 @@ sprite_frames = SubResource("SpriteFrames_2kuof")
 animation = &"world_transition"
 
 [node name="HeartBeat" type="AnimatedSprite2D" parent="."]
-sprite_frames = SubResource("SpriteFrames_xke1h")
-animation = &""
+position = Vector2(0.50001, -1.00002)
+scale = Vector2(0.442187, 0.42037)
+sprite_frames = SubResource("SpriteFrames_a8xwt")
 
 [connection signal="animation_finished" from="ChangeWorld" to="." method="_on_change_world_animation_finished"]

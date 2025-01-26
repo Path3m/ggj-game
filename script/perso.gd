@@ -3,6 +3,7 @@ extends CharacterBody2D
 const SPEED = 230.0
 var perso_size : float = 64;
 @onready var bubble_collide = preload("res://scene/bubble_collide.tscn");
+@onready var heartbeat = $HeartBeat;
 
 func _on_began_dialogue() -> void:
 	set_physics_process(false);
@@ -18,6 +19,9 @@ func _ready() -> void:
 	DialogueManager.dialogue_ended.connect(_on_end_dialogue);
 	$ChangeWorld.hide();
 	$BubbleStep.hide();
+	Global.changed_world.connect(_on_changed_world);
+	heartbeat.show();
+	heartbeat.play("default");
 	
 func is_moving() -> bool:
 	return (
@@ -26,6 +30,14 @@ func is_moving() -> bool:
 		Input.is_action_pressed("ui_left") ||
 		Input.is_action_pressed("ui_right")
 	);
+
+func _on_changed_world() -> void:
+	if Global.in_bubble_world:
+		heartbeat.set_speed_scale(0);
+		heartbeat.hide();
+	else:
+		heartbeat.set_speed_scale(1);
+		heartbeat.show();
 
 func play_collide() -> void:
 	var collide_sens = $CollideDetect.collide_check();

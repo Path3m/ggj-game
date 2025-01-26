@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://cxfcr6p6bkkoc"]
+[gd_scene load_steps=2 format=3 uid="uid://c8wg5cbng7tqu"]
 
 [ext_resource type="Script" path="res://script/jauge_stress.gd" id="1_3qlox"]
 
