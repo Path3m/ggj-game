@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://pcfnxrikhcq4"]
+
+[ext_resource type="Script" path="res://script/bubbling_hide.gd" id="1_051e3"]
+[ext_resource type="Texture2D" uid="uid://bgds7tvblvssh" path="res://textures/pc2.png" id="2_n31mo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
+size = Vector2(29, 31.75)
+
+[node name="pc3" type="StaticBody2D"]
+collision_layer = 2
+script = ExtResource("1_051e3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -1.875)
+shape = SubResource("RectangleShape2D_hg8ti")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_n31mo")
