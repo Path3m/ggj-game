@@ -1,0 +1,80 @@
+[gd_scene load_steps=9 format=3 uid="uid://bf2so8jv2q7ly"]
+
+[ext_resource type="Texture2D" uid="uid://dai6u2mokaqpk" path="res://assets/animations/bulles.png" id="1_qvewq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eodd1"]
+atlas = ExtResource("1_qvewq")
+region = Rect2(364, 0, 91, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xejr3"]
+atlas = ExtResource("1_qvewq")
+region = Rect2(273, 0, 91, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ac67o"]
+atlas = ExtResource("1_qvewq")
+region = Rect2(256, 0, 128, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyhee"]
+atlas = ExtResource("1_qvewq")
+region = Rect2(128, 0, 128, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5k3wv"]
+atlas = ExtResource("1_qvewq")
+region = Rect2(0, 0, 128, 134)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2sak"]
+atlas = ExtResource("1_qvewq")
+region = Rect2(480, 0, 160, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_21c7k"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eodd1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xejr3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ac67o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyhee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5k3wv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5k3wv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2sak")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2sak")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5k3wv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyhee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jyhee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xejr3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eodd1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="BubbleAnimation" type="Node2D"]
+
+[node name="BubbleAnim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_21c7k")
+frame_progress = 0.26368
