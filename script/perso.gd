@@ -5,6 +5,8 @@ var perso_size : float = 64;
 @onready var bubble_collide = preload("res://scene/bubble_collide.tscn");
 @onready var heartbeat = $HeartBeat;
 
+signal ending;
+
 func _on_began_dialogue() -> void:
 	set_physics_process(false);
 	
@@ -13,6 +15,9 @@ func _on_end_dialogue(ressource: DialogueResource) -> void:
 	
 func _on_change_world_animation_finished() -> void:
 	$ChangeWorld.hide();
+	
+func _on_end_anim() -> void:
+	get_tree().quit();
 
 func _ready() -> void:
 	Global.began_dialogue.connect(_on_began_dialogue);
@@ -23,6 +28,9 @@ func _ready() -> void:
 	heartbeat.show();
 	heartbeat.play("default");
 	$HeartBeatSound.play();
+	
+	$animfin.hide();
+	$animfin.animation_finished.connect(_on_end_anim);
 	
 func is_moving() -> bool:
 	return (
@@ -127,3 +135,15 @@ func _physics_process(delta: float) -> void:
 		# Arrête le son après 5 secondes
 		#yield(get_tree().create_timer(5), "timeout")
 		#$AudioStreamPlayer.stop()
+
+
+func _on_end_area_body_entered(body: Node2D) -> void:
+	print("Body entered");
+	if !Global.in_bubble_world:
+		Global.switch_world();
+		Global.changed_world.emit();
+	ending.emit();
+	$MC_mouv.hide();
+	await get_tree().create_timer(3).timeout;
+	$animfin.show();
+	$animfin.play("default");

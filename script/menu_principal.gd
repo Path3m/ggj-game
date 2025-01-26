@@ -5,6 +5,7 @@ extends Control
 func _ready() -> void:
 	$openingAnim.hide()
 	$bg_animation.hide()
+	$animfin.hide();
 
 func _on_start_pressed():
 	$openingAnim.show()

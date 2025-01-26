@@ -30,7 +30,6 @@ func _on_changed_world() -> void:
 		await get_tree().create_timer(1).timeout;
 		real_world_sfx.play();
 		real_world_theme.play();
-		
 
 func _ready():
 	pause_menu.hide()
@@ -64,3 +63,7 @@ func pause():
 	Engine.time_scale = 0
 	pause_menu.show()
 	paused = true
+
+
+func _on_perso_ending() -> void:
+	pass
