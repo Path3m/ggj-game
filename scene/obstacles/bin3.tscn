@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://4wx2pt8xjiel"]
+[gd_scene load_steps=4 format=3 uid="uid://b65saketoxv46"]
 
 [ext_resource type="Script" path="res://script/bubbling_hide.gd" id="1_8y0xx"]
 [ext_resource type="Texture2D" uid="uid://3pskpqyc6kyl" path="res://textures/poubelle3.png" id="1_ptq7c"]
@@ -13,6 +13,6 @@ script = ExtResource("1_8y0xx")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_ptq7c")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+[node name="CollisionShapeD2" type="CollisionShape2D" parent="."]
 position = Vector2(0, 19.5)
 shape = SubResource("RectangleShape2D_srwgy")
