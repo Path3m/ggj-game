@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://d01rajxipbb5a"]
+
+[ext_resource type="Script" path="res://script/bubbling_hide.gd" id="1_a0khb"]
+[ext_resource type="Texture2D" uid="uid://b2kom7o2db7rq" path="res://textures/urinoir1.png" id="2_dtfnf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hg8ti"]
+size = Vector2(23, 58.5)
+
+[node name="uri1" type="StaticBody2D"]
+collision_layer = 2
+script = ExtResource("1_a0khb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(24.5, -4.25)
+shape = SubResource("RectangleShape2D_hg8ti")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_dtfnf")
