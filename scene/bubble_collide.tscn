@@ -1,0 +1,51 @@
+[gd_scene load_steps=8 format=3 uid="uid://bxpuqk2a6a7sh"]
+
+[ext_resource type="Texture2D" uid="uid://dw3dypi5lfwjn" path="res://assets/animations/perso_principale/fx_colision_Sheet.png" id="1_mw5pk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6qb62"]
+atlas = ExtResource("1_mw5pk")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojhol"]
+atlas = ExtResource("1_mw5pk")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lc2pk"]
+atlas = ExtResource("1_mw5pk")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tk01n"]
+atlas = ExtResource("1_mw5pk")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_525bv"]
+atlas = ExtResource("1_mw5pk")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1qv6t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6qb62")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojhol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lc2pk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tk01n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_525bv")
+}],
+"loop": false,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="BubbleCollide" type="Node2D"]
+
+[node name="CollideAnim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1qv6t")

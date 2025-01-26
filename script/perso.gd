@@ -1,6 +1,8 @@
 extends CharacterBody2D
 
 const SPEED = 230.0
+var perso_size : float = 64;
+@onready var bubble_collide = preload("res://scene/bubble_collide.tscn");
 
 func _on_began_dialogue() -> void:
 	set_physics_process(false);
@@ -15,9 +17,30 @@ func _ready() -> void:
 	Global.began_dialogue.connect(_on_began_dialogue);
 	DialogueManager.dialogue_ended.connect(_on_end_dialogue);
 	$ChangeWorld.hide();
+	$BubbleStep.hide();
+	
+func is_moving() -> bool:
+	return (
+		Input.is_action_pressed("ui_down") ||
+		Input.is_action_pressed("ui_up")   ||
+		Input.is_action_pressed("ui_left") ||
+		Input.is_action_pressed("ui_right")
+	);
+
+func play_collide() -> void:
+	var collide_sens = $CollideDetect.collide_check();
+	if collide_sens != Vector2(0,0) && Global.in_bubble_world:
+		var bubble_collide_instance = bubble_collide.instantiate();
+		add_child(bubble_collide_instance);
+		bubble_collide_instance.position = -(perso_size/2) * collide_sens;
+		var anim = bubble_collide_instance.get_node("CollideAnim");
+		anim.set_speed_scale(5);
+		anim.play("default");
+		await get_tree().create_timer(0.2).timeout;
+		remove_child(bubble_collide_instance);
 
 func _physics_process(delta: float) -> void:
-
+	play_collide();
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction_x := Input.get_axis("ui_left", "ui_right")
@@ -26,7 +49,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	
-	var direction_y := Input.get_axis("ui_up", "ui_down")
+	var direction_y := Input.get_axis("ui_up", "ui_down");
 	if direction_y:
 		velocity.y = direction_y * SPEED
 	else:
@@ -54,7 +77,13 @@ func _physics_process(delta: float) -> void:
 		$MC_mouv.play("MC_bas")
 	else:
 		$MC_mouv.pause()
-		
+	
+	if is_moving() && Global.in_bubble_world:
+		$BubbleStep.show();
+		$BubbleStep.play("bubble step");
+	else:
+		$BubbleStep.hide();
+	
 	if Input.is_action_just_pressed("change_world"):
 		Global.switch_world();
 		Global.changed_world.emit();
