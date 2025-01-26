@@ -373,7 +373,7 @@ shape = SubResource("RectangleShape2D_dij2g")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 ignore_rotation = false
-zoom = Vector2(2, 2)
+zoom = Vector2(5, 5)
 
 [node name="Control" parent="." instance=ExtResource("3_2o3bu")]
 
