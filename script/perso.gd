@@ -22,6 +22,7 @@ func _ready() -> void:
 	Global.changed_world.connect(_on_changed_world);
 	heartbeat.show();
 	heartbeat.play("default");
+	$HeartBeatSound.play();
 	
 func is_moving() -> bool:
 	return (
@@ -35,9 +36,12 @@ func _on_changed_world() -> void:
 	if Global.in_bubble_world:
 		heartbeat.set_speed_scale(0);
 		heartbeat.hide();
+		$HeartBeatSound.stream_paused = true;
 	else:
+		await get_tree().create_timer(Global.wait_transition+0.2).timeout;
 		heartbeat.set_speed_scale(1);
 		heartbeat.show();
+		$HeartBeatSound.stream_paused = false;
 
 func play_collide() -> void:
 	var collide_sens = $CollideDetect.collide_check();
@@ -93,9 +97,14 @@ func _physics_process(delta: float) -> void:
 	if is_moving() && Global.in_bubble_world:
 		$BubbleStep.show();
 		$BubbleStep.play("bubble step");
-	else:
+		if !$reel_step_sfx.is_playing(): $reel_step_sfx.play();
+	elif is_moving():
 		$BubbleStep.hide();
-	
+		if !$bubble_step_sfx.is_playing(): $bubble_step_sfx.play();
+	else:
+		$bubble_step_sfx.stop();
+		$reel_step_sfx.stop();
+				
 	if Input.is_action_just_pressed("change_world"):
 		Global.switch_world();
 		Global.changed_world.emit();

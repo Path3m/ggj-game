@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_14"
+type="Resource"
+uid="uid://f0ffr8uaphti"
+path="res://.godot/imported/scribe.dialogue-557c5e8cbb1d81b116c2f26349f43031.tres"
+
+[deps]
+
+source_file="res://dialogues/scribe.dialogue"
+dest_files=["res://.godot/imported/scribe.dialogue-557c5e8cbb1d81b116c2f26349f43031.tres"]
+
+[params]
+
+defaults=true

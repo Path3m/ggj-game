@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Monde_reel_pas.mp3-b1f64cdaedfbfc072dcea6de11
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

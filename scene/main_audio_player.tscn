@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://c4lidbvoxiyhu"]
+
+[ext_resource type="AudioStream" uid="uid://b6hwdokwsh58f" path="res://musiques/Monde_reel.wav" id="1_hcr0p"]
+[ext_resource type="AudioStream" uid="uid://bb36kqwxcd2li" path="res://musiques/Monde_reel_ambiance.mp3" id="2_ktcah"]
+[ext_resource type="AudioStream" uid="uid://p6xfgp1nmvqe" path="res://musiques/Monde_bulle.wav" id="3_w3dpf"]
+[ext_resource type="AudioStream" uid="uid://bl6rsj47ykint" path="res://musiques/Monde_bulle_ambiance.mp3" id="4_cs6dx"]
+[ext_resource type="AudioStream" uid="uid://cbkujgj12efxh" path="res://sons/Transition_b_a_r.mp3" id="5_uku2x"]
+[ext_resource type="AudioStream" uid="uid://tnxejrj5tjyl" path="res://sons/Transition_r_a_b.mp3" id="6_t6h7t"]
+
+[node name="MainAudioPlayer" type="Node2D"]
+
+[node name="real_world_theme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_hcr0p")
+volume_db = -10.0
+
+[node name="real_world_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_ktcah")
+
+[node name="bubble_world_theme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_w3dpf")
+
+[node name="bubble_world_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_cs6dx")
+
+[node name="transition_br" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_uku2x")
+volume_db = 6.0
+
+[node name="transition_rb" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_t6h7t")
+volume_db = 6.0

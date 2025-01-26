@@ -9,6 +9,7 @@ var enemy_timeout : int = 3;
 @onready var detection_area = $detection_area;
 @onready var colleague_anim = $enemy_animation;
 @onready var colleague_sprite = $Sprite2D;
+@onready var sfx_enemy_moving = $sfx_enemy_moving;
 
 # Ray cast to check collision with environnement
 @onready var collide_detect = $CollideDetect;
@@ -17,6 +18,8 @@ var enemy_timeout : int = 3;
 func _on_changed_world() -> void:
 	if Global.in_bubble_world:
 		set_process(false);
+		$sfx_mumble.stop();
+		sfx_enemy_moving.stop();
 		hide();
 	else:
 		await get_tree().create_timer(Global.wait_transition).timeout;
@@ -39,16 +42,20 @@ func _on_detection_area_body_entered(body: Node2D) -> void:
 	print("Currently hunting");
 	is_hunting = true;
 	prey = body;
+	if !Global.in_bubble_world: $sfx_mumble.play();
 
 func _on_detection_area_body_exited(body: Node2D) -> void:
 	print("Stop the hunt");
 	is_hunting = false;
 	prey = null;
+	sfx_enemy_moving.stop();
+	$sfx_mumble.stop();
 	
 func _on_collide_shape_body_entered(body: Node2D) -> void:
 	if !Global.in_bubble_world:
 		var dialogue : String = Global.select_random_dialogue();
 		DialogueManager.show_dialogue_balloon(load(dialogue));
+		$sfx_mumble.play();
 		Global.began_dialogue.emit();
 
 func _on_dialogue_began() -> void:
@@ -90,5 +97,10 @@ func _process(delta: float) -> void:
 		direction += dir2pt(prey.global_position);
 	else:
 		direction += dir2pt(init_position);
+	if !Global.in_bubble_world && direction != Vector2(0,0) && !sfx_enemy_moving.is_playing():
+		sfx_enemy_moving.play();
+	elif direction == Vector2(0,0) || Global.in_bubble_world:
+		sfx_enemy_moving.stop();
+		
 	position += delta * ENNEMY_SPEED * direction;
 	display_animation(direction);

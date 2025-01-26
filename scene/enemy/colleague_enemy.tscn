@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://bjvu6haff4888"]
+[gd_scene load_steps=43 format=3 uid="uid://bjvu6haff4888"]
 
 [ext_resource type="Script" path="res://script/colleague_enemy.gd" id="1_hcbsy"]
 [ext_resource type="PackedScene" uid="uid://dw0873tjomhe6" path="res://scene/enemy/detection_area.tscn" id="1_ujunv"]
@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://n6qr0yq61rrx" path="res://textures/boss.png" id="4_h7nnu"]
 [ext_resource type="Texture2D" uid="uid://c8vbniaiccif3" path="res://assets/animations/enemy/boss_droit_Sheet.png" id="4_iyk70"]
 [ext_resource type="Texture2D" uid="uid://cifhj85kn7y5l" path="res://assets/animations/enemy/boss_dos_Sheet.png" id="5_82ost"]
+[ext_resource type="AudioStream" uid="uid://bfp6gukt17u8v" path="res://sons/Monde_reel_pas.mp3" id="9_1l1t5"]
+[ext_resource type="AudioStream" uid="uid://cm7y8s3lx5don" path="res://sons/mumble.mp3" id="10_qcopp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_prt6y"]
 atlas = ExtResource("2_xefxn")
@@ -273,6 +275,16 @@ offset_bottom = 32.0
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("4_h7nnu")
+
+[node name="sfx_enemy_moving" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_1l1t5")
+volume_db = 24.0
+pitch_scale = 0.66
+
+[node name="sfx_mumble" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_qcopp")
+volume_db = 8.078
+pitch_scale = 0.69
 
 [connection signal="body_entered" from="detection_area" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="detection_area" to="." method="_on_detection_area_body_exited"]

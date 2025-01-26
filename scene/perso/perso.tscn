@@ -1,4 +1,4 @@
-[gd_scene load_steps=843 format=3 uid="uid://dj6hwkrm8834a"]
+[gd_scene load_steps=846 format=3 uid="uid://dj6hwkrm8834a"]
 
 [ext_resource type="Script" path="res://script/perso.gd" id="1_264pp"]
 [ext_resource type="Texture2D" uid="uid://c1tyiofburlq5" path="res://assets/animations/perso_principale/mc_Sheet_face.png" id="2_2l0iw"]
@@ -768,6 +768,9 @@
 [ext_resource type="Texture2D" uid="uid://c0h3i4egij672" path="res://assets/animations/coeur/a-batement-de-coeurs-3733.png" id="766_b0hh0"]
 [ext_resource type="Texture2D" uid="uid://dnyhee4fnw6wc" path="res://assets/animations/coeur/a-batement-de-coeurs-3734.png" id="767_0uuuo"]
 [ext_resource type="Texture2D" uid="uid://by3ixmoo6s3mj" path="res://assets/animations/coeur/a-batement-de-coeurs-3735.png" id="768_ocpip"]
+[ext_resource type="AudioStream" uid="uid://bfp6gukt17u8v" path="res://sons/Monde_reel_pas.mp3" id="769_lh6ng"]
+[ext_resource type="AudioStream" uid="uid://c2dfubqsckxss" path="res://sons/Monde_bulle_pas.mp3" id="770_g7hux"]
+[ext_resource type="AudioStream" uid="uid://dbk41ukerh0ah" path="res://sons/battement_coeur.wav" id="771_84sru"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1bf7c"]
 atlas = ExtResource("10_d3fmu")
@@ -3638,5 +3641,16 @@ animation = &"world_transition"
 position = Vector2(0.50001, -1.00002)
 scale = Vector2(0.442187, 0.42037)
 sprite_frames = SubResource("SpriteFrames_a8xwt")
+
+[node name="reel_step_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("769_lh6ng")
+volume_db = -5.0
+
+[node name="bubble_step_sfx" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("770_g7hux")
+volume_db = -5.0
+
+[node name="HeartBeatSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("771_84sru")
 
 [connection signal="animation_finished" from="ChangeWorld" to="." method="_on_change_world_animation_finished"]
