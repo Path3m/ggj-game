@@ -4,7 +4,7 @@ Game developped for the global game jam 2025 in Nantes, the artist and sound des
 Godot 4.3 was used, the game is currently running on linux, the executable is also to be added.
 
 - Artist, character animation and design, drawing of background and scenery assets, ending animation : [Thibault](https://www.artstation.com/thibault-prono)  
-- Artist, global animation and background, drawing of background and scenery assets, starting animation : Break  
+- Artist, global animation and background, drawing of background and scenery assets, starting animation : [Guillaume](https://www.artstation.com/guillaume_lallemand)  
 - Sound design, all and every sound you hear in the game : Fido  
 
 
