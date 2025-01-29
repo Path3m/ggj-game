@@ -1,7 +1,12 @@
 # In My Bubble - In My World
 
-Game developped for the global game jam 2025 in Nantes, the artist and sound designer link and info are to be added to this README.
+Game developped for the global game jam 2025 in Nantes, the artist and sound designer link to their website are to be added to this README.
 Godot 4.3 was used, the game is currently running on linux, the executable is also to be added.
+
+Artist, character animation and design, drawing of background and scenery assets, ending animation : [Thibault](https://www.artstation.com/thibault-prono)
+Artist, global animation and background, drawing of background and scenery assets, starting animation : Break
+Sound design, all and every sound you hear in the game : Fido
+
 
 ## Story
 
