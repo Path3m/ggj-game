@@ -1,4 +1,4 @@
-[gd_scene load_steps=272 format=3 uid="uid://buq0py1vulp63"]
+[gd_scene load_steps=274 format=3 uid="uid://buq0py1vulp63"]
 
 [ext_resource type="Script" path="res://script/menu_principal.gd" id="1_xk3r2"]
 [ext_resource type="Texture2D" uid="uid://bosetksojcykw" path="res://textures/GUI/gui_load_screen.png" id="2_aaxb1"]
@@ -270,6 +270,8 @@
 [ext_resource type="Texture2D" uid="uid://c4woou0xo0p2k" path="res://textures/animation/opening/a-batement-de-coeurs-4256.png" id="267_m2pxg"]
 [ext_resource type="Texture2D" uid="uid://cqdlkptkbt630" path="res://textures/animation/opening/a-batement-de-coeurs-4257.png" id="268_38hji"]
 [ext_resource type="Texture2D" uid="uid://drnuhdobm5unh" path="res://textures/animation/opening/a-batement-de-coeurs-4258.png" id="269_8sfsn"]
+[ext_resource type="AudioStream" uid="uid://c3teurdeodkwg" path="res://musiques/Monde_reel_stress.wav" id="271_5dl4v"]
+[ext_resource type="AudioStream" uid="uid://p6xfgp1nmvqe" path="res://musiques/Monde_bulle.wav" id="272_rbuoq"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1kmrh"]
 animations = [{
@@ -1135,5 +1137,14 @@ scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_1kmrh")
 animation = &"opening"
 
+[node name="musicOpenAnim" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("271_5dl4v")
+volume_db = -10.0
+pitch_scale = 1.5
+
+[node name="musicMenu" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("272_rbuoq")
+
 [connection signal="pressed" from="start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
+[connection signal="animation_finished" from="openingAnim" to="." method="_on_opening_anim_animation_finished"]

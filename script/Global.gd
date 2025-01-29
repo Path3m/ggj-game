@@ -1,5 +1,7 @@
 extends Node
 
+@onready var ending = preload("res://scene/end_scene.tscn");
+
 const dialogue_list : Array[String] = [
 	"res://dialogues/complotiste.dialogue",
 	"res://dialogues/pere_de_famille.dialogue",

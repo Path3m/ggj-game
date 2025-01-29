@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://dbbhpc1dfbkfq"]
+[gd_scene load_steps=40 format=3 uid="uid://dbbhpc1dfbkfq"]
 
 [ext_resource type="Script" path="res://script/level1.gd" id="1_4ov7l"]
 [ext_resource type="Texture2D" uid="uid://c2bimpjmqv2pt" path="res://textures/mure blanc 1.png" id="1_ygvrr"]
@@ -18,7 +18,20 @@
 [ext_resource type="PackedScene" path="res://scene/obstacles/extinctor.tscn" id="12_jm8a0"]
 [ext_resource type="PackedScene" path="res://scene/obstacles/coffee.tscn" id="13_cjrfs"]
 [ext_resource type="PackedScene" path="res://scene/obstacles/phone.tscn" id="16_gerl6"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/spill_coffee.tscn" id="16_ijd82"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/feuille2.tscn" id="17_jqy85"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/feuille3.tscn" id="18_i1j07"]
 [ext_resource type="PackedScene" uid="uid://c4lidbvoxiyhu" path="res://scene/main_audio_player.tscn" id="19_8qw0a"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/broom.tscn" id="19_k4771"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/toillette1.tscn" id="20_56ttu"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/urinoir1.tscn" id="21_qvg77"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/urinoir2.tscn" id="22_t46r5"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/toillette2.tscn" id="23_7csgl"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/pc1.tscn" id="25_kicsr"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/pc2.tscn" id="26_cx2r0"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/pc3.tscn" id="27_tuqjr"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/feuille4.tscn" id="28_crkfj"]
+[ext_resource type="PackedScene" path="res://scene/obstacles/feuille1.tscn" id="29_v3sgb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_56ysi"]
 texture = ExtResource("2_tfobk")
@@ -487,6 +500,9 @@ position = Vector2(-832, 80)
 [node name="colleague_enemy4" parent="." instance=ExtResource("6_2uunk")]
 position = Vector2(1120, -336)
 
+[node name="colleague_enemy7" parent="." instance=ExtResource("6_2uunk")]
+position = Vector2(-103, 151)
+
 [node name="colleague_enemy5" parent="." instance=ExtResource("6_2uunk")]
 position = Vector2(1072, 1072)
 
@@ -712,6 +728,63 @@ position = Vector2(1104, 576)
 [node name="Extinctor3" parent="Obstacles" instance=ExtResource("12_jm8a0")]
 position = Vector2(808, 560)
 
+[node name="Spill_coffe" parent="Obstacles" instance=ExtResource("16_ijd82")]
+position = Vector2(352, 519)
+
+[node name="feuille2" parent="Obstacles" instance=ExtResource("17_jqy85")]
+position = Vector2(317, 432)
+
+[node name="feuille3" parent="Obstacles" instance=ExtResource("18_i1j07")]
+position = Vector2(332, 471)
+
+[node name="Broom" parent="Obstacles" instance=ExtResource("19_k4771")]
+position = Vector2(365, 377)
+
+[node name="Board16" parent="Obstacles" instance=ExtResource("10_51uvo")]
+position = Vector2(317, 568)
+
+[node name="toilette1" parent="Obstacles" instance=ExtResource("20_56ttu")]
+position = Vector2(-772, -118)
+
+[node name="toilette2" parent="Obstacles" instance=ExtResource("20_56ttu")]
+position = Vector2(-818, -123)
+
+[node name="uri1" parent="Obstacles" instance=ExtResource("21_qvg77")]
+position = Vector2(-777, 115)
+
+[node name="uri21" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(-1015, -86)
+
+[node name="uri22" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(-1016, -23)
+
+[node name="uri23" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(-1014, 44)
+
+[node name="uri24" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(-1014, 112)
+
+[node name="uri25" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(-1015, 181)
+
+[node name="uri26" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(-1014, 238)
+
+[node name="toil2" parent="Obstacles" instance=ExtResource("23_7csgl")]
+position = Vector2(-871, -123)
+
+[node name="toilette3" parent="Obstacles" instance=ExtResource("20_56ttu")]
+position = Vector2(-920, -120)
+
+[node name="uri2" parent="Obstacles" instance=ExtResource("21_qvg77")]
+position = Vector2(-778, 178)
+
+[node name="toilette4" parent="Obstacles" instance=ExtResource("20_56ttu")]
+position = Vector2(-970, -122)
+
+[node name="uri3" parent="Obstacles" instance=ExtResource("21_qvg77")]
+position = Vector2(-777, 239)
+
 [node name="Extinctor4" parent="Obstacles" instance=ExtResource("12_jm8a0")]
 position = Vector2(-712, -144)
 
@@ -729,6 +802,45 @@ position = Vector2(1344, 1024)
 
 [node name="Bin11" parent="Obstacles" instance=ExtResource("8_60p0x")]
 position = Vector2(1304, 1024)
+
+[node name="toil3" parent="Obstacles" instance=ExtResource("23_7csgl")]
+position = Vector2(505, 1157)
+
+[node name="toilette5" parent="Obstacles" instance=ExtResource("20_56ttu")]
+position = Vector2(559, 1160)
+
+[node name="toil4" parent="Obstacles" instance=ExtResource("23_7csgl")]
+position = Vector2(262, 1155)
+
+[node name="toilette6" parent="Obstacles" instance=ExtResource("20_56ttu")]
+position = Vector2(215, 1159)
+
+[node name="uri4" parent="Obstacles" instance=ExtResource("21_qvg77")]
+position = Vector2(567, 1206)
+
+[node name="uri5" parent="Obstacles" instance=ExtResource("21_qvg77")]
+position = Vector2(568, 1251)
+
+[node name="uri6" parent="Obstacles" instance=ExtResource("21_qvg77")]
+position = Vector2(569, 1302)
+
+[node name="uri7" parent="Obstacles" instance=ExtResource("21_qvg77")]
+position = Vector2(568, 1357)
+
+[node name="uri27" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(202, 1196)
+
+[node name="uri28" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(203, 1239)
+
+[node name="uri29" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(203, 1285)
+
+[node name="uri30" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(204, 1328)
+
+[node name="uri31" parent="Obstacles" instance=ExtResource("22_t46r5")]
+position = Vector2(203, 1376)
 
 [node name="Bin12" parent="Obstacles" instance=ExtResource("7_0w1j6")]
 position = Vector2(1248, 1016)
@@ -763,8 +875,109 @@ format = 2
 layer_0/tile_data = PackedInt32Array(720900, 393216, 0, 655364, 327680, 0, 327682, 458752, 0, 327683, 262144, 0, 327684, 524288, 0, 524283, 458752, 0, 524284, 262144, 0, 524285, 524288, 0, 655361, 327680, 0, 720897, 393216, 0, 458764, 458752, 0, 458765, 262144, 0, 458766, 524288, 0, 458768, 458752, 0, 458769, 262144, 0, 458770, 524288, 0, 196624, 458752, 0, 196625, 262144, 0, 196626, 524288, 0, -131055, 327680, 0, -65519, 393216, 0, 327687, 524288, 0, 327686, 458752, 0, 196617, 327680, 0, 262153, 393216, 0, 655365, 327680, 0, 720901, 393216, 0, 262143, 524288, 0, 262142, 458752, 0, 65544, 524288, 0, 65543, 458752, 0, 65541, 524288, 0, 65540, 458752, 0, 65538, 524288, 0, 65537, 458752, 0, -327674, 524288, 0, -327675, 262144, 0, -327676, 262144, 0, -327677, 262144, 0, -327678, 262144, 0, -327679, 262144, 0, -327680, 262144, 0, -262145, 262144, 0, -262146, 262144, 0, -262147, 262144, 0, -262148, 458752, 0, -327685, 327680, 0, -393209, 327680, 0, -262149, 393216, 0, -393220, 458752, 0, -393219, 262144, 0, -393218, 262144, 0, -393217, 262144, 0, -458752, 262144, 0, -458751, 262144, 0, -458750, 262144, 0, -458749, 262144, 0, -458748, 262144, 0, -458747, 262144, 0, -458746, 524288, 0, -327673, 393216, 0, -458763, 458752, 0, -458762, 262144, 0, -458761, 262144, 0, -458760, 524288, 0, -196619, 393216, 0, -262155, 327680, 0, -327688, 327680, 0, -262152, 393216, 0, 1245200, 458752, 0, 1245201, 262144, 0, 1245202, 262144, 0, 1245203, 262144, 0, 1245204, 262144, 0, 1245205, 524288, 0, -327667, 458752, 0, -327666, 262144, 0, -327665, 262144, 0, -327664, 524288, 0)
 script = ExtResource("6_bp8io")
 
-[node name="Phone" parent="." instance=ExtResource("16_gerl6")]
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="pc1" parent="Node2D" instance=ExtResource("25_kicsr")]
+position = Vector2(114, -290)
+
+[node name="pc2" parent="Node2D" instance=ExtResource("26_cx2r0")]
+position = Vector2(61, -419)
+
+[node name="pc3" parent="Node2D" instance=ExtResource("27_tuqjr")]
+position = Vector2(191, -421)
+
+[node name="feui4" parent="Node2D" instance=ExtResource("28_crkfj")]
+position = Vector2(-22, -417)
+
+[node name="feuille3" parent="Node2D" instance=ExtResource("18_i1j07")]
+position = Vector2(227, -421)
+
+[node name="feui5" parent="Node2D" instance=ExtResource("28_crkfj")]
+position = Vector2(-290, -335)
+
+[node name="feuille4" parent="Node2D" instance=ExtResource("18_i1j07")]
+position = Vector2(-41, 221)
+
+[node name="feuille2" parent="Node2D" instance=ExtResource("17_jqy85")]
+position = Vector2(278, 342)
+
+[node name="feuille5" parent="Node2D" instance=ExtResource("17_jqy85")]
+position = Vector2(251, 345)
+
+[node name="pc4" parent="Node2D" instance=ExtResource("27_tuqjr")]
+position = Vector2(184, 347)
+
+[node name="feui6" parent="Node2D" instance=ExtResource("28_crkfj")]
+position = Vector2(423, 352)
+
+[node name="feuille6" parent="Node2D" instance=ExtResource("17_jqy85")]
+position = Vector2(813, 471)
+
+[node name="feuille7" parent="Node2D" instance=ExtResource("17_jqy85")]
+position = Vector2(1038, -301)
+
+[node name="pc5" parent="Node2D" instance=ExtResource("26_cx2r0")]
+position = Vector2(1120, -103)
+
+[node name="pc6" parent="Node2D" instance=ExtResource("27_tuqjr")]
+position = Vector2(967, -291)
+
+[node name="Feuille2" parent="Node2D" instance=ExtResource("29_v3sgb")]
+position = Vector2(868, -292)
+
+[node name="feuille8" parent="Node2D" instance=ExtResource("17_jqy85")]
+position = Vector2(1169, 213)
+
+[node name="pc7" parent="Node2D" instance=ExtResource("27_tuqjr")]
+position = Vector2(1090, 220)
+
+[node name="pc8" parent="Node2D" instance=ExtResource("26_cx2r0")]
+position = Vector2(895, 481)
+
+[node name="feui7" parent="Node2D" instance=ExtResource("28_crkfj")]
+position = Vector2(860, 484)
+
+[node name="feuille9" parent="Node2D" instance=ExtResource("18_i1j07")]
+position = Vector2(291, 712)
+
+[node name="pc9" parent="Node2D" instance=ExtResource("26_cx2r0")]
+position = Vector2(287, 660)
+
+[node name="feuille10" parent="Node2D" instance=ExtResource("17_jqy85")]
+position = Vector2(350, 654)
+
+[node name="feui8" parent="Node2D" instance=ExtResource("28_crkfj")]
+position = Vector2(98, 725)
+
+[node name="Feuille3" parent="Node2D" instance=ExtResource("29_v3sgb")]
+position = Vector2(95, 695)
+
+[node name="feuille11" parent="Node2D" instance=ExtResource("17_jqy85")]
+position = Vector2(-177, 471)
+
+[node name="feuille12" parent="Node2D" instance=ExtResource("18_i1j07")]
+position = Vector2(-254, 476)
+
+[node name="Phone" parent="Node2D" instance=ExtResource("16_gerl6")]
 position = Vector2(920, -296)
+
+[node name="Feuille1" parent="Node2D" instance=ExtResource("29_v3sgb")]
+position = Vector2(172, -288)
+
+[node name="colleague_enemy" parent="Node2D" instance=ExtResource("6_2uunk")]
+position = Vector2(435, 1090)
+
+[node name="colleague_enemy2" parent="Node2D" instance=ExtResource("6_2uunk")]
+position = Vector2(240, 1365)
+
+[node name="colleague_enemy3" parent="Node2D" instance=ExtResource("6_2uunk")]
+position = Vector2(534, 312)
+
+[node name="colleague_enemy4" parent="Node2D" instance=ExtResource("6_2uunk")]
+position = Vector2(940, 396)
+
+[node name="colleague_enemy8" parent="." instance=ExtResource("6_2uunk")]
+position = Vector2(144, -223)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

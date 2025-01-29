@@ -81,13 +81,13 @@ func display_animation(direction : Vector2) -> void:
 		colleague_sprite.show();
 	else:
 		colleague_sprite.hide();
-		if direction.x <= 0 && direction.y <= 0:
+		if direction.x >= 0 && direction.y < 0:
 			colleague_anim.play("enemy_up");
-		if direction.x >= 0 && direction.y <= 0:
+		if direction.x > 0 && direction.y >= 0:
 			colleague_anim.play("enemy_right");
-		if direction.x >= 0 && direction.y >= 0:
+		if direction.x <= 0 && direction.y > 0:
 			colleague_anim.play("enemy_down");
-		if direction.x <= 0 && direction.y >= 0:
+		if direction.x < 0 && direction.y <= 0:
 			colleague_anim.play("enemy_left");
 
 func _process(delta: float) -> void:

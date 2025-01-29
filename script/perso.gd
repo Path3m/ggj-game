@@ -29,9 +29,6 @@ func _ready() -> void:
 	heartbeat.play("default");
 	$HeartBeatSound.play();
 	
-	$animfin.hide();
-	$animfin.animation_finished.connect(_on_end_anim);
-	
 func is_moving() -> bool:
 	return (
 		Input.is_action_pressed("ui_down") ||
@@ -139,11 +136,4 @@ func _physics_process(delta: float) -> void:
 
 func _on_end_area_body_entered(body: Node2D) -> void:
 	print("Body entered");
-	if !Global.in_bubble_world:
-		Global.switch_world();
-		Global.changed_world.emit();
-	ending.emit();
-	$MC_mouv.hide();
-	await get_tree().create_timer(3).timeout;
-	$animfin.show();
-	$animfin.play("default");
+	get_tree().change_scene_to_packed(Global.ending);
